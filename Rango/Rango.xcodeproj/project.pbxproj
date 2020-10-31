@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,6 +16,8 @@
 		C3AD9B6F254CECC000CDD65D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3AD9B6E254CECC000CDD65D /* Assets.xcassets */; };
 		C3AD9B72254CECC000CDD65D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3AD9B70254CECC000CDD65D /* LaunchScreen.storyboard */; };
 		C3AD9B7D254CECC000CDD65D /* RangoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3AD9B7C254CECC000CDD65D /* RangoTests.swift */; };
+		C3AD9B92254CF9AD00CDD65D /* Alias.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3AD9B91254CF9AD00CDD65D /* Alias.swift */; };
+		C3AD9B96254CFAE600CDD65D /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3AD9B95254CFAE600CDD65D /* R.generated.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +44,8 @@
 		C3AD9B78254CECC000CDD65D /* RangoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RangoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3AD9B7C254CECC000CDD65D /* RangoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RangoTests.swift; sourceTree = "<group>"; };
 		C3AD9B7E254CECC000CDD65D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3AD9B91254CF9AD00CDD65D /* Alias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alias.swift; sourceTree = "<group>"; };
+		C3AD9B95254CFAE600CDD65D /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		C5C925304F083606DE307C89 /* Pods-Rango.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rango.release.xcconfig"; path = "Target Support Files/Pods-Rango/Pods-Rango.release.xcconfig"; sourceTree = "<group>"; };
 		E3399DACC8415A10ABAD5B08 /* Pods_RangoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RangoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4A710C225AC8A347E6FED02 /* Pods-RangoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RangoTests.debug.xcconfig"; path = "Target Support Files/Pods-RangoTests/Pods-RangoTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -76,7 +80,6 @@
 				E4A710C225AC8A347E6FED02 /* Pods-RangoTests.debug.xcconfig */,
 				F01757C97EAE95BDBEB60E9D /* Pods-RangoTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -92,6 +95,7 @@
 		C3AD9B59254CECBE00CDD65D = {
 			isa = PBXGroup;
 			children = (
+				C3AD9B95254CFAE600CDD65D /* R.generated.swift */,
 				C3AD9B64254CECBE00CDD65D /* Rango */,
 				C3AD9B7B254CECC000CDD65D /* RangoTests */,
 				C3AD9B63254CECBE00CDD65D /* Products */,
@@ -112,6 +116,8 @@
 		C3AD9B64254CECBE00CDD65D /* Rango */ = {
 			isa = PBXGroup;
 			children = (
+				C3AD9B8B254CF72100CDD65D /* Extensions */,
+				C3AD9B87254CF66E00CDD65D /* Modules */,
 				C3AD9B65254CECBE00CDD65D /* AppDelegate.swift */,
 				C3AD9B67254CECBE00CDD65D /* SceneDelegate.swift */,
 				C3AD9B69254CECBE00CDD65D /* ViewController.swift */,
@@ -119,6 +125,7 @@
 				C3AD9B6E254CECC000CDD65D /* Assets.xcassets */,
 				C3AD9B70254CECC000CDD65D /* LaunchScreen.storyboard */,
 				C3AD9B73254CECC000CDD65D /* Info.plist */,
+				C3AD9B91254CF9AD00CDD65D /* Alias.swift */,
 			);
 			path = Rango;
 			sourceTree = "<group>";
@@ -130,6 +137,20 @@
 				C3AD9B7E254CECC000CDD65D /* Info.plist */,
 			);
 			path = RangoTests;
+			sourceTree = "<group>";
+		};
+		C3AD9B87254CF66E00CDD65D /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		C3AD9B8B254CF72100CDD65D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,6 +165,7 @@
 				C3AD9B5F254CECBE00CDD65D /* Frameworks */,
 				C3AD9B60254CECBE00CDD65D /* Resources */,
 				8789AFA8401B40A7E08F9163 /* [CP] Embed Pods Frameworks */,
+				C3AD9B90254CF88D00CDD65D /* Run Script */,
 			);
 			buildRules = (
 			);
@@ -272,6 +294,26 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Rango/Pods-Rango-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		C3AD9B90254CF88D00CDD65D /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			name = "Run Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\n\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
+		};
 		CADAB18627C3756E2021A128 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -318,8 +360,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3AD9B96254CFAE600CDD65D /* R.generated.swift in Sources */,
 				C3AD9B6A254CECBE00CDD65D /* ViewController.swift in Sources */,
 				C3AD9B66254CECBE00CDD65D /* AppDelegate.swift in Sources */,
+				C3AD9B92254CF9AD00CDD65D /* Alias.swift in Sources */,
 				C3AD9B68254CECBE00CDD65D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
