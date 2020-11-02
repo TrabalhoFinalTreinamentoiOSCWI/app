@@ -1,0 +1,1047 @@
+{
+    "salads": [
+        {
+            "id": 1,
+            "userId": 1,
+            "name": "Salada de Macarrão com Atum",
+            "bio": "Uma deliciosa salada de macarrão com atum para você apreciar.",
+            "dificulty": "intermediate",
+            "time": 30,
+            "rating": 4,
+            "image": "https://cdn.discordapp.com/attachments/576875163686010911/771877616339648582/unknown.png",
+            "ingredients": [
+                "250 g de macarrão parafuso",
+                "1/2 cebola bem picadinha",
+                "2 tomates sem sementes cortados em cubinhos",
+                "1 lata de milho verde",
+                "2 latas de atum ralado sem o óleo da conserva",
+                "2 colheres (sopa) de mostarda",
+                "1 xícara de maionese",
+                "sal, pimenta-do-reino e cheiro verde a gosto"
+            ],
+            "steps": [
+                "Em uma panela ferva a água para cozinhar o macarrão.",
+                "Cozinhe da forma tradicional deixando o macarrão al dente.",
+                "Enquanto isso prepare a mistura para temperar o macarrão.",
+                "Coloque em uma vasilha grande as 2 latas de atum, a cebola, os tomates, o milho, a maionese, a mostarda, sal, pimenta do reino e o cheiro verde.",
+                "Cuidadosamente misture bem.",
+                "Depois que o macarrão estiver cozido, colque em um refratário e adicione a mistura mexendo levemente para não quebrar o macarrão.",
+                "Quando a mistura estiver bem incorporada ao macarrão leve para a geladeira por no mínimo 1 hora e meia.",
+                "Eu prefiro fazer com de um dia para o outro,pois o sabor fica bem mais apurado.",
+                "Sirva como prato principal em dias quentes acompanhado de um frango grelhado."
+            ]
+        },
+        {
+            "id": 2,
+            "userId": 2,
+            "name": "Salada de Berinjela",
+            "bio": "Aproveite essa ótima receita, uma salada de berinjela para a família",
+            "dificulty": "hard",
+            "time": 45,
+            "rating": 5,
+            "image": "https://cdn.discordapp.com/attachments/576875163686010911/771879764968865822/unknown.png",
+            "ingredients": [
+                "3 berinjelas",
+                "1 pimentão verde",
+                "1 pimentão vermelho",
+                "1 pimentão amarelo",
+                "1 cebola grande",
+                "1/2 xícara (chá) de azeite",
+                "1/4 xícara (chá) de vinagre",
+                "3 colheres (sopa) de azeitonas pretas picadas",
+                "2 dentes (grandes) de alho picadinho",
+                "1 folha de louro",
+                "2 colheres (sopa) de orégano",
+                "2 colheres (sopa) de salsa picadinha",
+                "sal a gosto"
+            ],
+            "steps": [
+                "Retire um pouco da casca da berinjela, corte em fatias finas no sentido do comprimento e depois corte em tirinhas.",
+                "Coloque as berinjelas cortadas de molho em água com sal durante meia hora, depois passe na água para retirar o sal e dê uma espremida.",
+                "Corte a cebola e o pimentão em tirinhas, coloque em uma assadeira, junte a berinjela, o alho, o louro, a salsa, orégano, azeitona e o sal.",
+                "Regue com metade do vinagre e leve ao forno médio preaquecido por 45 minutos.",
+                "Retire do forno e regue com o azeite e o restante do vinagre.",
+                "Deixe esfriar e sirva."
+            ]
+        },
+        {
+            "id": 3,
+            "userId": 3,
+            "name": "Salada de maçã, cenoura e repolho",
+            "bio": "Uma deliciosa salada diversas e muito colorida para aproveitar com o pessoal",
+            "dificulty": "easy",
+            "time": 30,
+            "rating": 3,
+            "image": "https://cdn.discordapp.com/attachments/576875163686010911/771881675663736852/unknown.png",
+            "ingredients": [
+                "2 maçãs com casca cortadas em cubos pequenos",
+                "2 cenouras médias raladas grossa",
+                "3 xícaras (chá) de repolho picado",
+                "1 xícara (chá) de maionese sabor tomate e manjericão",
+                "8 folhas de alface americana"
+            ],
+            "steps": [
+                "Em uma tigela grande misture as maçãs, as cenouras e o repolho.",
+                "Acrescente a maionese sabor tomate e manjericão e misture até que fique homogêneo e reserve.",
+                "Forre uma saladeira ou prato grande com as folhas de alface e cubra com a mistura reservada. Sirva em seguida."
+            ]
+        },
+        {
+            "id": 4,
+            "userId": 4,
+            "name": "Salada de verão",
+            "bio": "Aproveite essa deliciosa salada especial para o verão",
+            "dificulty": "intermediate",
+            "time": 40,
+            "rating": 4,
+            "image": "https://cdn.discordapp.com/attachments/576875163686010911/771882554416431104/unknown.png",
+            "ingredients": [
+                "1 alface picada",
+                "2 cenouras médias raladas",
+                "200 gramas de mussarela ralada",
+                "2 tomates p/ salada cortados em 06 partes",
+                "1 cebola fatiada",
+                "3 ovos cozidos cortados em 04 partes",
+                "Batata palha",
+                "Temperos: fondor, ajinomoto, azeite, limão"
+            ],
+            "steps": [
+                "Coloque em uma saladeira rasa na seguinte ordem:",
+                "o alface picado, por cima a cenoura ralada, a mussarela ralada",
+                "enfeite as laterais com os tomates, coloque a cebola fatiada e por cima os ovos cozidos cortados.",
+                "Para servir coloque em porções separadas, tempere e jogue batata palha.",
+                "é só comer um jantar dos deuses."
+            ]
+        },
+        {
+            "id": 5,
+            "userId": 5,
+            "name": "Salada primavera de morangos",
+            "bio": "Uma deliciosa salada com morangos para sua primavera",
+            "dificulty": "easy",
+            "time": 40,
+            "rating": 5,
+            "image": "https://cdn.discordapp.com/attachments/576875163686010911/771884009777004564/unknown.png",
+            "ingredients": [
+                "1/2 kg de morango",
+                "1 pé pequeno de alface americana",
+                "1 xícara (chá) de cogumelos frescos fatiados",
+                "3 colheres (sopa) de cebolinha picada",
+                "4 colheres (sopa) de amêndoas torradas em lascas",
+                "1 colher (sopa) de vinagre de maçã",
+                "1 colher (chá) de mel",
+                "1 colher (chá) de Fondor MAGGI",
+                "1 colher (sopa) de azeite",
+                "1 colher (chá) de sementes de papoula"
+            ],
+            "steps": [
+                "Limpe os morangos e corte-os em quatro.",
+                "Reserve 1/2 xícara (chá) para o preparo do molho.",
+                "Lave a alface, deixe secar um pouco e corte-a em tiras finas.",
+                "Afervente rapidamente os cogumelos, escorra e reserve.",
+                "Em uma saladeira ou em pratos individuais, disponha a alface, os morangos, os cogumelos, a cebolinha e as amêndoas.",
+                "À parte, amasse com um garfo o morango reservado e acrescente os ingredientes do molho. Regue a salada com o molho e sirva."
+            ]
+        }
+    ],
+    "meats": [
+        {
+            "id": 1,
+            "userId": 2,
+            "name": "Picadinho de carne ao vinho",
+            "bio": "Um delicioso picadinho de carne ao vinho, aproveite em família",
+            "dificulty": "hard",
+            "time": 50,
+            "rating": 5,
+            "image": "https://cdn.discordapp.com/attachments/576875163686010911/771885377110933524/unknown.png",
+            "ingredients": [
+                "3 colheres de sopa de óleo",
+                "2 dentes de alho bem picados",
+                "2 cebolas médias picadas",
+                "1 Kg de patinho ou alcatra em cubinhos",
+                "1 folha de louro",
+                "sal e pimenta a gosto",
+                "1/2 xícara de chá de purê de tomate",
+                "4 xícaras de chá de água",
+                "2 cubinhos de caldo de carne",
+                "1/2 xícara de vinho tinto seco",
+                "500 g de cebolas bem pequenas",
+                "1 pimentão verde picado"
+            ],
+            "steps": [
+                "Aqueça o óleo e refogue a cebola picada e o alho.",
+                "Junte os cubinhos de carne, o louro, a pimenta e deixe dourar.",
+                "Acrescente a água e os cubinhos de caldo de carne até de dissolver bem, adicione o purê de tomate, o vinho e o pimentão.",
+                "Misture bem e deixe cozinhar por 30 mimutos.",
+                "Coloque as cebolas pequenas e cozinhe por mais 10 minutos e está pronto."
+            ]
+        },
+        {
+            "id": 2,
+            "userId": 4,
+            "name": "Carne de panela de pressão",
+            "bio": "Deguste dessa maravilhosa carne de panela de pressão em seu almoço",
+            "dificulty": "intermediate",
+            "time": 25,
+            "rating": 4,
+            "image": "https://cdn.discordapp.com/attachments/576875163686010911/771886840684478464/unknown.png",
+            "ingredients": [
+                "1 kg de carne (acém, patinho ou lombo de porco)",
+                "8 cebolas grandes cortadas em rodelas",
+                "3 ou 4 cubos de caldo de carne"
+            ],
+            "steps": [
+                "Forre o fundo de uma panela de pressão com metade das cebolas.",
+                "Esfarele um cubo de caldo de carne por cima das cebolas, adicione a carne, adicione outro cubo de caldo de carne e cubra com o restante das cebolas.",
+                "Feche a panela de pressão, sem adicionar água, e deixe cozinhar por 25 minutos.",
+                "Se preferir, adicione batatas em rodelas e deixe cozinhar por mais 10 minutos."
+            ]
+        },
+        {
+            "id": 3,
+            "userId": 1,
+            "name": "Esfiha de carne turca",
+            "bio": "Experimente essa deliciosa receita de esfiha turca",
+            "dificulty": "hard",
+            "time": 90,
+            "rating": 5,
+            "image": "https://cdn.discordapp.com/attachments/576875163686010911/771887789431324723/unknown.png",
+            "ingredients": [
+                "1 colher (sopa) bem cheia de fermento para pão (eu usei fermento granulado instantâneo para pão)",
+                "2 colheres (sopa) cheias de açúcar refinado",
+                "1/2 colher (chá) de sal",
+                "1/2 xícara de leite morno (100 ml)",
+                "1 xícara de água morna (200 ml)",
+                "1 ovo",
+                "650 ou 700 g de farinha de trigo",
+                "1/2 xícara (chá) de óleo ou 100 ml",
+                "1/2 kg de carne moída magra",
+                "3 tomates picadinhos",
+                "1 cebola picada",
+                "1 dente de alho (opcional)",
+                "1/2 xícara (chá) de azeitonas picadas",
+                "1/2 colher (chá) de noz moscada (opcional)",
+                "Salsinha e cebolinha a gosto (opcional)",
+                "Gotas de molho de pimenta (opcional)",
+                "1 gema",
+                "Gergelim torrado ou preto para salpicar depois que pincelar"
+            ],
+            "steps": [
+                "Em ma tigela grande e larga colocar o fermento em pó, o açúcar e despejar a água morna, o leite morno, o sal e o óleo.",
+                "Mexer bem.",
+                "Em seguida, acrescentar a metade da farinha de trigo aos poucos e mexer com uma colher de pau ou de plástico.",
+                "Colocar o ovo e continuar acrescentando a farinha de trigo.",
+                "Antes de finalizar a farinha, comece a trabalhar a massa com uma das mãos para sentir a textura da mesma e ver se precisa colocar realmente toda a farinha.",
+                "Dependendo do tamanho do ovo, 650 g de farinha é suficiente, caso contrário, use 700 g, mas atenção, muita farinha pode deixar a massa dura.",
+                "Sove a massa por uns 5 minutos na própria tigela com uma das mãos em movimentos de vai e vem.",
+                "A massa fica bem maleável, gostosa de trabalhar e não gruda nas mãos.",
+                "Coloque a tigela dentro de um saco plástico ou feche-a com um filme plástico.",
+                "Deixe descansar por 20 minutos em local que vá favorecer o crescimento da massa.",
+                "Eu deixei recebendo a luz do sol através de uma janela, com os vidros fechados.",
+                "Abrir porções da massa com um rolo.",
+                "Cortar em círculos com uma faca e colocar 1 colher (sopa) do recheio.",
+                "Pegar metade da massa do círculo e dobrá-la até o centro e fechar as duas outras extremidades apertando bem.",
+                "Se sentir que há muita massa nas extremidades, corte e modele para dar o formato triangular.",
+                "Untar levemente uma forma de alumínio com óleo e colocar as esfihas.",
+                "Pincelar com a gema e salpicar gergelim torrado ou gergelim preto.",
+                "Levar ao forno pré-aquecido a 150° por 20 minutos, depois mais 10 minutos a 180°.",
+                "Este tempo é necessário para que as esfihas cresçam e assem por igual.",
+                "Não ficam com a massa crua.",
+                "Muitos indicam o forno super quente, mas, eu acredito que o forno super quente seja bom para esfihas abertas ou senão para esfihas pequenas, com pouca massa.",
+                "Escorrer a carne moída e refogá-la com o alho e a cebola picadinhos.",
+                "Acrescentar sal ou temperos de sua preferência e deixar refogando até que a cor avermelhada da carne despareça.",
+                "Mexa sempre para evitar pelotas.",
+                "Tire a carne do fogo, escorra se tiver líquido e acrescente os outros ingredientes.",
+                "Escorrer a carne e colocá-la em uma vasilha de vidro convencional, como duralex (eu uso um refratário de vidro retangular com bordas altas).",
+                "Deixar cozinhar por 2 minutos.",
+                "Retirar o refratário (usar luvas para não se queimar) e mexer a carne com um garfo para não deixá-la empelotar.",
+                "Escorrer o líquido que saiu da carne e voltar o refratário ao microondas por mais 3 minutos.",
+                "Escorrer o líquido do cozimento.",
+                "Acrescentar os outros ingredientes e deixar esfriar.",
+                "Levar a carne ao congelador por uns 10 minutos acelera o processo de resfriamento.",
+                "Nunca use o recheio quente na massa da esfiha, ele deve estar sempre frio e sem líquido."
+            ]
+        },
+        {
+            "id": 4,
+            "userId": 5,
+            "name": "Estrogonofe de carne",
+            "bio": "Desfrute de um delicioso estrogonofe de carne",
+            "dificulty": "intermediate",
+            "time": 35,
+            "rating": 5,
+            "image": "https://cdn.discordapp.com/attachments/576875163686010911/771889998105411614/unknown.png",
+            "ingredients": [
+                "400g de carne (filé mignon, chã de dentro ou alcatra)",
+                "Pimenta",
+                "Cominho",
+                "Sal",
+                "1/2 cebola ralada",
+                "1 caixa e meia de creme de leite",
+                "3 colheres (sopa) de catchup",
+                "3 colheres (sopa) de extrato de tomate",
+                "1 colher (sopa) de mostarda",
+                "Óleo para fritar"
+            ],
+            "steps": [
+                "Corte a carne selecionada em tirinhas, tempere com a pimenta, cominho e sal (eu coloco 1 ou 2 pitadas de cada, no máximo).",
+                "Deixe descansar a carne por 20 minutos para apurar o gosto.",
+                "Coloque óleo suficiente para fritar poucas quantidades de tirinhas (7 ou 8), esquente bem o óleo.",
+                "Comece a fritura com poucas tirinhas para que o óleo não vire uma sopa, retire as tiras e reserve.",
+                "Não deixe fritar muito para que a carne não fique dura.",
+                "Troque o óleo da panela e refogue a cebola ralada.",
+                "Depois de dourada, jogue todas as tirinhas de carne dentro da panela e mexa.",
+                "Frite por 3 minutos e jogue na panela o creme de leite, catchup, extrato de tomate e mostarda.",
+                "Deixe ferver um pouco, sempre misturando.",
+                "Sirva com arroz branco e batata palha."
+            ]
+        },
+        {
+            "id": 5,
+            "userId": 2,
+            "name": "Bolinho de carne e escarola",
+            "bio": "Deliciosos bolinhos para você aproveitar",
+            "dificulty": "easy",
+            "time": 40,
+            "rating": 4,
+            "image": "https://cdn.discordapp.com/attachments/576875163686010911/771891402392207390/unknown.png",
+            "ingredients": [
+                "1/2 kg de carne moída",
+                "2 pãezinhos embebidos em leite",
+                "1 colher (sopa) de farinha de trigo",
+                "1 cebola picada",
+                "3 dentes de alho picados",
+                "1 ovo",
+                "2 colheres (chá) rasas de gengibre picadinho",
+                "Tempero pronto com sal a gosto",
+                "1 maço pequeno de escarola picada",
+                "1 colher (sopa) de azeite",
+                "1 pitada de sal"
+            ],
+            "steps": [
+                "Tempere a carne moída com o tempero pronto, cebola, 2 dentes de alho e o gengibre.",
+                "Acrescente os pãezinhos espremidos, farinha de trigo e o ovo.",
+                "Misture bem.",
+                "Reserve",
+                "Refogue o dente de alho restante no azeite.",
+                "Coloque a escarola e 1 pitada de sal.",
+                "Mexa para murchar rápidamente (não cozinhe demais para evitar que solte líquido).",
+                "Pode fazer os bolinhos de 2 maneiras:",
+                "Misturar o refogado de escarola à carne moída reservada e fazer os bolinhos.",
+                "Ou fazer bolinhos com a carne moída reservada, recheando com o refogado de escarola. Feche bem para não abrir.",
+                "Frite em óleo quente e em pequenas porções."
+            ]
+        },
+        {
+            "id": 6,
+            "userId": 5,
+            "name": "Pimentão recheado com carne",
+            "bio": "Um saboroso pimentão suculento recheado com carne",
+            "dificulty": "hard",
+            "time": 30,
+            "rating": 4,
+            "image": "https://cdn.discordapp.com/attachments/576875163686010911/771892703818416138/unknown.png",
+            "ingredients": [
+                "2 pimentões médios ou grandes",
+                "300 g de carne moída",
+                "1/2 cebola picada",
+                "2 dentes de alho picado",
+                "Sal a gosto",
+                "1 pedaço pequeno de bacon (opcional)",
+                "1 cenoura pequena (opcional)",
+                "2 fatias de presunto",
+                "2 fatias de queijo",
+                "3 colheres (sopa) de requeijão"
+            ],
+            "steps": [
+                "Lave bem os pimentões.",
+                "Faça um buraco no pé de cada pimentão, como uma tampa.",
+                "Retire toda a semente de dentro limpando tudo.",
+                "Deixe reservado.",
+                "Tempere a carne e deixe reservada também.",
+                "Refogue a cebola e o alho picados. Acrescente o bacon cortado em cubos. Deixe dourar.",
+                "Coloque a Carne moída e mexa bem. Misture a cenoura cortada em cubos.Coloque um copo de água e deixe cozinhar até a cenoura cozinhar e secar a água.",
+                "Corte as fatias do presunto e queijo em pedaços pequenos.",
+                "Acrescente à carne e desligue o fogo.",
+                "Coloque o requeijão e mexa bem.",
+                "Pegue os pimentões, coloque o recheio dentro preenchendo por completo.",
+                "Corte um pedaço de papel alumínio ( proporcional ao pimentão ) e cubra cada pimentão. Coloque-os em uma forma de alumínio ou refratária.",
+                "Leve ao forno pré-aquecido, a 220º, por 20 minutos.",
+                "Sirva de preferência bem quentinho."
+            ]
+        },
+        {
+            "id": 7,
+            "userId": 4,
+            "name": "Tomates e Pimentão recheados com carne",
+            "bio": "Aproveite essa receita deliciosa com tomates recheados com carne",
+            "dificulty": "intermediate",
+            "time": 40,
+            "rating": 3,
+            "image": "https://cdn.discordapp.com/attachments/576875163686010911/771893934897102878/unknown.png",
+            "ingredients": [
+                "11 tomates bem vermelhos",
+                "1/2 kg de carne moída",
+                "1 cebola branca grande",
+                "1 pimentao verde",
+                "sal e pimenta do reino",
+                "queijo parmesao ralado",
+                "1/2 molho de tomate pronto",
+                "galhos de salsinha para decorar"
+            ],
+            "steps": [
+                "Coloque a carne em uma panela média para cozinhar.",
+                "Acrescente a cebola branca picada, o pimentão verde picado, o sal e a pimenta-do-reino.",
+                "Quando a carne estiver cozida acrescente metade do molho de tomate pronto.",
+                "Pegue os tomates e faça um corte circular retirando o tampo.",
+                "Recheie com a carne moída já cozida.",
+                "Regue com parmesão ralado e leve ao forno preaquecido a 180ºC por 5 minutos.",
+                "Quando tirar do forno regue com parmesão ralado e coloque os galhos de salsinha"
+            ]
+        }
+    ],
+    "pasta": [
+        {
+            "id": 1,
+            "userId": 3,
+            "name": "Macarrão com requeijão",
+            "bio": "Um delicioso macarraão com requeijão",
+            "dificulty": "intermediate",
+            "time": 40,
+            "rating": 5,
+            "image": "https://cdn.discordapp.com/attachments/576875163686010911/771895891475955722/unknown.png",
+            "ingredients": [
+                "500 g de penne cozido al dente",
+                "2 colheres (sopa) de azeite",
+                "2 dentes de alho picados",
+                "1 lata de molho de tomate",
+                "200 g de requeijão de sua preferência",
+                "1 lata de creme de leite",
+                "300 g de presunto picado",
+                "300 g de mussarela picada",
+                "Queijo parmesão ralado",
+                "Sal e pimenta a gosto"
+            ],
+            "steps": [
+                "Em uma panela aqueça o azeite e doure o alho.",
+                "Junte o molho de tomate, o requeijão e o creme de leite.",
+                "Tempere com sal e pimenta.",
+                "Deixe no fogo brando até o requeijão derreter.",
+                "Desligue o fogo e misture a mussarela e o presunto picados.",
+                "Em um refratário coloque o macarrão, despeje o molho e polvilhe o queijo ralado.",
+                "Deixe por 20 minutos em forno pré-aquecido.",
+                "Sirva em seguida."
+            ]
+        },
+        {
+            "id": 2,
+            "userId": 2,
+            "name": "Macarrão ao molho branco",
+            "bio": "Uma massa deliciosa acompanhada de molho branco",
+            "dificulty": "easy",
+            "time": 30,
+            "rating": 5,
+            "image": "https://cdn.discordapp.com/attachments/576875163686010911/771897682431442954/unknown.png",
+            "ingredients": [
+                "1 pacote de macarrão tipo talharim",
+                "1 lata de creme de leite",
+                "1 colher (sopa) de maizena",
+                "2 tabletes de caldo de galinha",
+                "folhas de manjericão fresco",
+                "azeite",
+                "2 cebolas médias picadas",
+                "água",
+                "queijo ralado"
+            ],
+            "steps": [
+                "Cozinhe o macarrão em muita água até ficar macio.",
+                "Reserve.",
+                "Refogue a cebola no azeite e acrescente água o suficiente para o molho.",
+                "Coloque o caldo de galinha e deixe dissolver.",
+                "Quando a água estiver fervendo, dissolva a maisena em um pouco de água e acrescente.",
+                "Coloque o manjericão.",
+                "Assim que levantar fervura, coloque o creme de leite.",
+                "Deixe ferver novamente, sempre mexendo.",
+                "Despeje em cima do macarrão e polvilhe o queijo ralado.",
+                "Sirva quente."
+            ]
+        },
+        {
+            "id": 3,
+            "userId": 5,
+            "name": "Macarrão rápido ao molho branco",
+            "bio": "Macarrão delicioso e rápido para você aproveitar",
+            "dificulty": "easy",
+            "time": 20,
+            "rating": 4,
+            "image": "https://cdn.discordapp.com/attachments/576875163686010911/771898893309837312/unknown.png",
+            "ingredients": [
+                "1/2 pacote de macarrão ninho largo (ou qual você tiver em casa)",
+                "3 colheres de sopa de óleo",
+                "Água para cozinhar",
+                "2 colheres de óleo",
+                "2 dentes de alho",
+                "1/2 cebola",
+                "1 copo de requeijão",
+                "1 creme de leite",
+                "Cebolinha e salsinha a gost",
+                "Sal a gosto"
+            ],
+            "steps": [
+                "Coloque a água para ferver (quantidade suficiente pra cobrir o macarrão) e coloque o óleo, quando ela começar a ferver coloque o macarrão.",
+                "Enquanto o macarrão está fervendo em uma outra panela, adicione o óleo e a cebola, quando a cebola começar a fritar adicione o alho e deixe fritar mais um pouco, logo verá que o alho vai dourar.",
+                "Neste momento coloque o requeijão e deixe ele derreter bem, quando ele estiver bem derretido coloque a cebolinha, salsinha e o creme de leite e mexa bem, até ficar homogêneo.",
+                "Coloque sal, desligue o fogo e verifique se o macarrão está cozido.",
+                "Quando o macarrão estiver cozido, escorra ele bem e misture com o molho."
+            ]
+        },
+        {
+            "id": 4,
+            "userId": 1,
+            "name": "Macarrão ao forno com bacon e mussarela",
+            "bio": "Aproveite essa deliciosa massa com bacon e mussarela",
+            "dificulty": "hard",
+            "time": 40,
+            "rating": 5,
+            "image": "https://cdn.discordapp.com/attachments/576875163686010911/771907204591648798/unknown.png",
+            "ingredients": [
+                "500 g de macarrão caracolinho cozido e escorrido",
+                "300 g de bacon cortado em cubinhos",
+                "3 tomates cortados e sem semente",
+                "1 cebola grande picada",
+                "salsinha a gosto",
+                "3 colheres (sopa) de maionese",
+                "2 dentes de alho picados",
+                "2 colheres (sopa) de azeite",
+                "350 g de mussarela ralada ou picada",
+                "50 g de queijo ralado"
+            ],
+            "steps": [
+                "Coloque o bacon em uma panela e misture até dourar.",
+                "Acrescente o azeite, o alho, a cebola e os tomates.",
+                "Em um refratário, coloque o macarrão, a maionese, a salsinha, a mussarela e os ingredientes refogados.",
+                "Misture bem e polvilhe queijo ralado.",
+                "Leve ao forno médio para gratinar o queijo e está pronto para servir."
+            ]
+        },
+        {
+            "id": 5,
+            "userId": 4,
+            "name": "Macarrão ao alho e óleo simples",
+            "bio": "Um delicioso macarrão com alho e óleo",
+            "dificulty": "intermediate",
+            "time": 30,
+            "rating": 5,
+            "image": "https://cdn.discordapp.com/attachments/576875163686010911/771908820347387924/unknown.png",
+            "ingredients": [
+                "5 dentes de alho amassados",
+                "5 colheres de sopa de óleo",
+                "1 colher de sopa de manteiga",
+                "Sal a gosto"
+            ],
+            "steps": [
+                "Amasse bem o alho juntamente com o sal, formando uma pasta.",
+                "Em uma frigideira, coloque o alho amassado e o óleo.",
+                "Frite em fogo médio sem deixar o alho queimar, só dourar.",
+                "Acrescente a manteiga e deixe ferver um pouco, só para incorporar bem o sabor, mexendo sempre.",
+                "Coloque sobre o macarrão imediatamente."
+            ]
+        }
+    ],
+    "snack": [
+        {
+            "id": 1,
+            "userId": 2,
+            "name": "Torta de liquidificador salgada",
+            "bio": "Aproveite uma deliciosa torta salgada rápida que pode ser feita em seu liquidificador",
+            "dificulty": "easy",
+            "time": 45,
+            "rating": 4,
+            "image": "https://cdn.discordapp.com/attachments/576875163686010911/772136882842239006/unknown.png",
+            "ingredients": [
+                "3 ovos inteiros",
+                "1 xícara (chá) de óleo",
+                "2 xícaras de leite",
+                "2 xícaras de farinha de trigo",
+                "1 pacote de queijo ralado (50g)",
+                "sal a gosto ou 1 tablete de caldo de galinha, ou carne",
+                "1 colher (sopa) de fermento em pó"
+            ],
+            "steps": [
+                "Bata todos os ingredientes da massa no liquidificador.",
+                "Recheie a gosto.",
+                "Em uma forma untada, coloque metade da massa do liquidificador.",
+                "Em cima, acrescente o recheio e o por último, o restante da massa.",
+                "Leve ao forno preaquecido, deixe até dourar."
+            ]
+        },
+        {
+            "id": 2,
+            "userId": 3,
+            "name": "Risólis",
+            "bio": "Um delicioso risólis para fazer e comer em sua casa",
+            "dificulty": "hard",
+            "time": 30,
+            "rating": 4,
+            "image": "https://cdn.discordapp.com/attachments/576875163686010911/772137529590939668/unknown.png",
+            "ingredients": [
+                "2 copos de leite",
+                "1 colher (sopa) de manteiga ou margarina",
+                "1 colher (chá) de sal",
+                "2 copos de farinha de trigo"
+            ],
+            "steps": [
+                "Ferva o leite, a manteiga e o sal.",
+                "Quando levantar fervura, jogar de uma vez os 2 copos de farinha.",
+                "Sovar bem a massa. Estique a massa em cima da pia (pode ser com as mãos), corte rodelas com a borda de um copo e recheie a gosto. Feche os risólis e passe no ovo batido e farinha de rosca. Frite."
+            ]
+        },
+        {
+            "id": 3,
+            "userId": 5,
+            "name": "Bolinhas de queijo",
+            "bio": "Deliciosas bolinhas de queijo para comer com seus amigos",
+            "dificulty": "intermediate",
+            "time": 120,
+            "rating": 5,
+            "image": "https://cdn.discordapp.com/attachments/576875163686010911/772138812969189426/unknown.png",
+            "ingredients": [
+                "300 ml de água",
+                "200ml de leite",
+                "3 colheres (sopa) de manteiga",
+                "1 cubo de caldo de legumes",
+                "4 copos cheios de farinha de trigo",
+                "Sal a gosto",
+                "300 g de mussarela em cubos para rechear",
+                "Óleo vegetal para fritar",
+                "Leite e farinha de rosca para empanar"
+            ],
+            "steps": [
+                "Em uma panela larga coloque os ingredientes da massa, menos o trigo e deixe formar um caldo até derreter a margarina.",
+                "Abaixe o fogo e acrescente a farinha de trigo de uma vez só, mexa bem para cozinhar até que forme uma bola.",
+                "Coloque sobre uma superfície untada com margarina e deixe esfriar.",
+                "Pegue porções de massa, faça bolinhas e uma covinha no meio e recheie com um cubo de mussarela, feche e modele as bolinhas.",
+                "Empane passando primeiramente no leite e depois da farinha de rosca, retire o excesso e frite em óleo quente. Escorra bem em papel toalha e sirva."
+            ]
+        },
+        {
+            "id": 4,
+            "userId": 2,
+            "name": "Torta salgada de farofa pronta",
+            "bio": "Aprecie uma deliciosa torta salgada em sua casa",
+            "dificulty": "hard",
+            "time": 40,
+            "rating": 4,
+            "image": "https://cdn.discordapp.com/attachments/576875163686010911/772141428834959390/unknown.png",
+            "ingredients": [
+                "1 xícara de farofa pronta Yoki tradicional",
+                "1 xícara de farinha de trigo",
+                "3 colheres (sopa) rasa de manteiga (em temperatura ambiente ou um pouco derretida)",
+                "1 ovo",
+                "1/2 xícara de água",
+                "1/2 colher (sopa) de fermento em pó",
+                "1 cebola",
+                "1 linguiça calabresa (sem pele)",
+                "300 g de brócolis cozido",
+                "1/2 pote de requeijão cremoso"
+            ],
+            "steps": [
+                "Misture a farofa com a farinha, acrescente o ovo e a manteiga e mexa",
+                "Coloque a água aos poucos até sentir que massa se encontra homogênea e por fim o fermento",
+                "Amasse com as mãos.",
+                "Corte a cebola em pedaços e doure, acrescente a linguiça em cubinhos e frite-a com a cebola",
+                "Corte em pedacinhos o brócolis cozido e misture com a linguiça frita, misture tudo com o requeijão",
+                "Forre uma forma com a massa apertando com as mãos, coloque o recheio e cubra com o restante da massa.",
+                "Aqueça o forno por 10 minutos a 180° C",
+                "Após, coloque a torta para assar por 40 minutos, aproximadamente, na mesma temperatura."
+            ]
+        },
+        {
+            "id": 5,
+            "userId": 4,
+            "name": "Sanduíche natural de frango bem temperado",
+            "bio": "Aproveite um delicioso sanduíche durante a tarde",
+            "dificulty": "easy",
+            "time": 15,
+            "rating": 3,
+            "image": "https://cdn.discordapp.com/attachments/576875163686010911/772143290564476958/unknown.png",
+            "ingredients": [
+                "100 g de frango desfiado pré-cozido",
+                "1/2 cebola pequena picada",
+                "1/2 tomate picado",
+                "1 cenoura pequena ralada",
+                "1/2 lata de milho verde",
+                "salsinha e cebolinha a gosto",
+                "sal a gosto",
+                "maionese light a gosto",
+                "pão de forma"
+            ],
+            "steps": [
+                "Refogue o frango desfiado com azeite, alho e cebola em uma panela.",
+                "Misture a cebola e o tomate picados, a cenoura ralada, o milho, a salsa, a cebolinha e o sal.",
+                "Adicione maionese até a obter a consistência desejada do recheio.",
+                "Cremosa ou mais consistente, como você preferir.",
+                "Coloque o recheio entre 2 fatias de pão de forma."
+            ]
+        }
+    ],
+    "fish": [
+        {
+            "id": 1,
+            "userId": 3,
+            "name": "Filé de peixe assado",
+            "bio": "Um delicioso fíle de peixe assado para o próximo domingo",
+            "dificulty": "hard",
+            "time": 40,
+            "rating": 5,
+            "image": "https://cdn.discordapp.com/attachments/576875163686010911/772144219010891806/unknown.png",
+            "ingredients": [
+                "500 g de filé de peixe (tilápia, saint peter ou outro)",
+                "4 batatas grande descascada em rodelas de 0,5 centímetro de espessura",
+                "2 tomates picadinhos",
+                "1/2 pimentão(se ele for grande)",
+                "1 cebola média picada em cubos",
+                "1 colher (sopa) cheia de alcaparras",
+                "cheiro-verde a gosto",
+                "coentro a gosto (opcional)",
+                "1/2 colher (sopa) de sal",
+                "1 dente de alho (pequeno) bem espremido",
+                "azeite a gosto"
+            ],
+            "steps": [
+                "Tempere o filé de peixe com sal e alho e reserve.",
+                "Misture o tomate, cebola, pimentão e alcaparras e tempere com um pouco de sal e junte o cheiro verde e coentro. Reseve.",
+                "Unte um refratário com azeite, e forre com as batatas cruas.",
+                "Cubra as batatas com o peixe e por cima distribua a mistura do tomate. Regue com bastante azeite e leve ao forno por mais ou menos 30 a 40 minutos.",
+                "Quando secar o líquido que acumula no fundo da forma quando está assando e ficar dourado está pronto.",
+                "Sirva com arroz intergal ou branco, é uma delícia!"
+            ]
+        },
+        {
+            "id": 2,
+            "userId": 1,
+            "name": "Estrogonofe de camarão",
+            "bio": "Um delicioso estrogonofe para comer em família",
+            "dificulty": "intermediate",
+            "time": 40,
+            "rating": 5,
+            "image": "https://cdn.discordapp.com/attachments/576875163686010911/772145453038960680/unknown.png",
+            "ingredients": [
+                "1 colher (sopa) de manteiga",
+                "1 cebola média ralada",
+                "1/2kg de camarão médio limpo",
+                "Sal e pimenta do reino",
+                "4 colheres (sopa) de conhaque",
+                "100g de cogumelos em conserva picados",
+                "3 colheres (sopa) de catchup",
+                "1 colher (sopa) de mostarda",
+                "1 caixinha de creme de leite"
+            ],
+            "steps": [
+                "Limpe os camarões, retire as cascas e lave muito bem em água e limão, escorra e reserve.",
+                "Aqueça a manteiga e doure nela a cebola.",
+                "Junte os camarões e mexa bem, tempere com sal e pimenta.",
+                "Aqueça o conhaque em uma concha até este pegar fogo e despeje-o sobre os camarões, flambando-os.",
+                "Junte o cogumelo, o catchup, a mostarda e deixe ferver por cerca de 5 minutos.",
+                "No momento de servir, junte o creme de leite, mexa bem e aqueça sem ferver.",
+                "Sirva o strogonoff acompanhado de arroz branco e batata palha."
+            ]
+        },
+        {
+            "id": 3,
+            "userId": 3,
+            "name": "Filé de salmão ao forno",
+            "bio": "Aproveite essa receita de filé de salmão ao forno",
+            "dificulty": "hard",
+            "time": 50,
+            "rating": 4,
+            "image": "https://cdn.discordapp.com/attachments/576875163686010911/772146522581237822/unknown.png",
+            "ingredients": [
+                "500 g de filé de salmão",
+                "Azeitonas fatiadas sem caroço",
+                "Orégano",
+                "3 colheres de sopa de Molho de soja (shoyu)",
+                "Sal a gosto",
+                "Azeite a gosto",
+                "Limão",
+                "Papel alumínio",
+                "1/2 cebola fatiada"
+            ],
+            "steps": [
+                "Lave o salmão com suco de limão.",
+                "Aqueça o azeite e adicione a cebola fatiada, deixando no fogo até que fique transparente. Reserve.",
+                "Cubra uma assadeira com papel alumínio de maneira que a sobra dê para forrar todo o peixe.",
+                "Sobre o papel alumínio na assadeira, coloque o peixe já temperado com sal, regue com azeite e shoyu.",
+                "Decore com fatias de azeitonas e um pouco de orégano. ",
+                "Despeje a cebola por cima. Embrulhe com o papel alumínio, de maneira que o líquido não derrame quando começar a esquentar.",
+                "Leve ao forno médio para assar por cerca de 30 minutos.",
+                "Sirva com legumes e salada verde."
+            ]
+        },
+        {
+            "id": 4,
+            "userId": 5,
+            "name": "Filé de merluza com batata",
+            "bio": "Já imaginou fazer esse lindo prato no próximo almoço?",
+            "dificulty": "intermediate",
+            "time": 30,
+            "rating": 5,
+            "image": "https://www.tudogostoso.com.br/receita/88371-file-de-merluza-com-batata-ao-forno.html",
+            "ingredients": [
+                "8 filés de merluza",
+                "4 batatas cruas (em rodelas, sem casca)",
+                "1 pimentão (cortado em rodelas)",
+                "2 tomates (cortados em rodelas - as sementes ficam à preferência)",
+                "1 cebola (cortada em rodelas)",
+                "Molho de tomate de boa qualidade",
+                "Orégano",
+                "Azeite para untar"
+            ],
+            "steps": [
+                "Tempere os filés à seu gosto e reserve por 10 minutos.",
+                "Unta um refratário com azeite e faça uma camada de batata, em seguida arrume os filés sobre a batata.",
+                "Acrescente a cebola, o tomate, o pimentão, orégano a gosto, regue com o molho de tomate (1/2 lata).",
+                "Cubra com o restante das batatas. Cubra com papel alumínio e leve ao forno alto até que as batatas fiquem macias."
+            ]
+        },
+        {
+            "id": 5,
+            "userId": 3,
+            "name": "Camarão na moranga com catupiry",
+            "bio": "Esse delicioso prato de camarão na moranga para você aproveitar",
+            "dificulty": "hard",
+            "time": 60,
+            "rating": 5,
+            "image": "https://cdn.discordapp.com/attachments/576875163686010911/772148577676820540/unknown.png",
+            "ingredients": [
+                "1 moranga grande",
+                "1 kg de camarão médio",
+                "1 pote de catupiry",
+                "1 vidro de palmito",
+                "1 garrafinha de leite de coco",
+                "Sal",
+                "Pimenta",
+                "1 cebola ralada",
+                "2 dentes de alho",
+                "2 tomates picados sem semente",
+                "1 colher de sobremesa de farinha de trigo"
+            ],
+            "steps": [
+                "Retire a tampa da moranga e em seguida todas as sementes.",
+                "Depois de lavada pulverize sal por dentro.",
+                "Enrole com papel alumínio toda a moranga.",
+                "Leve ao forno por 45 minutos.",
+                "Reserve, mas antes tire com uma colher algumas lascas da moranga para agregar ao refogado.",
+                "Frite a cebola e o alho no azeite.",
+                "Em seguida os tomates, e as lascas de moranga que tirou de dentro dela deixando apurar por 10 minutos.",
+                "Junte o palmito picado e em seguida o camarão que não deve cozinhar mais do que 10 minutos, pois se cozinhá-lo mais que esse tempo ele fica totalmente duro (borrachudo).",
+                "Junte o leite de coco, e 1 colher de farinha dissolvida em água, para dar uma leve engrossada.",
+                "E junte ao refogado pronto e desligado metade da caixinha do catupiry, incorporando bem ao refogado.",
+                "Experimente o sal e a pimenta a gosto (cuidado para não salgar).",
+                "Com a moranga ainda quente pegue pelotas de catupiry com as mãos e coloque no fundo e nos lados, (o catupiry deve estar bem gelado para grudar mais fácil).",
+                "Jogue dentro da moranga o refogado bem quente e sirva.",
+                "Coloque salsinha a gosto ou coentro, (depende do gosto de cada um)."
+            ]
+        }
+    ],
+    "cakes": [
+        {
+            "id": 1,
+            "userId": 4,
+            "name": "Bolo de maça com canela",
+            "bio": "Aproveite esse delicioso bolo de maçã com canela",
+            "dificulty": "intermediate",
+            "time": 140,
+            "rating": 4,
+            "image": "https://cdn.discordapp.com/attachments/576875163686010911/772150208444235786/unknown.png",
+            "ingredients": [
+                "2 xícaras de açúcar",
+                "1 xícara de óleo - de preferência para milho ou canola",
+                "4 ovos inteiros",
+                "2 xícaras de farinha de trigo",
+                "3 maçãs, sem casca, picadas",
+                "1 colher de sopa de fermento para bolo",
+                "1 colher de café de canela em pó",
+                "1 punhado (a gosto, opcional) de uvas passas",
+                "Açúcar e canela para untar"
+            ],
+            "steps": [
+                "Bata no liquidificador o açúcar, os ovos e o óleo.",
+                "Despeje a mistura em uma tigela e acrescente a farinha, misture até a massa ficar uniforme.",
+                "Adicione a canela, as uvas passas, o fermento e as maçãs picadas.",
+                "Leve para assar em forno aquecido. Utilize forma de buraco no meio, untada com açucar e canela (ou, pode ser untada apenas com farinha).",
+                "Asse em forno baixo, por aproximadamente 1 hora e 30 minutos.",
+                "O tempo de forno pode variar dependendo do seu fogão.",
+                "Ponto de faca limpa."
+            ]
+        },
+        {
+            "id": 2,
+            "userId": 2,
+            "name": "Bolo de fubá no liquidificador",
+            "bio": "Delicie-se de um bolo rápido e gostoso de fubá",
+            "dificulty": "easy",
+            "time": 50,
+            "rating": 5,
+            "image": "https://cdn.discordapp.com/attachments/576875163686010911/772829502760812584/unknown.png",
+            "ingredients": [
+                "1 copo de óleo",
+                "3 ovos",
+                "1 e 1/2 copo de açúcar",
+                "2 copos de fubá",
+                "1 copo de trigo",
+                "1 copo de leite",
+                "1 colher de sopa de fermento em pó",
+                "1 pitada de sal"
+            ],
+            "steps": [
+                "Bater tudo no liquidificador.",
+                "Colocar em uma forma untada com margarina e polvilhada com trigo ou fubá.",
+                "Assar em forno preaquecido a 180ºC por 45 minutos.",
+                "Quando sair do forno polvilhar com açúcar e canela."
+            ]
+        },
+        {
+            "id": 3,
+            "userId": 5,
+            "name": "Bolo simples",
+            "bio": "Faça um bolo simples em casa, e aprobeite em sua tarde",
+            "dificulty": "easy",
+            "time": 40,
+            "rating": 2,
+            "image": "https://cdn.discordapp.com/attachments/576875163686010911/772831654917701632/unknown.png",
+            "ingredients": [
+                "2 xícaras (chá) de açúcar",
+                "3 xícaras (chá) de farinha de trigo",
+                "4 colheres (sopa) de margarina",
+                "3 ovos",
+                "1 e 1/2 xícara (chá) de leite",
+                "1 colher (sopa) bem cheia de fermento em pó"
+            ],
+            "steps": [
+                "Bata as claras em neve e reserve.",
+                "Misture as gemas, a margarina e o açúcar até obter uma massa homogênea.",
+                "Acrescente o leite e a farinha de trigo aos poucos, sem parar de bater.",
+                "Por último, adicione as claras em neve e o fermento.",
+                "Despeje a massa em uma forma grande de furo central untada e enfarinhada.",
+                "Asse em forno médio 180 °C, preaquecido, por aproximadamente 40 minutos ou ao furar o bolo com um garfo, este saia limpo."
+            ]
+        },
+        {
+            "id": 4,
+            "userId": 3,
+            "name": "Bolo de guloseimas",
+            "bio": "Um delicioso bolo cheio de guloseimas para você aproveitar",
+            "dificulty": "hard",
+            "time": 120,
+            "rating": 5,
+            "image": "https://cdn.discordapp.com/attachments/576875163686010911/772832921252921344/unknown.png",
+            "ingredients": [
+                "6 ovos",
+                "2 xícaras(chá) de açúcar refinada",
+                "3 xícaras(chá) de farinha de trigo",
+                "1 xícara(chá) de leite",
+                "3 colheres(sopa) margarina(qualy)",
+                "1 colher(sopa)de fermento em pó",
+                "1 xícara e meia de chá de chocolate em pó",
+                "1 barra de chocolate branco",
+                "1 creme de leite caixa",
+                "1 leite condensado",
+                "Chantily da sua preferência(pode ser de caixinha já vem pronto é só bater e colocar para gelar, se não tiver pode ser qualquer um)",
+                "biscoitos wafer (sabor da sua preferência)",
+                "mashmallow",
+                "jujubas",
+                "bolinhas de chocolate",
+                "palitinhos de chocolate"
+            ],
+            "steps": [
+                "Colocar o leite condensado e ocreme de leite misturado para esquentar em uma panela e depois de quente adicionar o chocolate e mexer até engrossar um pouco.",
+                "Quando bater as claras diminua a velocidade da batedeira.",
+                "Bata as claras em neve bem firme, junte as gemas (peneirar), o açúcar aos poucos e a farinha de trigo, o fermento em pó e o chocolate peneirados.",
+                "Intercale com leite (aquecido com a margarina), diminua velocidade da batedeira.",
+                "Depois colocar para assar em forno médio, preaquecido, por cerca de 40 minutos, ou até dourar.",
+                "O tempo varia de forno para forno, depois que espetar o palito e estiver seco está pronto.",
+                "Abra o bolo ao meio com a ajuda de uma faca e linha, coloque o recheio, depois cubra o bolo com chantilly.",
+                "Coloque os biscoitos em volta, em cima enfeite com as balas, os doces que tiver coloque organizados lado a lado ou misturado mesmo.",
+                "Depois faça um laço com a fita ao redor do bolo, fica lindo e charmoso."
+            ]
+        },
+        {
+            "id": 5,
+            "userId": 2,
+            "name": "Bolo de laranja",
+            "bio": "Um delicioso bolo de laranja para sua tarde",
+            "dificulty": "intermediate",
+            "time": 25,
+            "rating": 4,
+            "image": "https://cdn.discordapp.com/attachments/576875163686010911/772834780772827146/unknown.png",
+            "ingredients": [
+                "1 laranja média",
+                "1 xícara de chá de óleo",
+                "4 ovos",
+                "2 xícaras de chá de açúcar",
+                "2 xícaras de chá de farinha de trigo",
+                "1 colher de sopa de fermento em pó",
+                "2 xícaras de chá de suco de laranja peneirado",
+                "1 colher de sopa de amido de milho"
+            ],
+            "steps": [
+                "Corte a laranja em 4 pedaços, retire a parte branca do miolo e as sementes que estiverem aparentes.",
+                "Bata no liquidificador as laranjas, o óleo, os ovos e o açúcar.",
+                "Em uma vasilha, misture a farinha de trigo e o fermento.",
+                "Adicione o conteúdo do liquidificador à mistura, mexendo com colher de pau (não bater em batedeira).",
+                "Leve ao forno médio por aproximadamente 25 minutos em forma untada com margarina e polvilhada com farinha de trigo.",
+                "Misture em uma panela todos os ingredientes e leve ao fogo, mexendo sempre até ferver. Deixe cozinhar um pouco e despeje sobre o bolo assado ainda quente."
+            ]
+        }
+    ],
+    "users": [
+        {
+            "id": 1,
+            "name": "Emilly Manuela Cecília da Paz",
+            "email": "eemillydapaz@gmail.com",
+            "bio": "Oii! Me chamo Emilly, tenho 30 anos e sou aprendiz de chefe aqui na rango ahahah moro sozinha em São Paulo, e aqui na minha cozinha invento minhas receitas",
+            "image": "https://cdn.discordapp.com/attachments/576875163686010911/772836787931447299/unknown.png"
+        },
+        {
+            "id": 2,
+            "name": "Fábio Luiz Severino da Rocha",
+            "email": "fabioluizseverinodarocha@gmail.com",
+            "bio": "Fala galera, me chamo Fábio e sou chefe profissional de cozinha, compartilho aqui minhas receitas :D"
+        }, 
+        {
+            "id": 3,
+            "name": "Vinicius Manuel Viana",
+            "email": "viniciusmanuelviana@gmail.com",
+            "bio": "Opa, Vinicius, 23 anos, Nordestino e amo comida brasileira, quero aqui poder compartilhar minhas experiencias culinárias"
+        }, 
+        {
+            "id": 4,
+            "name": "Yago Caio da Conceição",
+            "email": "yagocaiodaconceicao@gmail.com",
+            "bio": "Amante de comida, faço isso por total prazer e amor, quero aqui compartilhar minhas receitas deliciosas espero que gostem",
+            "image": "https://cdn.discordapp.com/attachments/576875163686010911/772842754484862976/unknown.png"
+        }, 
+        {
+            "id": 5,
+            "name": "Thalia Levi Benjamin Cardoso",
+            "email": "thalialevibenjamincardoso@gmail.com",
+            "bio": "Oiiii tudo certo? me chamo Thalia e sou gaúcho, amo um churras e aqui procuro receitas para produzir aqui em casa s2",
+            "image": "https://cdn.discordapp.com/attachments/576875163686010911/772842906339246130/unknown.png"
+        }
+    ],
+    "menu": [
+        {
+            "image": "https://cdn.discordapp.com/attachments/576875163686010911/772856204019105862/unknown.png",
+            "category": "fish"
+        },
+        {
+            "image": "https://cdn.discordapp.com/attachments/576875163686010911/772856356146642984/unknown.png",
+            "category": "pasta"
+        },
+        {
+            "image": "https://cdn.discordapp.com/attachments/576875163686010911/772856477483663360/unknown.png",
+            "category": "cakes"
+        }
+    ]
+}
