@@ -15,6 +15,6 @@ public struct User: Decodable {
     let name: String
     let email: String
     let bio: String
-    let image: String
+    let image: String?
     
 }
