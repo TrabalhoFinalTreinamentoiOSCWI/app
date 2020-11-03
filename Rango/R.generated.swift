@@ -276,19 +276,19 @@ struct R: Rswift.Validatable {
 
   /// This `R.nib` struct is generated, and contains static references to 1 nibs.
   struct nib {
-    /// Nib `CardRecipeTableViewCell`.
-    static let cardRecipeTableViewCell = _R.nib._CardRecipeTableViewCell()
+    /// Nib `RecipeCardTableViewCell`.
+    static let recipeCardTableViewCell = _R.nib._RecipeCardTableViewCell()
 
     #if os(iOS) || os(tvOS)
-    /// `UINib(name: "CardRecipeTableViewCell", in: bundle)`
-    @available(*, deprecated, message: "Use UINib(resource: R.nib.cardRecipeTableViewCell) instead")
-    static func cardRecipeTableViewCell(_: Void = ()) -> UIKit.UINib {
-      return UIKit.UINib(resource: R.nib.cardRecipeTableViewCell)
+    /// `UINib(name: "RecipeCardTableViewCell", in: bundle)`
+    @available(*, deprecated, message: "Use UINib(resource: R.nib.recipeCardTableViewCell) instead")
+    static func recipeCardTableViewCell(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.recipeCardTableViewCell)
     }
     #endif
 
-    static func cardRecipeTableViewCell(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> CardRecipeTableViewCell? {
-      return R.nib.cardRecipeTableViewCell.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? CardRecipeTableViewCell
+    static func recipeCardTableViewCell(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> CardRecipeTableViewCell? {
+      return R.nib.recipeCardTableViewCell.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? CardRecipeTableViewCell
     }
 
     fileprivate init() {}
@@ -320,20 +320,21 @@ struct _R: Rswift.Validatable {
   #if os(iOS) || os(tvOS)
   struct nib: Rswift.Validatable {
     static func validate() throws {
-      try _CardRecipeTableViewCell.validate()
+      try _RecipeCardTableViewCell.validate()
     }
 
-    struct _CardRecipeTableViewCell: Rswift.NibResourceType, Rswift.Validatable {
+    struct _RecipeCardTableViewCell: Rswift.NibResourceType, Rswift.Validatable {
       let bundle = R.hostingBundle
-      let name = "CardRecipeTableViewCell"
+      let name = "RecipeCardTableViewCell"
 
       func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> CardRecipeTableViewCell? {
         return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? CardRecipeTableViewCell
       }
 
       static func validate() throws {
-        if UIKit.UIImage(named: "avatar", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'avatar' is used in nib 'CardRecipeTableViewCell', but couldn't be loaded.") }
+        if UIKit.UIImage(named: "avatar", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'avatar' is used in nib 'RecipeCardTableViewCell', but couldn't be loaded.") }
         if #available(iOS 11.0, tvOS 11.0, *) {
+          if UIKit.UIColor(named: "discreteText", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'discreteText' is used in storyboard 'RecipeCardTableViewCell', but couldn't be loaded.") }
         }
       }
 

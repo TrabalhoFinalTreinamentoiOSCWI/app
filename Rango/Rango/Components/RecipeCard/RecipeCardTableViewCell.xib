@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17115"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -24,17 +25,59 @@
                             <constraint firstAttribute="width" constant="80" id="ny3-zB-ofc"/>
                         </constraints>
                     </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Salada de Macarrão com Atum" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HQ1-NE-sNA">
+                        <rect key="frame" x="96" y="16" width="173" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Uma deliciosa salada de macarrão com atum para você apreciar." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="phY-Zw-t8A">
+                        <rect key="frame" x="96" y="30.5" width="174" height="24"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" name="discreteText"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="intermediate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iIh-PP-uyw">
+                        <rect key="frame" x="277" y="16" width="39" height="8"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="6"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="120 min" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hCj-2c-7BX">
+                        <rect key="frame" x="277" y="52" width="38" height="12"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
+                    <constraint firstItem="HQ1-NE-sNA" firstAttribute="leading" secondItem="GZb-aP-TrH" secondAttribute="trailing" constant="8" symbolic="YES" id="5Qk-yB-IU9"/>
+                    <constraint firstItem="HQ1-NE-sNA" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="96X-ue-NMN"/>
+                    <constraint firstItem="phY-Zw-t8A" firstAttribute="top" secondItem="HQ1-NE-sNA" secondAttribute="bottom" id="AgS-te-Eoc"/>
                     <constraint firstItem="GZb-aP-TrH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="Ocw-fy-sL5"/>
+                    <constraint firstItem="iIh-PP-uyw" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="Qvw-lY-Tdt"/>
+                    <constraint firstItem="phY-Zw-t8A" firstAttribute="leading" secondItem="GZb-aP-TrH" secondAttribute="trailing" constant="8" symbolic="YES" id="Utt-cm-lgb"/>
                     <constraint firstItem="GZb-aP-TrH" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="mvR-9A-wit"/>
+                    <constraint firstAttribute="trailing" secondItem="iIh-PP-uyw" secondAttribute="trailing" constant="4" id="ttm-vL-krD"/>
+                    <constraint firstAttribute="trailing" secondItem="phY-Zw-t8A" secondAttribute="trailing" constant="50" id="z8d-MW-nlD"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="dificultyLabel" destination="iIh-PP-uyw" id="KO6-Zf-kTd"/>
+                <outlet property="recipeBioLabel" destination="phY-Zw-t8A" id="9vk-o6-DzF"/>
+                <outlet property="recipeImageView" destination="GZb-aP-TrH" id="ZVT-w4-8nL"/>
+                <outlet property="recipeNameLabel" destination="HQ1-NE-sNA" id="fj1-xt-JiZ"/>
+                <outlet property="timeLabel" destination="hCj-2c-7BX" id="yBC-2E-3Cm"/>
+            </connections>
             <point key="canvasLocation" x="34.782608695652179" y="61.607142857142854"/>
         </tableViewCell>
     </objects>
     <resources>
         <image name="avatar" width="216" height="216"/>
+        <namedColor name="discreteText">
+            <color red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>
