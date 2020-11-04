@@ -85,6 +85,7 @@ struct R: Rswift.Validatable {
   }
 
   static func validate() throws {
+    try font.validate()
     try intern.validate()
   }
 
@@ -219,6 +220,245 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
 
+  /// This `R.file` struct is generated, and contains static references to 14 files.
+  struct file {
+    /// Resource file `Nunito-Black.ttf`.
+    static let nunitoBlackTtf = Rswift.FileResource(bundle: R.hostingBundle, name: "Nunito-Black", pathExtension: "ttf")
+    /// Resource file `Nunito-BlackItalic.ttf`.
+    static let nunitoBlackItalicTtf = Rswift.FileResource(bundle: R.hostingBundle, name: "Nunito-BlackItalic", pathExtension: "ttf")
+    /// Resource file `Nunito-Bold.ttf`.
+    static let nunitoBoldTtf = Rswift.FileResource(bundle: R.hostingBundle, name: "Nunito-Bold", pathExtension: "ttf")
+    /// Resource file `Nunito-BoldItalic.ttf`.
+    static let nunitoBoldItalicTtf = Rswift.FileResource(bundle: R.hostingBundle, name: "Nunito-BoldItalic", pathExtension: "ttf")
+    /// Resource file `Nunito-ExtraBold.ttf`.
+    static let nunitoExtraBoldTtf = Rswift.FileResource(bundle: R.hostingBundle, name: "Nunito-ExtraBold", pathExtension: "ttf")
+    /// Resource file `Nunito-ExtraBoldItalic.ttf`.
+    static let nunitoExtraBoldItalicTtf = Rswift.FileResource(bundle: R.hostingBundle, name: "Nunito-ExtraBoldItalic", pathExtension: "ttf")
+    /// Resource file `Nunito-ExtraLight.ttf`.
+    static let nunitoExtraLightTtf = Rswift.FileResource(bundle: R.hostingBundle, name: "Nunito-ExtraLight", pathExtension: "ttf")
+    /// Resource file `Nunito-ExtraLightItalic.ttf`.
+    static let nunitoExtraLightItalicTtf = Rswift.FileResource(bundle: R.hostingBundle, name: "Nunito-ExtraLightItalic", pathExtension: "ttf")
+    /// Resource file `Nunito-Italic.ttf`.
+    static let nunitoItalicTtf = Rswift.FileResource(bundle: R.hostingBundle, name: "Nunito-Italic", pathExtension: "ttf")
+    /// Resource file `Nunito-Light.ttf`.
+    static let nunitoLightTtf = Rswift.FileResource(bundle: R.hostingBundle, name: "Nunito-Light", pathExtension: "ttf")
+    /// Resource file `Nunito-LightItalic.ttf`.
+    static let nunitoLightItalicTtf = Rswift.FileResource(bundle: R.hostingBundle, name: "Nunito-LightItalic", pathExtension: "ttf")
+    /// Resource file `Nunito-Regular.ttf`.
+    static let nunitoRegularTtf = Rswift.FileResource(bundle: R.hostingBundle, name: "Nunito-Regular", pathExtension: "ttf")
+    /// Resource file `Nunito-SemiBold.ttf`.
+    static let nunitoSemiBoldTtf = Rswift.FileResource(bundle: R.hostingBundle, name: "Nunito-SemiBold", pathExtension: "ttf")
+    /// Resource file `Nunito-SemiBoldItalic.ttf`.
+    static let nunitoSemiBoldItalicTtf = Rswift.FileResource(bundle: R.hostingBundle, name: "Nunito-SemiBoldItalic", pathExtension: "ttf")
+
+    /// `bundle.url(forResource: "Nunito-Black", withExtension: "ttf")`
+    static func nunitoBlackTtf(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.nunitoBlackTtf
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+
+    /// `bundle.url(forResource: "Nunito-BlackItalic", withExtension: "ttf")`
+    static func nunitoBlackItalicTtf(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.nunitoBlackItalicTtf
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+
+    /// `bundle.url(forResource: "Nunito-Bold", withExtension: "ttf")`
+    static func nunitoBoldTtf(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.nunitoBoldTtf
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+
+    /// `bundle.url(forResource: "Nunito-BoldItalic", withExtension: "ttf")`
+    static func nunitoBoldItalicTtf(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.nunitoBoldItalicTtf
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+
+    /// `bundle.url(forResource: "Nunito-ExtraBold", withExtension: "ttf")`
+    static func nunitoExtraBoldTtf(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.nunitoExtraBoldTtf
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+
+    /// `bundle.url(forResource: "Nunito-ExtraBoldItalic", withExtension: "ttf")`
+    static func nunitoExtraBoldItalicTtf(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.nunitoExtraBoldItalicTtf
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+
+    /// `bundle.url(forResource: "Nunito-ExtraLight", withExtension: "ttf")`
+    static func nunitoExtraLightTtf(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.nunitoExtraLightTtf
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+
+    /// `bundle.url(forResource: "Nunito-ExtraLightItalic", withExtension: "ttf")`
+    static func nunitoExtraLightItalicTtf(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.nunitoExtraLightItalicTtf
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+
+    /// `bundle.url(forResource: "Nunito-Italic", withExtension: "ttf")`
+    static func nunitoItalicTtf(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.nunitoItalicTtf
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+
+    /// `bundle.url(forResource: "Nunito-Light", withExtension: "ttf")`
+    static func nunitoLightTtf(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.nunitoLightTtf
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+
+    /// `bundle.url(forResource: "Nunito-LightItalic", withExtension: "ttf")`
+    static func nunitoLightItalicTtf(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.nunitoLightItalicTtf
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+
+    /// `bundle.url(forResource: "Nunito-Regular", withExtension: "ttf")`
+    static func nunitoRegularTtf(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.nunitoRegularTtf
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+
+    /// `bundle.url(forResource: "Nunito-SemiBold", withExtension: "ttf")`
+    static func nunitoSemiBoldTtf(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.nunitoSemiBoldTtf
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+
+    /// `bundle.url(forResource: "Nunito-SemiBoldItalic", withExtension: "ttf")`
+    static func nunitoSemiBoldItalicTtf(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.nunitoSemiBoldItalicTtf
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+
+    fileprivate init() {}
+  }
+
+  /// This `R.font` struct is generated, and contains static references to 14 fonts.
+  struct font: Rswift.Validatable {
+    /// Font `Nunito-BlackItalic`.
+    static let nunitoBlackItalic = Rswift.FontResource(fontName: "Nunito-BlackItalic")
+    /// Font `Nunito-Black`.
+    static let nunitoBlack = Rswift.FontResource(fontName: "Nunito-Black")
+    /// Font `Nunito-BoldItalic`.
+    static let nunitoBoldItalic = Rswift.FontResource(fontName: "Nunito-BoldItalic")
+    /// Font `Nunito-Bold`.
+    static let nunitoBold = Rswift.FontResource(fontName: "Nunito-Bold")
+    /// Font `Nunito-ExtraBoldItalic`.
+    static let nunitoExtraBoldItalic = Rswift.FontResource(fontName: "Nunito-ExtraBoldItalic")
+    /// Font `Nunito-ExtraBold`.
+    static let nunitoExtraBold = Rswift.FontResource(fontName: "Nunito-ExtraBold")
+    /// Font `Nunito-ExtraLightItalic`.
+    static let nunitoExtraLightItalic = Rswift.FontResource(fontName: "Nunito-ExtraLightItalic")
+    /// Font `Nunito-ExtraLight`.
+    static let nunitoExtraLight = Rswift.FontResource(fontName: "Nunito-ExtraLight")
+    /// Font `Nunito-Italic`.
+    static let nunitoItalic = Rswift.FontResource(fontName: "Nunito-Italic")
+    /// Font `Nunito-LightItalic`.
+    static let nunitoLightItalic = Rswift.FontResource(fontName: "Nunito-LightItalic")
+    /// Font `Nunito-Light`.
+    static let nunitoLight = Rswift.FontResource(fontName: "Nunito-Light")
+    /// Font `Nunito-Regular`.
+    static let nunitoRegular = Rswift.FontResource(fontName: "Nunito-Regular")
+    /// Font `Nunito-SemiBoldItalic`.
+    static let nunitoSemiBoldItalic = Rswift.FontResource(fontName: "Nunito-SemiBoldItalic")
+    /// Font `Nunito-SemiBold`.
+    static let nunitoSemiBold = Rswift.FontResource(fontName: "Nunito-SemiBold")
+
+    /// `UIFont(name: "Nunito-Black", size: ...)`
+    static func nunitoBlack(size: CGFloat) -> UIKit.UIFont? {
+      return UIKit.UIFont(resource: nunitoBlack, size: size)
+    }
+
+    /// `UIFont(name: "Nunito-BlackItalic", size: ...)`
+    static func nunitoBlackItalic(size: CGFloat) -> UIKit.UIFont? {
+      return UIKit.UIFont(resource: nunitoBlackItalic, size: size)
+    }
+
+    /// `UIFont(name: "Nunito-Bold", size: ...)`
+    static func nunitoBold(size: CGFloat) -> UIKit.UIFont? {
+      return UIKit.UIFont(resource: nunitoBold, size: size)
+    }
+
+    /// `UIFont(name: "Nunito-BoldItalic", size: ...)`
+    static func nunitoBoldItalic(size: CGFloat) -> UIKit.UIFont? {
+      return UIKit.UIFont(resource: nunitoBoldItalic, size: size)
+    }
+
+    /// `UIFont(name: "Nunito-ExtraBold", size: ...)`
+    static func nunitoExtraBold(size: CGFloat) -> UIKit.UIFont? {
+      return UIKit.UIFont(resource: nunitoExtraBold, size: size)
+    }
+
+    /// `UIFont(name: "Nunito-ExtraBoldItalic", size: ...)`
+    static func nunitoExtraBoldItalic(size: CGFloat) -> UIKit.UIFont? {
+      return UIKit.UIFont(resource: nunitoExtraBoldItalic, size: size)
+    }
+
+    /// `UIFont(name: "Nunito-ExtraLight", size: ...)`
+    static func nunitoExtraLight(size: CGFloat) -> UIKit.UIFont? {
+      return UIKit.UIFont(resource: nunitoExtraLight, size: size)
+    }
+
+    /// `UIFont(name: "Nunito-ExtraLightItalic", size: ...)`
+    static func nunitoExtraLightItalic(size: CGFloat) -> UIKit.UIFont? {
+      return UIKit.UIFont(resource: nunitoExtraLightItalic, size: size)
+    }
+
+    /// `UIFont(name: "Nunito-Italic", size: ...)`
+    static func nunitoItalic(size: CGFloat) -> UIKit.UIFont? {
+      return UIKit.UIFont(resource: nunitoItalic, size: size)
+    }
+
+    /// `UIFont(name: "Nunito-Light", size: ...)`
+    static func nunitoLight(size: CGFloat) -> UIKit.UIFont? {
+      return UIKit.UIFont(resource: nunitoLight, size: size)
+    }
+
+    /// `UIFont(name: "Nunito-LightItalic", size: ...)`
+    static func nunitoLightItalic(size: CGFloat) -> UIKit.UIFont? {
+      return UIKit.UIFont(resource: nunitoLightItalic, size: size)
+    }
+
+    /// `UIFont(name: "Nunito-Regular", size: ...)`
+    static func nunitoRegular(size: CGFloat) -> UIKit.UIFont? {
+      return UIKit.UIFont(resource: nunitoRegular, size: size)
+    }
+
+    /// `UIFont(name: "Nunito-SemiBold", size: ...)`
+    static func nunitoSemiBold(size: CGFloat) -> UIKit.UIFont? {
+      return UIKit.UIFont(resource: nunitoSemiBold, size: size)
+    }
+
+    /// `UIFont(name: "Nunito-SemiBoldItalic", size: ...)`
+    static func nunitoSemiBoldItalic(size: CGFloat) -> UIKit.UIFont? {
+      return UIKit.UIFont(resource: nunitoSemiBoldItalic, size: size)
+    }
+
+    static func validate() throws {
+      if R.font.nunitoBlack(size: 42) == nil { throw Rswift.ValidationError(description:"[R.swift] Font 'Nunito-Black' could not be loaded, is 'Nunito-Black.ttf' added to the UIAppFonts array in this targets Info.plist?") }
+      if R.font.nunitoBlackItalic(size: 42) == nil { throw Rswift.ValidationError(description:"[R.swift] Font 'Nunito-BlackItalic' could not be loaded, is 'Nunito-BlackItalic.ttf' added to the UIAppFonts array in this targets Info.plist?") }
+      if R.font.nunitoBold(size: 42) == nil { throw Rswift.ValidationError(description:"[R.swift] Font 'Nunito-Bold' could not be loaded, is 'Nunito-Bold.ttf' added to the UIAppFonts array in this targets Info.plist?") }
+      if R.font.nunitoBoldItalic(size: 42) == nil { throw Rswift.ValidationError(description:"[R.swift] Font 'Nunito-BoldItalic' could not be loaded, is 'Nunito-BoldItalic.ttf' added to the UIAppFonts array in this targets Info.plist?") }
+      if R.font.nunitoExtraBold(size: 42) == nil { throw Rswift.ValidationError(description:"[R.swift] Font 'Nunito-ExtraBold' could not be loaded, is 'Nunito-ExtraBold.ttf' added to the UIAppFonts array in this targets Info.plist?") }
+      if R.font.nunitoExtraBoldItalic(size: 42) == nil { throw Rswift.ValidationError(description:"[R.swift] Font 'Nunito-ExtraBoldItalic' could not be loaded, is 'Nunito-ExtraBoldItalic.ttf' added to the UIAppFonts array in this targets Info.plist?") }
+      if R.font.nunitoExtraLight(size: 42) == nil { throw Rswift.ValidationError(description:"[R.swift] Font 'Nunito-ExtraLight' could not be loaded, is 'Nunito-ExtraLight.ttf' added to the UIAppFonts array in this targets Info.plist?") }
+      if R.font.nunitoExtraLightItalic(size: 42) == nil { throw Rswift.ValidationError(description:"[R.swift] Font 'Nunito-ExtraLightItalic' could not be loaded, is 'Nunito-ExtraLightItalic.ttf' added to the UIAppFonts array in this targets Info.plist?") }
+      if R.font.nunitoItalic(size: 42) == nil { throw Rswift.ValidationError(description:"[R.swift] Font 'Nunito-Italic' could not be loaded, is 'Nunito-Italic.ttf' added to the UIAppFonts array in this targets Info.plist?") }
+      if R.font.nunitoLight(size: 42) == nil { throw Rswift.ValidationError(description:"[R.swift] Font 'Nunito-Light' could not be loaded, is 'Nunito-Light.ttf' added to the UIAppFonts array in this targets Info.plist?") }
+      if R.font.nunitoLightItalic(size: 42) == nil { throw Rswift.ValidationError(description:"[R.swift] Font 'Nunito-LightItalic' could not be loaded, is 'Nunito-LightItalic.ttf' added to the UIAppFonts array in this targets Info.plist?") }
+      if R.font.nunitoRegular(size: 42) == nil { throw Rswift.ValidationError(description:"[R.swift] Font 'Nunito-Regular' could not be loaded, is 'Nunito-Regular.ttf' added to the UIAppFonts array in this targets Info.plist?") }
+      if R.font.nunitoSemiBold(size: 42) == nil { throw Rswift.ValidationError(description:"[R.swift] Font 'Nunito-SemiBold' could not be loaded, is 'Nunito-SemiBold.ttf' added to the UIAppFonts array in this targets Info.plist?") }
+      if R.font.nunitoSemiBoldItalic(size: 42) == nil { throw Rswift.ValidationError(description:"[R.swift] Font 'Nunito-SemiBoldItalic' could not be loaded, is 'Nunito-SemiBoldItalic.ttf' added to the UIAppFonts array in this targets Info.plist?") }
+    }
+
+    fileprivate init() {}
+  }
+
   /// This `R.image` struct is generated, and contains static references to 2 images.
   struct image {
     /// Image `avatar`.
@@ -274,6 +514,34 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
 
+  /// This `R.nib` struct is generated, and contains static references to 1 nibs.
+  struct nib {
+    /// Nib `RecipeTableViewCell`.
+    static let recipeTableViewCell = _R.nib._RecipeTableViewCell()
+
+    #if os(iOS) || os(tvOS)
+    /// `UINib(name: "RecipeTableViewCell", in: bundle)`
+    @available(*, deprecated, message: "Use UINib(resource: R.nib.recipeTableViewCell) instead")
+    static func recipeTableViewCell(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.recipeTableViewCell)
+    }
+    #endif
+
+    static func recipeTableViewCell(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> RecipeTableViewCell? {
+      return R.nib.recipeTableViewCell.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? RecipeTableViewCell
+    }
+
+    fileprivate init() {}
+  }
+
+  /// This `R.reuseIdentifier` struct is generated, and contains static references to 1 reuse identifiers.
+  struct reuseIdentifier {
+    /// Reuse identifier `favorite-cell`.
+    static let favoriteCell: Rswift.ReuseIdentifier<RecipeTableViewCell> = Rswift.ReuseIdentifier(identifier: "favorite-cell")
+
+    fileprivate init() {}
+  }
+
   fileprivate struct intern: Rswift.Validatable {
     fileprivate static func validate() throws {
       try _R.validate()
@@ -290,9 +558,42 @@ struct R: Rswift.Validatable {
 struct _R: Rswift.Validatable {
   static func validate() throws {
     #if os(iOS) || os(tvOS)
+    try nib.validate()
+    #endif
+    #if os(iOS) || os(tvOS)
     try storyboard.validate()
     #endif
   }
+
+  #if os(iOS) || os(tvOS)
+  struct nib: Rswift.Validatable {
+    static func validate() throws {
+      try _RecipeTableViewCell.validate()
+    }
+
+    struct _RecipeTableViewCell: Rswift.NibResourceType, Rswift.ReuseIdentifierType, Rswift.Validatable {
+      typealias ReusableType = RecipeTableViewCell
+
+      let bundle = R.hostingBundle
+      let identifier = "favorite-cell"
+      let name = "RecipeTableViewCell"
+
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> RecipeTableViewCell? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? RecipeTableViewCell
+      }
+
+      static func validate() throws {
+        if UIKit.UIImage(named: "avatar", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'avatar' is used in nib 'RecipeTableViewCell', but couldn't be loaded.") }
+        if #available(iOS 11.0, tvOS 11.0, *) {
+        }
+      }
+
+      fileprivate init() {}
+    }
+
+    fileprivate init() {}
+  }
+  #endif
 
   #if os(iOS) || os(tvOS)
   struct storyboard: Rswift.Validatable {
@@ -326,12 +627,16 @@ struct _R: Rswift.Validatable {
 
     #if os(iOS) || os(tvOS)
     struct main: Rswift.StoryboardResourceWithInitialControllerType, Rswift.Validatable {
-      typealias InitialController = ViewController
+      typealias InitialController = UIKit.UITabBarController
 
       let bundle = R.hostingBundle
       let name = "Main"
 
       static func validate() throws {
+        if UIKit.UIImage(named: "heart", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'heart' is used in storyboard 'Main', but couldn't be loaded.") }
+        if UIKit.UIImage(named: "house", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'house' is used in storyboard 'Main', but couldn't be loaded.") }
+        if UIKit.UIImage(named: "magnifyingglass", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'magnifyingglass' is used in storyboard 'Main', but couldn't be loaded.") }
+        if UIKit.UIImage(named: "person", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'person' is used in storyboard 'Main', but couldn't be loaded.") }
         if #available(iOS 11.0, tvOS 11.0, *) {
         }
       }
