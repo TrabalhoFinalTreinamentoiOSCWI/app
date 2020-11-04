@@ -274,6 +274,34 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
 
+  /// This `R.nib` struct is generated, and contains static references to 1 nibs.
+  struct nib {
+    /// Nib `MenuTableViewCell`.
+    static let menuTableViewCell = _R.nib._MenuTableViewCell()
+
+    #if os(iOS) || os(tvOS)
+    /// `UINib(name: "MenuTableViewCell", in: bundle)`
+    @available(*, deprecated, message: "Use UINib(resource: R.nib.menuTableViewCell) instead")
+    static func menuTableViewCell(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.menuTableViewCell)
+    }
+    #endif
+
+    static func menuTableViewCell(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> MenuTableViewCell? {
+      return R.nib.menuTableViewCell.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? MenuTableViewCell
+    }
+
+    fileprivate init() {}
+  }
+
+  /// This `R.reuseIdentifier` struct is generated, and contains static references to 1 reuse identifiers.
+  struct reuseIdentifier {
+    /// Reuse identifier `menu-cell`.
+    static let menuCell: Rswift.ReuseIdentifier<MenuTableViewCell> = Rswift.ReuseIdentifier(identifier: "menu-cell")
+
+    fileprivate init() {}
+  }
+
   fileprivate struct intern: Rswift.Validatable {
     fileprivate static func validate() throws {
       try _R.validate()
@@ -290,9 +318,43 @@ struct R: Rswift.Validatable {
 struct _R: Rswift.Validatable {
   static func validate() throws {
     #if os(iOS) || os(tvOS)
+    try nib.validate()
+    #endif
+    #if os(iOS) || os(tvOS)
     try storyboard.validate()
     #endif
   }
+
+  #if os(iOS) || os(tvOS)
+  struct nib: Rswift.Validatable {
+    static func validate() throws {
+      try _MenuTableViewCell.validate()
+    }
+
+    struct _MenuTableViewCell: Rswift.NibResourceType, Rswift.ReuseIdentifierType, Rswift.Validatable {
+      typealias ReusableType = MenuTableViewCell
+
+      let bundle = R.hostingBundle
+      let identifier = "menu-cell"
+      let name = "MenuTableViewCell"
+
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> MenuTableViewCell? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? MenuTableViewCell
+      }
+
+      static func validate() throws {
+        if UIKit.UIImage(named: "photo", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'photo' is used in nib 'MenuTableViewCell', but couldn't be loaded.") }
+        if #available(iOS 11.0, tvOS 11.0, *) {
+          if UIKit.UIColor(named: "lightDetail", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'lightDetail' is used in storyboard 'MenuTableViewCell', but couldn't be loaded.") }
+        }
+      }
+
+      fileprivate init() {}
+    }
+
+    fileprivate init() {}
+  }
+  #endif
 
   #if os(iOS) || os(tvOS)
   struct storyboard: Rswift.Validatable {
@@ -326,13 +388,18 @@ struct _R: Rswift.Validatable {
 
     #if os(iOS) || os(tvOS)
     struct main: Rswift.StoryboardResourceWithInitialControllerType, Rswift.Validatable {
-      typealias InitialController = ViewController
+      typealias InitialController = UIKit.UITabBarController
 
       let bundle = R.hostingBundle
       let name = "Main"
 
       static func validate() throws {
+        if UIKit.UIImage(named: "heart", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'heart' is used in storyboard 'Main', but couldn't be loaded.") }
+        if UIKit.UIImage(named: "house", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'house' is used in storyboard 'Main', but couldn't be loaded.") }
+        if UIKit.UIImage(named: "magnifyingglass", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'magnifyingglass' is used in storyboard 'Main', but couldn't be loaded.") }
+        if UIKit.UIImage(named: "person", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'person' is used in storyboard 'Main', but couldn't be loaded.") }
         if #available(iOS 11.0, tvOS 11.0, *) {
+          if UIKit.UIColor(named: "accent", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'accent' is used in storyboard 'Main', but couldn't be loaded.") }
         }
       }
 

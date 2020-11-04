@@ -6,13 +6,14 @@
 //  Copyright © 2020 CWI. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 protocol MenuTableViewType {
-    func setMenuOptions(with values: [Menu])
+    func presentTable(_ tela: UIViewController)
+    func updateList()
 }
 
-protocol MenuPresenterType {
+protocol MenuPresenterType {    
     func screenDidLoad()
     // TODO: adicionar funcao para clique em opcao
 }

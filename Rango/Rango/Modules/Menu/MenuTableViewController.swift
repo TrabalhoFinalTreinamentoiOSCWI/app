@@ -8,51 +8,56 @@
 
 import UIKit
 
-class MenuTableViewController: UITableViewController {
+class MenuViewController: UIViewController {
     
-    lazy var presenter: MenuPresenterType = MenuPresenter(view: self)
-    var menuOptions: [Menu] = []
+    typealias Presenter = MenuPresenterType & UITableViewDataSource
+    @IBOutlet private weak var tableView: UITableView!
+    lazy var presenter: Presenter = MenuPresenter(view: self)
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "MENU"
-        
+        configurateTable()
         removeBackButtonText()
         presenter.screenDidLoad()
     }
-
+    
+    private func configurateTable() {
+        tableView.dataSource = presenter
+        tableView.delegate = self
+        tableView.register(R.nib.menuTableViewCell)
+    }
 }
 
-extension MenuTableViewController: MenuTableViewType {
-    func setMenuOptions(with values: [Menu]) {
-        self.menuOptions = values
+extension MenuViewController: MenuTableViewType {
+    
+    func presentTable(_ screen: UIViewController) {
+        self.present(screen, animated: true, completion: nil)
     }
+    
+    func updateList() {
+        DispatchQueue.main.async {
+            self.tableView.reloadData()
+        }
+    }
+
 }
 
 // MARK: UITableViewDelegate
-extension MenuTableViewController {
-    override func numberOfSections(in tableView: UITableView) -> Int { 1 }
-    
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int { menuOptions.count
+extension MenuViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        195
     }
-                
-    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        0
+    }
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         nil
     }
     
-    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat { 195 }
-    
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let celula = tableView.dequeueReusableCell(withIdentifier: "menu-cell", for: indexPath) as! MenuTableViewCell
-        let option = menuOptions[indexPath.item]
-        celula.config(for: option)
-        
-        return celula
-    }
-    
-//    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        let cafe = categorias[indexPath.section].cafes[indexPath.row]
-//        let detalheCafeViewPresenter = DetalheCafePresenter.criarModulo(passando: cafe)
-//        navigationController?.pushViewController(detalheCafeViewPresenter, animated: true)
+//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        presenter.selecionouCelula(com: indexPath)
 //    }
 }

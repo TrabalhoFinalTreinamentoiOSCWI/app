@@ -8,7 +8,7 @@
 
 import Foundation
 
-public struct Menu: Decodable {
+public struct Menu: Codable {
     
     let image: String
     let category: String

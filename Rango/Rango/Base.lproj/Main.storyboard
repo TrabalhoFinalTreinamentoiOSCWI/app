@@ -145,36 +145,6 @@
             </objects>
             <point key="canvasLocation" x="62" y="-340"/>
         </scene>
-        <!--Root View Controller-->
-        <scene sceneID="Dfy-PV-BcH">
-            <objects>
-                <tableViewController id="1kM-G2-dHQ" customClass="MenuTableViewController" customModule="Rango" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="MSC-w8-1H1">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <inset key="scrollIndicatorInsets" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="dLu-A0-9Kh" customClass="MenuTableViewCell" customModule="Rango" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dLu-A0-9Kh" id="zhl-X8-dpB">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="1kM-G2-dHQ" id="J3I-NH-u0e"/>
-                            <outlet property="delegate" destination="1kM-G2-dHQ" id="a2G-KL-hQN"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="qDK-Qd-B3I"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="du9-Fd-9R0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1491" y="150"/>
-        </scene>
         <!--Menu-->
         <scene sceneID="fcx-mt-YIU">
             <objects>
@@ -191,12 +161,44 @@
                         </textAttributes>
                     </navigationBar>
                     <connections>
-                        <segue destination="1kM-G2-dHQ" kind="relationship" relationship="rootViewController" id="mD3-ug-t2d"/>
+                        <segue destination="v5n-6j-Kws" kind="relationship" relationship="rootViewController" id="5NF-Z8-fsq"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gig-GZ-g4x" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2220" y="150"/>
+        </scene>
+        <!--Menu View Controller-->
+        <scene sceneID="xow-Yx-CIF">
+            <objects>
+                <viewController id="v5n-6j-Kws" customClass="MenuViewController" customModule="Rango" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mVu-DH-RrT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="sXs-zO-2Yj">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <inset key="scrollIndicatorInsets" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="sXs-zO-2Yj" firstAttribute="leading" secondItem="Axx-Bi-NLW" secondAttribute="leading" id="F54-m2-r3q"/>
+                            <constraint firstItem="Axx-Bi-NLW" firstAttribute="bottom" secondItem="sXs-zO-2Yj" secondAttribute="bottom" id="H4e-DK-uXG"/>
+                            <constraint firstItem="Axx-Bi-NLW" firstAttribute="trailing" secondItem="sXs-zO-2Yj" secondAttribute="trailing" id="ZEx-xa-Kvp"/>
+                            <constraint firstItem="sXs-zO-2Yj" firstAttribute="top" secondItem="Axx-Bi-NLW" secondAttribute="top" id="vEC-e7-m6p"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Axx-Bi-NLW"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="JSa-mX-OKS"/>
+                    <connections>
+                        <outlet property="tableView" destination="sXs-zO-2Yj" id="qf1-CV-SjR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g8i-vP-ySV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1491" y="150"/>
         </scene>
     </scenes>
     <resources>
