@@ -42,6 +42,7 @@
 		F15A0D2B2552ED26006EFE94 /* FavoriteTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15A0D2A2552ED26006EFE94 /* FavoriteTableViewController.swift */; };
 		F15A0D302552F0D1006EFE94 /* RecipeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15A0D2E2552F0D1006EFE94 /* RecipeTableViewCell.swift */; };
 		F15A0D312552F0D1006EFE94 /* RecipeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F15A0D2F2552F0D1006EFE94 /* RecipeTableViewCell.xib */; };
+		F1F76BD8255382B700625A13 /* Favorite.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F76BD7255382B700625A13 /* Favorite.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +99,7 @@
 		F15A0D2A2552ED26006EFE94 /* FavoriteTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteTableViewController.swift; sourceTree = "<group>"; };
 		F15A0D2E2552F0D1006EFE94 /* RecipeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeTableViewCell.swift; sourceTree = "<group>"; };
 		F15A0D2F2552F0D1006EFE94 /* RecipeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecipeTableViewCell.xib; sourceTree = "<group>"; };
+		F1F76BD7255382B700625A13 /* Favorite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favorite.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -260,6 +262,7 @@
 			isa = PBXGroup;
 			children = (
 				F15A0D2A2552ED26006EFE94 /* FavoriteTableViewController.swift */,
+				F1F76BD7255382B700625A13 /* Favorite.swift */,
 			);
 			path = Favorite;
 			sourceTree = "<group>";
@@ -503,6 +506,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1F76BD8255382B700625A13 /* Favorite.swift in Sources */,
 				F15A0D2B2552ED26006EFE94 /* FavoriteTableViewController.swift in Sources */,
 				F1523A212550726200C4A65A /* Endpoint.swift in Sources */,
 				F1523A1F2550709500C4A65A /* Api.swift in Sources */,

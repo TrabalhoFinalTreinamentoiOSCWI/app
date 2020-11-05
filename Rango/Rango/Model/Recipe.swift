@@ -8,7 +8,7 @@
 
 import Foundation
 
-public struct Recipe: Decodable {
+public struct Recipe: Codable {
     
     let id: Int
     let userId: Int

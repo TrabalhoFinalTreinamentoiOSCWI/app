@@ -10,26 +10,9 @@ import UIKit
 
 class FavoriteTableViewController: UITableViewController {
     
-    var recipes: [Recipe] = [Recipe(id: 1, userId: 1, name: "Salada de Macarrão com Atum", bio: "Uma deliciosa salada de macarrão com atum para você apreciar.", dificulty: .intermediate, time: 30, rating: 4, image: "https://cdn.discordapp.com/attachments/576875163686010911/771877616339648582/unknown.png", ingredients: [
-        "250 g de macarrão parafuso",
-        "1/2 cebola bem picadinha",
-        "2 tomates sem sementes cortados em cubinhos",
-        "1 lata de milho verde",
-        "2 latas de atum ralado sem o óleo da conserva",
-        "2 colheres (sopa) de mostarda",
-        "1 xícara de maionese",
-        "sal, pimenta-do-reino e cheiro verde a gosto"
-    ], steps: [
-        "Em uma panela ferva a água para cozinhar o macarrão.",
-        "Cozinhe da forma tradicional deixando o macarrão al dente.",
-        "Enquanto isso prepare a mistura para temperar o macarrão.",
-        "Coloque em uma vasilha grande as 2 latas de atum, a cebola, os tomates, o milho, a maionese, a mostarda, sal, pimenta do reino e o cheiro verde.",
-        "Cuidadosamente misture bem.",
-        "Depois que o macarrão estiver cozido, colque em um refratário e adicione a mistura mexendo levemente para não quebrar o macarrão.",
-        "Quando a mistura estiver bem incorporada ao macarrão leve para a geladeira por no mínimo 1 hora e meia.",
-        "Eu prefiro fazer com de um dia para o outro,pois o sabor fica bem mais apurado.",
-        "Sirva como prato principal em dias quentes acompanhado de um frango grelhado."
-    ])]
+    var recipes: [Recipe] {
+        Favorite.instance.favoriteRecipes
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -56,5 +39,15 @@ extension FavoriteTableViewController {
         
         cell.config(recipes[0])
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        let action = UIContextualAction(style: .destructive, title: "Remover") {acao, view, handler in
+            let recipe = self.recipes[indexPath.row]
+            Favorite.instance.remove(recipe: recipe)
+            tableView.deleteRows(at: [indexPath], with: .left)
+            handler(true)
+        }
+        return .init(actions: [action])
     }
 }
