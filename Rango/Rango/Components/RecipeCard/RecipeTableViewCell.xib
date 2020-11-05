@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17140" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17115"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="favorite-cell" id="KGk-i7-Jjw" customClass="RecipeTableViewCell" customModule="Rango" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="130"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="130"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar" translatesAutoresizingMaskIntoConstraints="NO" id="oo0-9c-Obi">
+                        <rect key="frame" x="16" y="8" width="110" height="110"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="110" id="Cf2-zj-XfW"/>
+                            <constraint firstAttribute="width" constant="110" id="Wlt-dC-9UV"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aOS-IX-5eC">
+                        <rect key="frame" x="134" y="16" width="136" height="19.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ypj-pE-MKA">
+                        <rect key="frame" x="134" y="35.5" width="136" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" name="discreteText"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="29" translatesAutoresizingMaskIntoConstraints="NO" id="eA4-DF-sw7">
+                        <rect key="frame" x="267.5" y="11.5" width="44.5" height="107"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="hyL-Lu-SJL">
+                                <rect key="frame" x="0.0" y="0.0" width="44.5" height="39.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yKc-9D-Lxm">
+                                        <rect key="frame" x="0.0" y="0.0" width="44.5" height="25"/>
+                                        <color key="tintColor" name="accent"/>
+                                        <state key="normal" image="star.fill" catalog="system">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
+                                        </state>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4.4" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wbY-53-2xh">
+                                        <rect key="frame" x="0.0" y="25" width="44.5" height="14.5"/>
+                                        <color key="tintColor" name="accent"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                        <color key="textColor" name="accent"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="fc5-kI-FcI">
+                                <rect key="frame" x="0.0" y="68.5" width="44.5" height="38.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j2b-Ex-Gx0">
+                                        <rect key="frame" x="0.0" y="0.0" width="44.5" height="24"/>
+                                        <color key="tintColor" name="accent"/>
+                                        <state key="normal" image="timer" catalog="system">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
+                                        </state>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="120 min" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UdY-U4-c88">
+                                        <rect key="frame" x="0.0" y="24" width="44.5" height="14.5"/>
+                                        <color key="tintColor" name="accent"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" name="accent"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="oo0-9c-Obi" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="9cP-RQ-Mxy"/>
+                    <constraint firstItem="aOS-IX-5eC" firstAttribute="leading" secondItem="oo0-9c-Obi" secondAttribute="trailing" constant="8" id="Mvp-Ep-w4c"/>
+                    <constraint firstItem="oo0-9c-Obi" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="UMl-Va-ImB"/>
+                    <constraint firstItem="eA4-DF-sw7" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="YSM-fu-Lu9"/>
+                    <constraint firstAttribute="trailing" secondItem="eA4-DF-sw7" secondAttribute="trailing" constant="8" id="YXb-Vx-D52"/>
+                    <constraint firstItem="ypj-pE-MKA" firstAttribute="top" secondItem="aOS-IX-5eC" secondAttribute="bottom" id="YuX-V8-S1X"/>
+                    <constraint firstAttribute="trailing" secondItem="aOS-IX-5eC" secondAttribute="trailing" constant="50" id="opt-ei-1za"/>
+                    <constraint firstAttribute="trailing" secondItem="ypj-pE-MKA" secondAttribute="trailing" constant="50" id="t5s-vQ-gMA"/>
+                    <constraint firstItem="ypj-pE-MKA" firstAttribute="leading" secondItem="oo0-9c-Obi" secondAttribute="trailing" constant="8" id="xc6-O0-7kI"/>
+                    <constraint firstItem="aOS-IX-5eC" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="zPJ-At-v7J"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="recipeBioName" destination="ypj-pE-MKA" id="xei-0I-Lk4"/>
+                <outlet property="recipeImageView" destination="oo0-9c-Obi" id="7DD-fX-O3p"/>
+                <outlet property="recipeNameLabel" destination="aOS-IX-5eC" id="WWI-gp-7UW"/>
+                <outlet property="recipeRatingLabel" destination="wbY-53-2xh" id="9ka-di-RUm"/>
+                <outlet property="recipeTimeLabel" destination="UdY-U4-c88" id="rVH-Vv-Ms7"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="61.607142857142854"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="avatar" width="216" height="216"/>
+        <image name="star.fill" catalog="system" width="128" height="116"/>
+        <image name="timer" catalog="system" width="128" height="121"/>
+        <namedColor name="accent">
+            <color red="0.9882352941176471" green="0.54509803921568623" blue="0.33725490196078434" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="discreteText">
+            <color red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
