@@ -48,13 +48,24 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         Bundle.main.loadNibNamed(LOGIN_VIEW_CONTROLLER, owner: self, options: nil)
     }
     
+}
+
+extension LoginViewController {
+    
     private func navigateToMainStack() {
         let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
         let nextViewController = storyBoard.instantiateViewController(withIdentifier: "MainStack")
         
         navigationController?.pushViewController(nextViewController, animated: true)
     }
-
+    
+    private enum LayoutConstants {
+        static let cornerRadiusButton: CGFloat = 10
+        static let cornerRadiusTextField: CGFloat = 10
+        static let paddingTextField: CGFloat = 10
+    }
+    
+    
     private func setUI() {
         emailTextField.setLeftPaddingPoints(LayoutConstants.paddingTextField)
         emailTextField.setRightPaddingPoints(LayoutConstants.paddingTextField)
@@ -64,12 +75,6 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         emailTextField.layer.cornerRadius = LayoutConstants.cornerRadiusTextField
         passwordTextField.layer.cornerRadius = LayoutConstants.cornerRadiusTextField
         submitButton.layer.cornerRadius = LayoutConstants.cornerRadiusButton
-    }
-    
-    private enum LayoutConstants {
-        static let cornerRadiusButton: CGFloat = 10
-        static let cornerRadiusTextField: CGFloat = 10
-        static let paddingTextField: CGFloat = 10
     }
 }
 
