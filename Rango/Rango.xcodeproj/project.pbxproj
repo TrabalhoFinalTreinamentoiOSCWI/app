@@ -43,6 +43,9 @@
 		F15A0D302552F0D1006EFE94 /* RecipeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15A0D2E2552F0D1006EFE94 /* RecipeTableViewCell.swift */; };
 		F15A0D312552F0D1006EFE94 /* RecipeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F15A0D2F2552F0D1006EFE94 /* RecipeTableViewCell.xib */; };
 		F1F76BD8255382B700625A13 /* Favorite.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F76BD7255382B700625A13 /* Favorite.swift */; };
+		F1FF2EDD2553944400AE0D25 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FF2EDC2553944400AE0D25 /* ProfileViewController.swift */; };
+		F1FF2EDF2553959600AE0D25 /* ProfileProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FF2EDE2553959600AE0D25 /* ProfileProtocol.swift */; };
+		F1FF2EE1255395F000AE0D25 /* ProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FF2EE0255395F000AE0D25 /* ProfilePresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +103,9 @@
 		F15A0D2E2552F0D1006EFE94 /* RecipeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeTableViewCell.swift; sourceTree = "<group>"; };
 		F15A0D2F2552F0D1006EFE94 /* RecipeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecipeTableViewCell.xib; sourceTree = "<group>"; };
 		F1F76BD7255382B700625A13 /* Favorite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favorite.swift; sourceTree = "<group>"; };
+		F1FF2EDC2553944400AE0D25 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		F1FF2EDE2553959600AE0D25 /* ProfileProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileProtocol.swift; sourceTree = "<group>"; };
+		F1FF2EE0255395F000AE0D25 /* ProfilePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -225,6 +231,7 @@
 		C3AD9B87254CF66E00CDD65D /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				F1FF2EDB2553943000AE0D25 /* Profile */,
 				F15A0D292552ED06006EFE94 /* Favorite */,
 			);
 			path = Modules;
@@ -282,6 +289,16 @@
 				F15A0D2F2552F0D1006EFE94 /* RecipeTableViewCell.xib */,
 			);
 			path = RecipeCard;
+			sourceTree = "<group>";
+		};
+		F1FF2EDB2553943000AE0D25 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				F1FF2EDC2553944400AE0D25 /* ProfileViewController.swift */,
+				F1FF2EDE2553959600AE0D25 /* ProfileProtocol.swift */,
+				F1FF2EE0255395F000AE0D25 /* ProfilePresenter.swift */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -511,13 +528,16 @@
 				F1523A212550726200C4A65A /* Endpoint.swift in Sources */,
 				F1523A1F2550709500C4A65A /* Api.swift in Sources */,
 				F15A0D302552F0D1006EFE94 /* RecipeTableViewCell.swift in Sources */,
+				F1FF2EDF2553959600AE0D25 /* ProfileProtocol.swift in Sources */,
 				F1523A262550755A00C4A65A /* Dificulty.swift in Sources */,
+				F1FF2EDD2553944400AE0D25 /* ProfileViewController.swift in Sources */,
 				C3AD9B96254CFAE600CDD65D /* R.generated.swift in Sources */,
 				F1523A2C2550782800C4A65A /* UIImageView+LoadImage.swift in Sources */,
 				C3AD9B6A254CECBE00CDD65D /* ViewController.swift in Sources */,
 				F1523A2A2550773000C4A65A /* Menu.swift in Sources */,
 				C3AD9B66254CECBE00CDD65D /* AppDelegate.swift in Sources */,
 				C3AD9B92254CF9AD00CDD65D /* Alias.swift in Sources */,
+				F1FF2EE1255395F000AE0D25 /* ProfilePresenter.swift in Sources */,
 				C3AD9B68254CECBE00CDD65D /* SceneDelegate.swift in Sources */,
 				F1523A282550766E00C4A65A /* User.swift in Sources */,
 				F1523A24255074B100C4A65A /* Recipe.swift in Sources */,
