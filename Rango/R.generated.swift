@@ -584,7 +584,11 @@ struct _R: Rswift.Validatable {
 
       static func validate() throws {
         if UIKit.UIImage(named: "avatar", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'avatar' is used in nib 'RecipeTableViewCell', but couldn't be loaded.") }
+        if UIKit.UIImage(named: "star.fill", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'star.fill' is used in nib 'RecipeTableViewCell', but couldn't be loaded.") }
+        if UIKit.UIImage(named: "timer", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'timer' is used in nib 'RecipeTableViewCell', but couldn't be loaded.") }
         if #available(iOS 11.0, tvOS 11.0, *) {
+          if UIKit.UIColor(named: "accent", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'accent' is used in storyboard 'RecipeTableViewCell', but couldn't be loaded.") }
+          if UIKit.UIColor(named: "discreteText", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'discreteText' is used in storyboard 'RecipeTableViewCell', but couldn't be loaded.") }
         }
       }
 

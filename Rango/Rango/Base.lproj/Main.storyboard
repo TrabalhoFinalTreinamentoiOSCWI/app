@@ -30,7 +30,7 @@
             </objects>
             <point key="canvasLocation" x="-2219" y="-739"/>
         </scene>
-        <!--Root View Controller-->
+        <!--Favoritos-->
         <scene sceneID="8yL-J9-Dg0">
             <objects>
                 <tableViewController id="yst-Ho-RiX" customClass="FavoriteTableViewController" customModule="Rango" customModuleProvider="target" sceneMemberID="viewController">
@@ -43,7 +43,7 @@
                             <outlet property="delegate" destination="yst-Ho-RiX" id="avS-QR-LdK"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="Noy-h5-XAY"/>
+                    <navigationItem key="navigationItem" title="Favoritos" id="Noy-h5-XAY"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rwy-IR-g1c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -10,7 +10,7 @@ import UIKit
 
 class FavoriteTableViewController: UITableViewController {
     
-    var recipes: [Recipe] = [Recipe(id: 1, userId: 1, name: "Salada de Macarrão com Atum", bio: "Uma deliciosa salada de macarrão com atum para você apreciar.", dificulty: .intermediate, time: 10, rating: 4, image: "https://cdn.discordapp.com/attachments/576875163686010911/771877616339648582/unknown.png", ingredients: [
+    var recipes: [Recipe] = [Recipe(id: 1, userId: 1, name: "Salada de Macarrão com Atum", bio: "Uma deliciosa salada de macarrão com atum para você apreciar.", dificulty: .intermediate, time: 30, rating: 4, image: "https://cdn.discordapp.com/attachments/576875163686010911/771877616339648582/unknown.png", ingredients: [
         "250 g de macarrão parafuso",
         "1/2 cebola bem picadinha",
         "2 tomates sem sementes cortados em cubinhos",
@@ -38,6 +38,10 @@ class FavoriteTableViewController: UITableViewController {
         tableView.delegate = self
         tableView.dataSource = self
     }
+    
+}
+
+extension FavoriteTableViewController {
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         recipes.count
