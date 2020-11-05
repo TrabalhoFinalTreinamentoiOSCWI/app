@@ -115,7 +115,7 @@ struct R: Rswift.Validatable {
   }
   #endif
 
-  /// This `R.color` struct is generated, and contains static references to 9 colors.
+  /// This `R.color` struct is generated, and contains static references to 10 colors.
   struct color {
     /// Color `accent`.
     static let accent = Rswift.ColorResource(bundle: R.hostingBundle, name: "accent")
@@ -135,6 +135,8 @@ struct R: Rswift.Validatable {
     static let medium = Rswift.ColorResource(bundle: R.hostingBundle, name: "medium")
     /// Color `text`.
     static let text = Rswift.ColorResource(bundle: R.hostingBundle, name: "text")
+    /// Color `title`.
+    static let title = Rswift.ColorResource(bundle: R.hostingBundle, name: "title")
 
     #if os(iOS) || os(tvOS)
     /// `UIColor(named: "accent", bundle: ..., traitCollection: ...)`
@@ -214,6 +216,15 @@ struct R: Rswift.Validatable {
     @available(iOS 11.0, *)
     static func text(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIColor? {
       return UIKit.UIColor(resource: R.color.text, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIColor(named: "title", bundle: ..., traitCollection: ...)`
+    @available(tvOS 11.0, *)
+    @available(iOS 11.0, *)
+    static func title(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIColor? {
+      return UIKit.UIColor(resource: R.color.title, compatibleWith: traitCollection)
     }
     #endif
 
@@ -514,10 +525,20 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
 
-  /// This `R.nib` struct is generated, and contains static references to 1 nibs.
+  /// This `R.nib` struct is generated, and contains static references to 2 nibs.
   struct nib {
+    /// Nib `LoginViewController`.
+    static let loginViewController = _R.nib._LoginViewController()
     /// Nib `RecipeTableViewCell`.
     static let recipeTableViewCell = _R.nib._RecipeTableViewCell()
+
+    #if os(iOS) || os(tvOS)
+    /// `UINib(name: "LoginViewController", in: bundle)`
+    @available(*, deprecated, message: "Use UINib(resource: R.nib.loginViewController) instead")
+    static func loginViewController(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.loginViewController)
+    }
+    #endif
 
     #if os(iOS) || os(tvOS)
     /// `UINib(name: "RecipeTableViewCell", in: bundle)`
@@ -526,6 +547,10 @@ struct R: Rswift.Validatable {
       return UIKit.UINib(resource: R.nib.recipeTableViewCell)
     }
     #endif
+
+    static func loginViewController(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
+      return R.nib.loginViewController.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
+    }
 
     static func recipeTableViewCell(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> RecipeTableViewCell? {
       return R.nib.recipeTableViewCell.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? RecipeTableViewCell
@@ -568,7 +593,28 @@ struct _R: Rswift.Validatable {
   #if os(iOS) || os(tvOS)
   struct nib: Rswift.Validatable {
     static func validate() throws {
+      try _LoginViewController.validate()
       try _RecipeTableViewCell.validate()
+    }
+
+    struct _LoginViewController: Rswift.NibResourceType, Rswift.Validatable {
+      let bundle = R.hostingBundle
+      let name = "LoginViewController"
+
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
+      }
+
+      static func validate() throws {
+        if UIKit.UIImage(named: "avatar", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'avatar' is used in nib 'LoginViewController', but couldn't be loaded.") }
+        if #available(iOS 11.0, tvOS 11.0, *) {
+          if UIKit.UIColor(named: "accent", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'accent' is used in storyboard 'LoginViewController', but couldn't be loaded.") }
+          if UIKit.UIColor(named: "discreteText", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'discreteText' is used in storyboard 'LoginViewController', but couldn't be loaded.") }
+          if UIKit.UIColor(named: "title", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'title' is used in storyboard 'LoginViewController', but couldn't be loaded.") }
+        }
+      }
+
+      fileprivate init() {}
     }
 
     struct _RecipeTableViewCell: Rswift.NibResourceType, Rswift.ReuseIdentifierType, Rswift.Validatable {
@@ -631,10 +677,15 @@ struct _R: Rswift.Validatable {
 
     #if os(iOS) || os(tvOS)
     struct main: Rswift.StoryboardResourceWithInitialControllerType, Rswift.Validatable {
-      typealias InitialController = UIKit.UITabBarController
+      typealias InitialController = UIKit.UINavigationController
 
       let bundle = R.hostingBundle
+      let mainStack = StoryboardViewControllerResource<UIKit.UITabBarController>(identifier: "MainStack")
       let name = "Main"
+
+      func mainStack(_: Void = ()) -> UIKit.UITabBarController? {
+        return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: mainStack)
+      }
 
       static func validate() throws {
         if UIKit.UIImage(named: "heart", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'heart' is used in storyboard 'Main', but couldn't be loaded.") }
@@ -643,6 +694,7 @@ struct _R: Rswift.Validatable {
         if UIKit.UIImage(named: "person", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'person' is used in storyboard 'Main', but couldn't be loaded.") }
         if #available(iOS 11.0, tvOS 11.0, *) {
         }
+        if _R.storyboard.main().mainStack() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'mainStack' could not be loaded from storyboard 'Main' as 'UIKit.UITabBarController'.") }
       }
 
       fileprivate init() {}
