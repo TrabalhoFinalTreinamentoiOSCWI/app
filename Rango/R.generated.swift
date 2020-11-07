@@ -525,10 +525,12 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
 
-  /// This `R.nib` struct is generated, and contains static references to 2 nibs.
+  /// This `R.nib` struct is generated, and contains static references to 3 nibs.
   struct nib {
     /// Nib `LoginViewController`.
     static let loginViewController = _R.nib._LoginViewController()
+    /// Nib `MenuOptionView`.
+    static let menuOptionView = _R.nib._MenuOptionView()
     /// Nib `RecipeTableViewCell`.
     static let recipeTableViewCell = _R.nib._RecipeTableViewCell()
 
@@ -537,6 +539,14 @@ struct R: Rswift.Validatable {
     @available(*, deprecated, message: "Use UINib(resource: R.nib.loginViewController) instead")
     static func loginViewController(_: Void = ()) -> UIKit.UINib {
       return UIKit.UINib(resource: R.nib.loginViewController)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UINib(name: "MenuOptionView", in: bundle)`
+    @available(*, deprecated, message: "Use UINib(resource: R.nib.menuOptionView) instead")
+    static func menuOptionView(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.menuOptionView)
     }
     #endif
 
@@ -550,6 +560,10 @@ struct R: Rswift.Validatable {
 
     static func loginViewController(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
       return R.nib.loginViewController.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
+    }
+
+    static func menuOptionView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> MenuOptionView? {
+      return R.nib.menuOptionView.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? MenuOptionView
     }
 
     static func recipeTableViewCell(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> RecipeTableViewCell? {
@@ -612,6 +626,17 @@ struct _R: Rswift.Validatable {
           if UIKit.UIColor(named: "discreteText", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'discreteText' is used in storyboard 'LoginViewController', but couldn't be loaded.") }
           if UIKit.UIColor(named: "title", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'title' is used in storyboard 'LoginViewController', but couldn't be loaded.") }
         }
+      }
+
+      fileprivate init() {}
+    }
+
+    struct _MenuOptionView: Rswift.NibResourceType {
+      let bundle = R.hostingBundle
+      let name = "MenuOptionView"
+
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> MenuOptionView? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? MenuOptionView
       }
 
       fileprivate init() {}
