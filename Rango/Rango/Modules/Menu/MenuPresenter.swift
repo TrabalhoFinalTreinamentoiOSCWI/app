@@ -8,7 +8,7 @@
 
 import Foundation
 
-class MenuPresenter {
+class MenuPresenter: NSObject {
     let api = Api()
     var menuOptions: [Menu] = []
     var view: MenuViewType?
@@ -20,6 +20,7 @@ class MenuPresenter {
 
 extension MenuPresenter: MenuPresenterType {
     func screenDidLoad() {
+        view?.showLoader()
         request()
     }
     
@@ -28,7 +29,10 @@ extension MenuPresenter: MenuPresenterType {
     }
     
     private func success(_ response: [Menu]) {
-        view?.setMenuOptions(for: response)
+        DispatchQueue.main.async {
+            self.view?.setMenuOptions(for: response)
+            self.view?.dismissLoader()
+        }
     }
     
     private func fail(_ error: String) {

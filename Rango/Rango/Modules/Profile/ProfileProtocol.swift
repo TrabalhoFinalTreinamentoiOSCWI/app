@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol ProfileViewType {
+protocol ProfileViewType: LoaderViewType {
     
     func showUser(use user: User)
     

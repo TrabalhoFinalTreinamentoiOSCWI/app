@@ -16,6 +16,8 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var profileBioLabel: UILabel!
     @IBOutlet weak var favoriteCountLabel: UILabel!
     
+    var loaderScreen: LoaderViewController?
+    
     lazy var presenter: ProfilePresenter = ProfilePresenter()
     
     override func viewDidLoad() {

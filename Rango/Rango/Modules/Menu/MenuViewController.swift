@@ -12,6 +12,8 @@ class MenuViewController: UIViewController {
     
     @IBOutlet private weak var optionsStackView: UIStackView!
     lazy var presenter: MenuPresenterType = MenuPresenter(view: self)
+    
+    var loaderScreen: LoaderViewController?
 
     override func viewDidLoad() {
         super.viewDidLoad()
