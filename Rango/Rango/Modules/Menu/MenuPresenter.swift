@@ -2,55 +2,36 @@
 //  MenuPresenter.swift
 //  Rango
 //
-//  Created by Bel Cogo on 02/11/20.
+//  Created by Bel Cogo on 04/11/20.
 //  Copyright © 2020 CWI. All rights reserved.
 //
 
-import UIKit
+import Foundation
 
-class MenuPresenter: NSObject {
+class MenuPresenter {
     let api = Api()
-    var view: MenuTableViewType?
     var menuOptions: [Menu] = []
+    var view: MenuViewType?
     
-    init(view: MenuTableViewType) {
+    init(view: MenuViewType) {
         self.view = view
     }
 }
 
 extension MenuPresenter: MenuPresenterType {
-    
     func screenDidLoad() {
-        api.get(endpoint: .menu, success: success, error: error)
+        request()
     }
     
-    private func success(_ response: [Menu]) -> Void {
-        DispatchQueue.main.async {
-            self.menuOptions = response
-            self.view?.updateList()
-        }
+    private func request() {
+        self.api.get(endpoint: .menu, success: success, error: fail)
     }
     
-    private func error(_: Any) {
-        print("deu ruim")
-        // TODO: implementar tratamento
-    }
-}
-
-extension MenuPresenter: UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        menuOptions.count
+    private func success(_ response: [Menu]) {
+        view?.setMenuOptions(for: response)
     }
     
-    func numberOfSections(in tableView: UITableView) -> Int { 1 }
-
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: R.nib.menuTableViewCell.name, for: indexPath) as! MenuTableViewCell
-        let option = menuOptions[indexPath.item]
-        cell.config(for: option)
-        
-        return cell
-
+    private func fail(_ error: String) {
+        print(error)
     }
 }

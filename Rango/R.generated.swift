@@ -276,28 +276,20 @@ struct R: Rswift.Validatable {
 
   /// This `R.nib` struct is generated, and contains static references to 1 nibs.
   struct nib {
-    /// Nib `MenuTableViewCell`.
-    static let menuTableViewCell = _R.nib._MenuTableViewCell()
+    /// Nib `MenuOptionView`.
+    static let menuOptionView = _R.nib._MenuOptionView()
 
     #if os(iOS) || os(tvOS)
-    /// `UINib(name: "MenuTableViewCell", in: bundle)`
-    @available(*, deprecated, message: "Use UINib(resource: R.nib.menuTableViewCell) instead")
-    static func menuTableViewCell(_: Void = ()) -> UIKit.UINib {
-      return UIKit.UINib(resource: R.nib.menuTableViewCell)
+    /// `UINib(name: "MenuOptionView", in: bundle)`
+    @available(*, deprecated, message: "Use UINib(resource: R.nib.menuOptionView) instead")
+    static func menuOptionView(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.menuOptionView)
     }
     #endif
 
-    static func menuTableViewCell(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> MenuTableViewCell? {
-      return R.nib.menuTableViewCell.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? MenuTableViewCell
+    static func menuOptionView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> MenuOptionView? {
+      return R.nib.menuOptionView.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? MenuOptionView
     }
-
-    fileprivate init() {}
-  }
-
-  /// This `R.reuseIdentifier` struct is generated, and contains static references to 1 reuse identifiers.
-  struct reuseIdentifier {
-    /// Reuse identifier `menu-cell`.
-    static let menuCell: Rswift.ReuseIdentifier<MenuTableViewCell> = Rswift.ReuseIdentifier(identifier: "menu-cell")
 
     fileprivate init() {}
   }
@@ -318,35 +310,18 @@ struct R: Rswift.Validatable {
 struct _R: Rswift.Validatable {
   static func validate() throws {
     #if os(iOS) || os(tvOS)
-    try nib.validate()
-    #endif
-    #if os(iOS) || os(tvOS)
     try storyboard.validate()
     #endif
   }
 
   #if os(iOS) || os(tvOS)
-  struct nib: Rswift.Validatable {
-    static func validate() throws {
-      try _MenuTableViewCell.validate()
-    }
-
-    struct _MenuTableViewCell: Rswift.NibResourceType, Rswift.ReuseIdentifierType, Rswift.Validatable {
-      typealias ReusableType = MenuTableViewCell
-
+  struct nib {
+    struct _MenuOptionView: Rswift.NibResourceType {
       let bundle = R.hostingBundle
-      let identifier = "menu-cell"
-      let name = "MenuTableViewCell"
+      let name = "MenuOptionView"
 
-      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> MenuTableViewCell? {
-        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? MenuTableViewCell
-      }
-
-      static func validate() throws {
-        if UIKit.UIImage(named: "photo", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'photo' is used in nib 'MenuTableViewCell', but couldn't be loaded.") }
-        if #available(iOS 11.0, tvOS 11.0, *) {
-          if UIKit.UIColor(named: "lightDetail", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'lightDetail' is used in storyboard 'MenuTableViewCell', but couldn't be loaded.") }
-        }
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> MenuOptionView? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? MenuOptionView
       }
 
       fileprivate init() {}

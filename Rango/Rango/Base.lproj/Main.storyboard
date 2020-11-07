@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vU3-6F-A7d">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vU3-6F-A7d">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -64,11 +63,14 @@
         <scene sceneID="pD8-VK-OA9">
             <objects>
                 <viewController id="cRV-we-gZX" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="92I-kH-KIf"/>
+                        <viewControllerLayoutGuide type="bottom" id="uvm-2g-1jZ"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="sgx-BX-q5s">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="MQn-7N-kGz"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Perfil" image="person" catalog="system" id="31U-er-YQZ"/>
                 </viewController>
@@ -172,28 +174,42 @@
         <scene sceneID="xow-Yx-CIF">
             <objects>
                 <viewController id="v5n-6j-Kws" customClass="MenuViewController" customModule="Rango" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LjX-Ib-Acv"/>
+                        <viewControllerLayoutGuide type="bottom" id="Zhs-U1-iJa"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="mVu-DH-RrT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="sXs-zO-2Yj">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="alI-S1-afI">
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <inset key="scrollIndicatorInsets" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
-                            </tableView>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="redraw" axis="vertical" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="5vs-bo-yQj">
+                                        <rect key="frame" x="20" y="20" width="374" height="685"/>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="5vs-bo-yQj" firstAttribute="top" secondItem="alI-S1-afI" secondAttribute="top" constant="20" id="Rww-HN-g5k"/>
+                                    <constraint firstItem="5vs-bo-yQj" firstAttribute="centerX" secondItem="alI-S1-afI" secondAttribute="centerX" id="V0W-XX-wEh"/>
+                                    <constraint firstAttribute="trailing" secondItem="5vs-bo-yQj" secondAttribute="trailing" constant="20" id="r07-Jx-PFp"/>
+                                    <constraint firstItem="5vs-bo-yQj" firstAttribute="leading" secondItem="alI-S1-afI" secondAttribute="leading" constant="20" id="r9i-4z-wDK"/>
+                                    <constraint firstItem="5vs-bo-yQj" firstAttribute="centerY" secondItem="alI-S1-afI" secondAttribute="centerY" id="rYR-4D-jnC"/>
+                                    <constraint firstAttribute="bottom" secondItem="5vs-bo-yQj" secondAttribute="bottom" constant="20" id="ztr-7j-EWN"/>
+                                </constraints>
+                            </scrollView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="sXs-zO-2Yj" firstAttribute="leading" secondItem="Axx-Bi-NLW" secondAttribute="leading" id="F54-m2-r3q"/>
-                            <constraint firstItem="Axx-Bi-NLW" firstAttribute="bottom" secondItem="sXs-zO-2Yj" secondAttribute="bottom" id="H4e-DK-uXG"/>
-                            <constraint firstItem="Axx-Bi-NLW" firstAttribute="trailing" secondItem="sXs-zO-2Yj" secondAttribute="trailing" id="ZEx-xa-Kvp"/>
-                            <constraint firstItem="sXs-zO-2Yj" firstAttribute="top" secondItem="Axx-Bi-NLW" secondAttribute="top" id="vEC-e7-m6p"/>
+                            <constraint firstItem="Zhs-U1-iJa" firstAttribute="top" secondItem="alI-S1-afI" secondAttribute="bottom" id="DYg-vX-3Dn"/>
+                            <constraint firstItem="alI-S1-afI" firstAttribute="leading" secondItem="mVu-DH-RrT" secondAttribute="leading" id="Kcl-Yf-GSC"/>
+                            <constraint firstItem="alI-S1-afI" firstAttribute="top" secondItem="LjX-Ib-Acv" secondAttribute="bottom" id="TMy-u2-xfe"/>
+                            <constraint firstAttribute="trailing" secondItem="alI-S1-afI" secondAttribute="trailing" id="l8Z-0M-jqe"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="Axx-Bi-NLW"/>
                     </view>
                     <navigationItem key="navigationItem" id="JSa-mX-OKS"/>
                     <connections>
-                        <outlet property="tableView" destination="sXs-zO-2Yj" id="qf1-CV-SjR"/>
+                        <outlet property="optionsStackView" destination="5vs-bo-yQj" id="Uga-Ss-MXU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g8i-vP-ySV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -1,20 +1,20 @@
 //
-//  MenuTableViewCell.swift
+//  MenuOptionViewController.swift
 //  Rango
 //
-//  Created by Bel Cogo on 03/11/20.
+//  Created by Bel Cogo on 05/11/20.
 //  Copyright © 2020 CWI. All rights reserved.
 //
 
 import UIKit
 
-class MenuTableViewCell: UITableViewCell {
+class MenuOptionView: UIView {
+
     @IBOutlet private weak var photoImageView: UIImageView!
     @IBOutlet private weak var categoryLabel: UILabel!
-
-    func config(for option: Menu) {
-        photoImageView.loadImage(use: option.image)
-        categoryLabel.text = option.category
-    }
     
+    func config(for option: Menu) {
+        self.photoImageView.loadImage(use: option.image)
+        self.categoryLabel.text = option.category
+    }
 }
