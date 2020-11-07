@@ -8,7 +8,7 @@
 
 import Foundation
 
-public struct Recipe: Decodable {
+public struct Recipe: Codable {
     
     let id: Int
     let userId: Int
@@ -16,7 +16,7 @@ public struct Recipe: Decodable {
     let bio: String
     let dificulty: Dificult
     let time: Int
-    let rating: Int
+    let rating: Double
     let image: String
     let ingredients: [String]
     let steps: [String]
