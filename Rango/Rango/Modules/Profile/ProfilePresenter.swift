@@ -8,7 +8,7 @@
 
 import Foundation
 
-class ProfilePresenter {
+class ProfilePresenter: NSObject {
     
     var view: ProfileViewType?
     var user: User?
@@ -19,12 +19,18 @@ class ProfilePresenter {
 extension ProfilePresenter: ProfilePresenterType {
     
     func loadScreen() {
-        self.api.get(endpoint: .users(id: 1)) { (user: User) in
-            self.user = user
-            self.view?.showUser(use: user)
-        } error: { (error) in
-            print(error)
-        }
+        view?.showLoader()
+        self.api.get(endpoint: .users(id: 1), success: success, error: fail)
+    }
+    
+    private func success(_ user: User) {
+        self.user = user
+        self.view?.showUser(use: user)
+        view?.dismissLoader()
+    }
+    
+    private func fail(_ error: String) {
+        print(error)
     }
     
 }

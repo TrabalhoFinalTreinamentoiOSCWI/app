@@ -525,12 +525,22 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
 
-  /// This `R.nib` struct is generated, and contains static references to 2 nibs.
+  /// This `R.nib` struct is generated, and contains static references to 3 nibs.
   struct nib {
+    /// Nib `LoaderViewController`.
+    static let loaderViewController = _R.nib._LoaderViewController()
     /// Nib `LoginViewController`.
     static let loginViewController = _R.nib._LoginViewController()
     /// Nib `RecipeTableViewCell`.
     static let recipeTableViewCell = _R.nib._RecipeTableViewCell()
+
+    #if os(iOS) || os(tvOS)
+    /// `UINib(name: "LoaderViewController", in: bundle)`
+    @available(*, deprecated, message: "Use UINib(resource: R.nib.loaderViewController) instead")
+    static func loaderViewController(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.loaderViewController)
+    }
+    #endif
 
     #if os(iOS) || os(tvOS)
     /// `UINib(name: "LoginViewController", in: bundle)`
@@ -547,6 +557,10 @@ struct R: Rswift.Validatable {
       return UIKit.UINib(resource: R.nib.recipeTableViewCell)
     }
     #endif
+
+    static func loaderViewController(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
+      return R.nib.loaderViewController.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
+    }
 
     static func loginViewController(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
       return R.nib.loginViewController.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
@@ -593,8 +607,27 @@ struct _R: Rswift.Validatable {
   #if os(iOS) || os(tvOS)
   struct nib: Rswift.Validatable {
     static func validate() throws {
+      try _LoaderViewController.validate()
       try _LoginViewController.validate()
       try _RecipeTableViewCell.validate()
+    }
+
+    struct _LoaderViewController: Rswift.NibResourceType, Rswift.Validatable {
+      let bundle = R.hostingBundle
+      let name = "LoaderViewController"
+
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
+      }
+
+      static func validate() throws {
+        if UIKit.UIImage(named: "hourglass", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'hourglass' is used in nib 'LoaderViewController', but couldn't be loaded.") }
+        if #available(iOS 11.0, tvOS 11.0, *) {
+          if UIKit.UIColor(named: "loaderBackground", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'loaderBackground' is used in storyboard 'LoaderViewController', but couldn't be loaded.") }
+        }
+      }
+
+      fileprivate init() {}
     }
 
     struct _LoginViewController: Rswift.NibResourceType, Rswift.Validatable {
