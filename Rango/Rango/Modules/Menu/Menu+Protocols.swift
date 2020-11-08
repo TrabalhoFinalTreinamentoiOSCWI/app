@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol MenuViewType {
+protocol MenuViewType: LoaderViewType {
     func setMenuOptions(for options: [Menu])
 }
 
