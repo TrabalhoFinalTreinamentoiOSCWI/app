@@ -36,11 +36,11 @@ extension SearchCollectionViewController: UICollectionViewDelegateFlowLayout {
     
     enum ConstantesDeLayout {
         static let alturaDaCelula: CGFloat = 160
-        static let espacamentoHorizontal: CGFloat = 5
-        static let espacamentoVertical: CGFloat = 5
+        static let espacamentoHorizontal: CGFloat = 10
+        static let espacamentoVertical: CGFloat = 10
         
         static func largura(baseadaNa larguraDaCollectionView: CGFloat) -> CGFloat {
-            (larguraDaCollectionView - espacamentoHorizontal) / 2 - espacamentoHorizontal
+            (larguraDaCollectionView - espacamentoHorizontal) / 2.1 - espacamentoHorizontal
         }
     }
     
