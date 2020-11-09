@@ -9,6 +9,12 @@
 import UIKit
 
 class SearchResultTableViewController: UITableViewController {
+    
+    lazy var presenter: SearchResultPresenterType = SearchResultPresenter(view: self)
+    
+    var loaderScreen: LoaderViewController?
+    
+    var path: String = "salads"
         
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,13 +22,17 @@ class SearchResultTableViewController: UITableViewController {
         tableView.register(UINib(resource: R.nib.recipeTableViewCell), forCellReuseIdentifier: "recipe-cell")
         tableView.delegate = self
         tableView.dataSource = self
+        presenter.loadScreen(path: self.path)
     }
-
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        return 0
+    
+    func config(path: String) {
+        self.path = path
     }
+}
 
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+extension SearchResultTableViewController: SearchResultViewType {
+    
+    func showCards() {
+        tableView.reloadData()
     }
 }

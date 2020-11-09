@@ -8,10 +8,16 @@
 
 import Foundation
 
-protocol SearchPresenterType {
+protocol SearchResultViewType: LoaderViewType {
     
-    var categories: [Category] { get }
+    func showCards()
     
-    func loadScreen()
+}
+
+protocol SearchResultPresenterType {
+    
+    var recipes: [Recipe] { get }
+    
+    func loadScreen(path: String)
     
 }

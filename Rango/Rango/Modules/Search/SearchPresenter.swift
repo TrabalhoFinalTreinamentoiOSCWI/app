@@ -54,4 +54,12 @@ extension SearchPresenter: UICollectionViewDataSource {
         
         return cell
     }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let path = categories[indexPath.row].path
+        
+        //TODO
+        let vc = R.nib.searchResultTableViewController()
+        navigationController?.pushViewController(vc, animated: true)
+    }
 }

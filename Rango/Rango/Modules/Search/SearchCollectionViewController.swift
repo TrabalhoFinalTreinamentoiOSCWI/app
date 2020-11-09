@@ -44,10 +44,6 @@ extension SearchCollectionViewController: UICollectionViewDelegateFlowLayout {
         }
     }
     
-    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        //TODO go to search result screen
-    }
-    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         .init(width: LayoutContants.width(base: collectionView.frame.width),
               height: LayoutContants.cellHeight)

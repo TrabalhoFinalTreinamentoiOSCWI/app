@@ -536,7 +536,7 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
 
-  /// This `R.nib` struct is generated, and contains static references to 6 nibs.
+  /// This `R.nib` struct is generated, and contains static references to 7 nibs.
   struct nib {
     /// Nib `LoaderViewController`.
     static let loaderViewController = _R.nib._LoaderViewController()
@@ -550,6 +550,8 @@ struct R: Rswift.Validatable {
     static let recipeViewController = _R.nib._RecipeViewController()
     /// Nib `SearchCollectionViewCell`.
     static let searchCollectionViewCell = _R.nib._SearchCollectionViewCell()
+    /// Nib `SearchResultTableViewController`.
+    static let searchResultTableViewController = _R.nib._SearchResultTableViewController()
 
     #if os(iOS) || os(tvOS)
     /// `UINib(name: "LoaderViewController", in: bundle)`
@@ -599,6 +601,14 @@ struct R: Rswift.Validatable {
     }
     #endif
 
+    #if os(iOS) || os(tvOS)
+    /// `UINib(name: "SearchResultTableViewController", in: bundle)`
+    @available(*, deprecated, message: "Use UINib(resource: R.nib.searchResultTableViewController) instead")
+    static func searchResultTableViewController(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.searchResultTableViewController)
+    }
+    #endif
+
     static func loaderViewController(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
       return R.nib.loaderViewController.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
     }
@@ -623,13 +633,17 @@ struct R: Rswift.Validatable {
       return R.nib.searchCollectionViewCell.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? SearchCollectionViewCell
     }
 
+    static func searchResultTableViewController(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
+      return R.nib.searchResultTableViewController.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
+    }
+
     fileprivate init() {}
   }
 
   /// This `R.reuseIdentifier` struct is generated, and contains static references to 2 reuse identifiers.
   struct reuseIdentifier {
-    /// Reuse identifier `favorite-cell`.
-    static let favoriteCell: Rswift.ReuseIdentifier<RecipeTableViewCell> = Rswift.ReuseIdentifier(identifier: "favorite-cell")
+    /// Reuse identifier `recipe-cell`.
+    static let recipeCell: Rswift.ReuseIdentifier<RecipeTableViewCell> = Rswift.ReuseIdentifier(identifier: "recipe-cell")
     /// Reuse identifier `search-cell`.
     static let searchCell: Rswift.ReuseIdentifier<SearchCollectionViewCell> = Rswift.ReuseIdentifier(identifier: "search-cell")
 
@@ -722,7 +736,7 @@ struct _R: Rswift.Validatable {
       typealias ReusableType = RecipeTableViewCell
 
       let bundle = R.hostingBundle
-      let identifier = "favorite-cell"
+      let identifier = "recipe-cell"
       let name = "RecipeTableViewCell"
 
       func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> RecipeTableViewCell? {
@@ -777,6 +791,17 @@ struct _R: Rswift.Validatable {
         if #available(iOS 11.0, tvOS 11.0, *) {
           if UIKit.UIColor(named: "discreteText", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'discreteText' is used in storyboard 'SearchCollectionViewCell', but couldn't be loaded.") }
         }
+      }
+
+      fileprivate init() {}
+    }
+
+    struct _SearchResultTableViewController: Rswift.NibResourceType {
+      let bundle = R.hostingBundle
+      let name = "SearchResultTableViewController"
+
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
       }
 
       fileprivate init() {}

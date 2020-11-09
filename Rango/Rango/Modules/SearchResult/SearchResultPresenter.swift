@@ -6,9 +6,54 @@
 //  Copyright © 2020 CWI. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
-class SearchPresenter: NSObject {
+class SearchResultPresenter: NSObject {
     
+    var view: SearchResultViewType?
+    var recipes: [Recipe] = []
+    let api = Api()
     
+    init(view: SearchResultViewType) {
+        self.view = view
+    }
+}
+
+extension SearchResultPresenter: SearchResultPresenterType {
+    
+    func loadScreen(path: String) {
+        self.view?.showLoader()
+        self.api.get(endpoint: path.findEndpointByPath(path: path) ?? .salads, success: success, error: fail)
+    }
+    
+    private func success(_ recipes: [Recipe]) {
+        DispatchQueue.main.async {
+            self.recipes = recipes
+            self.view?.showCards()
+            self.view?.dismissLoader()
+        }
+    }
+    
+    private func fail(_ error: String) {
+        print(error)
+        self.view?.dismissLoader()
+    }
+}
+
+extension SearchResultPresenter {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        self.recipes.count
+    }
+
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        130
+    }
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "recipe-cell", for: indexPath) as! RecipeTableViewCell
+        
+        cell.config(self.recipes[0])
+        return cell
+    }
 }
