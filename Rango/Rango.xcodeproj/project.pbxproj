@@ -62,7 +62,7 @@
 		F15A0D312552F0D1006EFE94 /* RecipeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F15A0D2F2552F0D1006EFE94 /* RecipeTableViewCell.xib */; };
 		F1F76BD8255382B700625A13 /* Favorite.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F76BD7255382B700625A13 /* Favorite.swift */; };
 		F1FF2EDD2553944400AE0D25 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FF2EDC2553944400AE0D25 /* ProfileViewController.swift */; };
-		F1FF2EDF2553959600AE0D25 /* ProfileProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FF2EDE2553959600AE0D25 /* ProfileProtocol.swift */; };
+		F1FF2EDF2553959600AE0D25 /* Profile+Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FF2EDE2553959600AE0D25 /* Profile+Protocols.swift */; };
 		F1FF2EE1255395F000AE0D25 /* ProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FF2EE0255395F000AE0D25 /* ProfilePresenter.swift */; };
 /* End PBXBuildFile section */
 
@@ -140,7 +140,7 @@
 		F15A0D2F2552F0D1006EFE94 /* RecipeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecipeTableViewCell.xib; sourceTree = "<group>"; };
 		F1F76BD7255382B700625A13 /* Favorite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favorite.swift; sourceTree = "<group>"; };
 		F1FF2EDC2553944400AE0D25 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
-		F1FF2EDE2553959600AE0D25 /* ProfileProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileProtocol.swift; sourceTree = "<group>"; };
+		F1FF2EDE2553959600AE0D25 /* Profile+Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Profile+Protocols.swift"; sourceTree = "<group>"; };
 		F1FF2EE0255395F000AE0D25 /* ProfilePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -397,7 +397,7 @@
 			isa = PBXGroup;
 			children = (
 				F1FF2EDC2553944400AE0D25 /* ProfileViewController.swift */,
-				F1FF2EDE2553959600AE0D25 /* ProfileProtocol.swift */,
+				F1FF2EDE2553959600AE0D25 /* Profile+Protocols.swift */,
 				F1FF2EE0255395F000AE0D25 /* ProfilePresenter.swift */,
 			);
 			path = Profile;
@@ -637,7 +637,7 @@
 				C301FDFD25563A6100F00AA1 /* MenuPresenter.swift in Sources */,
 				F1523A1F2550709500C4A65A /* Api.swift in Sources */,
 				F15A0D302552F0D1006EFE94 /* RecipeTableViewCell.swift in Sources */,
-				F1FF2EDF2553959600AE0D25 /* ProfileProtocol.swift in Sources */,
+				F1FF2EDF2553959600AE0D25 /* Profile+Protocols.swift in Sources */,
 				F1523A262550755A00C4A65A /* Dificulty.swift in Sources */,
 				C301FE0125563BEA00F00AA1 /* MenuOptionView.swift in Sources */,
 				F1FF2EDD2553944400AE0D25 /* ProfileViewController.swift in Sources */,

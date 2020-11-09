@@ -7,3 +7,17 @@
 //
 
 import Foundation
+
+protocol SearchViewType: LoaderViewType {
+    
+    func reloadCollection()
+    
+}
+
+protocol SearchPresenterType {
+    
+    var categories: [String] { get }
+    
+    func loadScreen()
+    
+}
