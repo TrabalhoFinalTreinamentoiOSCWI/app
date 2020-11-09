@@ -10,11 +10,13 @@ import UIKit
 
 class SearchCollectionViewCell: UICollectionViewCell {
 
+    @IBOutlet weak var categoryImageView: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
     }
     
     func config(with: Category) {
-        
+        self.categoryImageView.loadImage(use: with.image)
     }
 }

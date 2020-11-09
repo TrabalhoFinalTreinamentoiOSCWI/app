@@ -640,6 +640,7 @@ struct _R: Rswift.Validatable {
       try _LoaderViewController.validate()
       try _LoginViewController.validate()
       try _RecipeTableViewCell.validate()
+      try _SearchCollectionViewCell.validate()
     }
 
     struct _LoaderViewController: Rswift.NibResourceType, Rswift.Validatable {
@@ -715,7 +716,7 @@ struct _R: Rswift.Validatable {
       fileprivate init() {}
     }
 
-    struct _SearchCollectionViewCell: Rswift.NibResourceType, Rswift.ReuseIdentifierType {
+    struct _SearchCollectionViewCell: Rswift.NibResourceType, Rswift.ReuseIdentifierType, Rswift.Validatable {
       typealias ReusableType = SearchCollectionViewCell
 
       let bundle = R.hostingBundle
@@ -724,6 +725,12 @@ struct _R: Rswift.Validatable {
 
       func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> SearchCollectionViewCell? {
         return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? SearchCollectionViewCell
+      }
+
+      static func validate() throws {
+        if UIKit.UIImage(named: "avatar", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'avatar' is used in nib 'SearchCollectionViewCell', but couldn't be loaded.") }
+        if #available(iOS 11.0, tvOS 11.0, *) {
+        }
       }
 
       fileprivate init() {}

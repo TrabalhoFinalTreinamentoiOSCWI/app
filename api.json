@@ -1049,37 +1049,37 @@
             "id": 1,
             "path": "salads",
             "name": "Saladas",
-            "image": "https://cdn.discordapp.com/attachments/576875163686010911/775168318289084466/salad.png"
+            "image": "https://cdn.discordapp.com/attachments/576875163686010911/775192200493137920/salad.png"
         },
         {
             "id": 2,
             "path": "meats",
             "name": "Carnes",
-            "image": "https://cdn.discordapp.com/attachments/576875163686010911/775168318289084466/salad.png"
+            "image": "https://cdn.discordapp.com/attachments/576875163686010911/775192200493137920/salad.png"
         },
         {
             "id": 3,
             "path": "pasta",
             "name": "Massas",
-            "image": "https://cdn.discordapp.com/attachments/576875163686010911/775168318289084466/salad.png"
+            "image": "https://cdn.discordapp.com/attachments/576875163686010911/775192200493137920/salad.png"
         },
         {
             "id": 4,
             "path": "snack",
             "name": "Lanches",
-            "image": "https://cdn.discordapp.com/attachments/576875163686010911/775168318289084466/salad.png"
+            "image": "https://cdn.discordapp.com/attachments/576875163686010911/775192200493137920/salad.png"
         },
         {
             "id": 5,
             "path": "fish",
             "name": "Peixes",
-            "image": "https://cdn.discordapp.com/attachments/576875163686010911/775168318289084466/salad.png"
+            "image": "https://cdn.discordapp.com/attachments/576875163686010911/775192200493137920/salad.png"
         },
         {
             "id": 6,
             "path": "cakes",
             "name": "Bolos",
-            "image": "https://cdn.discordapp.com/attachments/576875163686010911/775168318289084466/salad.png"
+            "image": "https://cdn.discordapp.com/attachments/576875163686010911/775192200493137920/salad.png"
         }
     ]
 }
