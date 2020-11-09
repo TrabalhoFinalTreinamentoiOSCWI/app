@@ -115,7 +115,7 @@ struct R: Rswift.Validatable {
   }
   #endif
 
-  /// This `R.color` struct is generated, and contains static references to 10 colors.
+  /// This `R.color` struct is generated, and contains static references to 11 colors.
   struct color {
     /// Color `accent`.
     static let accent = Rswift.ColorResource(bundle: R.hostingBundle, name: "accent")
@@ -125,14 +125,16 @@ struct R: Rswift.Validatable {
     static let discreteText = Rswift.ColorResource(bundle: R.hostingBundle, name: "discreteText")
     /// Color `easy`.
     static let easy = Rswift.ColorResource(bundle: R.hostingBundle, name: "easy")
+    /// Color `favorite`.
+    static let favorite = Rswift.ColorResource(bundle: R.hostingBundle, name: "favorite")
     /// Color `hard`.
     static let hard = Rswift.ColorResource(bundle: R.hostingBundle, name: "hard")
+    /// Color `intermediate`.
+    static let intermediate = Rswift.ColorResource(bundle: R.hostingBundle, name: "intermediate")
     /// Color `lightDetail`.
     static let lightDetail = Rswift.ColorResource(bundle: R.hostingBundle, name: "lightDetail")
     /// Color `loaderBackground`.
     static let loaderBackground = Rswift.ColorResource(bundle: R.hostingBundle, name: "loaderBackground")
-    /// Color `medium`.
-    static let medium = Rswift.ColorResource(bundle: R.hostingBundle, name: "medium")
     /// Color `text`.
     static let text = Rswift.ColorResource(bundle: R.hostingBundle, name: "text")
     /// Color `title`.
@@ -175,11 +177,29 @@ struct R: Rswift.Validatable {
     #endif
 
     #if os(iOS) || os(tvOS)
+    /// `UIColor(named: "favorite", bundle: ..., traitCollection: ...)`
+    @available(tvOS 11.0, *)
+    @available(iOS 11.0, *)
+    static func favorite(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIColor? {
+      return UIKit.UIColor(resource: R.color.favorite, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
     /// `UIColor(named: "hard", bundle: ..., traitCollection: ...)`
     @available(tvOS 11.0, *)
     @available(iOS 11.0, *)
     static func hard(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIColor? {
       return UIKit.UIColor(resource: R.color.hard, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIColor(named: "intermediate", bundle: ..., traitCollection: ...)`
+    @available(tvOS 11.0, *)
+    @available(iOS 11.0, *)
+    static func intermediate(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIColor? {
+      return UIKit.UIColor(resource: R.color.intermediate, compatibleWith: traitCollection)
     }
     #endif
 
@@ -198,15 +218,6 @@ struct R: Rswift.Validatable {
     @available(iOS 11.0, *)
     static func loaderBackground(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIColor? {
       return UIKit.UIColor(resource: R.color.loaderBackground, compatibleWith: traitCollection)
-    }
-    #endif
-
-    #if os(iOS) || os(tvOS)
-    /// `UIColor(named: "medium", bundle: ..., traitCollection: ...)`
-    @available(tvOS 11.0, *)
-    @available(iOS 11.0, *)
-    static func medium(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIColor? {
-      return UIKit.UIColor(resource: R.color.medium, compatibleWith: traitCollection)
     }
     #endif
 
@@ -525,7 +536,7 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
 
-  /// This `R.nib` struct is generated, and contains static references to 4 nibs.
+  /// This `R.nib` struct is generated, and contains static references to 5 nibs.
   struct nib {
     /// Nib `LoaderViewController`.
     static let loaderViewController = _R.nib._LoaderViewController()
@@ -535,6 +546,8 @@ struct R: Rswift.Validatable {
     static let menuOptionView = _R.nib._MenuOptionView()
     /// Nib `RecipeTableViewCell`.
     static let recipeTableViewCell = _R.nib._RecipeTableViewCell()
+    /// Nib `RecipeViewController`.
+    static let recipeViewController = _R.nib._RecipeViewController()
 
     #if os(iOS) || os(tvOS)
     /// `UINib(name: "LoaderViewController", in: bundle)`
@@ -568,6 +581,14 @@ struct R: Rswift.Validatable {
     }
     #endif
 
+    #if os(iOS) || os(tvOS)
+    /// `UINib(name: "RecipeViewController", in: bundle)`
+    @available(*, deprecated, message: "Use UINib(resource: R.nib.recipeViewController) instead")
+    static func recipeViewController(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.recipeViewController)
+    }
+    #endif
+
     static func loaderViewController(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
       return R.nib.loaderViewController.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
     }
@@ -582,6 +603,10 @@ struct R: Rswift.Validatable {
 
     static func recipeTableViewCell(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> RecipeTableViewCell? {
       return R.nib.recipeTableViewCell.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? RecipeTableViewCell
+    }
+
+    static func recipeViewController(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
+      return R.nib.recipeViewController.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
     }
 
     fileprivate init() {}
@@ -624,6 +649,7 @@ struct _R: Rswift.Validatable {
       try _LoaderViewController.validate()
       try _LoginViewController.validate()
       try _RecipeTableViewCell.validate()
+      try _RecipeViewController.validate()
     }
 
     struct _LoaderViewController: Rswift.NibResourceType, Rswift.Validatable {
@@ -693,6 +719,25 @@ struct _R: Rswift.Validatable {
         if #available(iOS 11.0, tvOS 11.0, *) {
           if UIKit.UIColor(named: "accent", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'accent' is used in storyboard 'RecipeTableViewCell', but couldn't be loaded.") }
           if UIKit.UIColor(named: "discreteText", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'discreteText' is used in storyboard 'RecipeTableViewCell', but couldn't be loaded.") }
+        }
+      }
+
+      fileprivate init() {}
+    }
+
+    struct _RecipeViewController: Rswift.NibResourceType, Rswift.Validatable {
+      let bundle = R.hostingBundle
+      let name = "RecipeViewController"
+
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
+      }
+
+      static func validate() throws {
+        if UIKit.UIImage(named: "heart", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'heart' is used in nib 'RecipeViewController', but couldn't be loaded.") }
+        if #available(iOS 11.0, tvOS 11.0, *) {
+          if UIKit.UIColor(named: "discreteText", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'discreteText' is used in storyboard 'RecipeViewController', but couldn't be loaded.") }
+          if UIKit.UIColor(named: "favorite", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'favorite' is used in storyboard 'RecipeViewController', but couldn't be loaded.") }
         }
       }
 
