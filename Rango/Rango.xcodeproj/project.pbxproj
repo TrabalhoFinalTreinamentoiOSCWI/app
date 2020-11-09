@@ -33,6 +33,8 @@
 		C301FE0325563BF900F00AA1 /* MenuOptionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C301FE0225563BF900F00AA1 /* MenuOptionView.xib */; };
 		C301FE0525563D2900F00AA1 /* UIView+RoundCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = C301FE0425563D2900F00AA1 /* UIView+RoundCorners.swift */; };
 		C301FE0725563D4600F00AA1 /* UIView+Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = C301FE0625563D4600F00AA1 /* UIView+Size.swift */; };
+		C30E870725586EEE00C2644B /* RecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30E870525586EEE00C2644B /* RecipeViewController.swift */; };
+		C30E870825586EEE00C2644B /* RecipeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C30E870625586EEE00C2644B /* RecipeViewController.xib */; };
 		C3212D1E2557663900B0BE51 /* LoaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3212D1C2557663900B0BE51 /* LoaderViewController.swift */; };
 		C3212D1F2557663900B0BE51 /* LoaderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3212D1D2557663900B0BE51 /* LoaderViewController.xib */; };
 		C3212D212557664600B0BE51 /* LoaderViewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3212D202557664600B0BE51 /* LoaderViewType.swift */; };
@@ -66,9 +68,9 @@
 		F1633A512559F35900409168 /* SearchResultTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1633A4F2559F35900409168 /* SearchResultTableViewController.xib */; };
 		F1633A532559F3DC00409168 /* SearchResult+Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1633A522559F3DC00409168 /* SearchResult+Protocols.swift */; };
 		F1633A552559F3F600409168 /* SearchResultPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1633A542559F3F600409168 /* SearchResultPresenter.swift */; };
+		F1633A572559F7DF00409168 /* Profile+Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1633A562559F7DF00409168 /* Profile+Protocols.swift */; };
 		F1F76BD8255382B700625A13 /* Favorite.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F76BD7255382B700625A13 /* Favorite.swift */; };
 		F1FF2EDD2553944400AE0D25 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FF2EDC2553944400AE0D25 /* ProfileViewController.swift */; };
-		F1FF2EDF2553959600AE0D25 /* Profile+Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FF2EDE2553959600AE0D25 /* Profile+Protocols.swift */; };
 		F1FF2EE1255395F000AE0D25 /* ProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FF2EE0255395F000AE0D25 /* ProfilePresenter.swift */; };
 /* End PBXBuildFile section */
 
@@ -109,6 +111,8 @@
 		C301FE0225563BF900F00AA1 /* MenuOptionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuOptionView.xib; sourceTree = "<group>"; };
 		C301FE0425563D2900F00AA1 /* UIView+RoundCorners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIView+RoundCorners.swift"; path = "Rango/Modules/Menu/Components/UIView+RoundCorners.swift"; sourceTree = SOURCE_ROOT; };
 		C301FE0625563D4600F00AA1 /* UIView+Size.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIView+Size.swift"; path = "Rango/Modules/Menu/Components/UIView+Size.swift"; sourceTree = SOURCE_ROOT; };
+		C30E870525586EEE00C2644B /* RecipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeViewController.swift; sourceTree = "<group>"; };
+		C30E870625586EEE00C2644B /* RecipeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecipeViewController.xib; sourceTree = "<group>"; };
 		C3212D1C2557663900B0BE51 /* LoaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderViewController.swift; sourceTree = "<group>"; };
 		C3212D1D2557663900B0BE51 /* LoaderViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoaderViewController.xib; sourceTree = "<group>"; };
 		C3212D202557664600B0BE51 /* LoaderViewType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderViewType.swift; sourceTree = "<group>"; };
@@ -150,9 +154,9 @@
 		F1633A4F2559F35900409168 /* SearchResultTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchResultTableViewController.xib; sourceTree = "<group>"; };
 		F1633A522559F3DC00409168 /* SearchResult+Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchResult+Protocols.swift"; sourceTree = "<group>"; };
 		F1633A542559F3F600409168 /* SearchResultPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultPresenter.swift; sourceTree = "<group>"; };
+		F1633A562559F7DF00409168 /* Profile+Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Profile+Protocols.swift"; sourceTree = "<group>"; };
 		F1F76BD7255382B700625A13 /* Favorite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favorite.swift; sourceTree = "<group>"; };
 		F1FF2EDC2553944400AE0D25 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
-		F1FF2EDE2553959600AE0D25 /* Profile+Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Profile+Protocols.swift"; sourceTree = "<group>"; };
 		F1FF2EE0255395F000AE0D25 /* ProfilePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -254,6 +258,15 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
+		C30E870425586ED200C2644B /* Recipe */ = {
+			isa = PBXGroup;
+			children = (
+				C30E870525586EEE00C2644B /* RecipeViewController.swift */,
+				C30E870625586EEE00C2644B /* RecipeViewController.xib */,
+			);
+			path = Recipe;
+			sourceTree = "<group>";
+		};
 		C3212D1B2557662300B0BE51 /* Loader */ = {
 			isa = PBXGroup;
 			children = (
@@ -320,6 +333,7 @@
 			children = (
 				F1633A4D2559F32B00409168 /* SearchResult */,
 				F13C3B0C2558CA4D00209F2B /* Search */,
+				C30E870425586ED200C2644B /* Recipe */,
 				C301FDF825563A1600F00AA1 /* Menu */,
 				F1FF2EDB2553943000AE0D25 /* Profile */,
 				9206E0262554BCE9001CC6E8 /* Login */,
@@ -423,8 +437,8 @@
 			isa = PBXGroup;
 			children = (
 				F1FF2EDC2553944400AE0D25 /* ProfileViewController.swift */,
-				F1FF2EDE2553959600AE0D25 /* Profile+Protocols.swift */,
 				F1FF2EE0255395F000AE0D25 /* ProfilePresenter.swift */,
+				F1633A562559F7DF00409168 /* Profile+Protocols.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -525,6 +539,7 @@
 				C3AD9B72254CECC000CDD65D /* LaunchScreen.storyboard in Resources */,
 				C301FE0325563BF900F00AA1 /* MenuOptionView.xib in Resources */,
 				C3AD9B6F254CECC000CDD65D /* Assets.xcassets in Resources */,
+				C30E870825586EEE00C2644B /* RecipeViewController.xib in Resources */,
 				928182D52550D3B50035C7CB /* Nunito-Light.ttf in Resources */,
 				C3AD9B6D254CECBE00CDD65D /* Main.storyboard in Resources */,
 				928182E12550D3B50035C7CB /* Nunito-LightItalic.ttf in Resources */,
@@ -665,7 +680,7 @@
 				C301FDFD25563A6100F00AA1 /* MenuPresenter.swift in Sources */,
 				F1523A1F2550709500C4A65A /* Api.swift in Sources */,
 				F15A0D302552F0D1006EFE94 /* RecipeTableViewCell.swift in Sources */,
-				F1FF2EDF2553959600AE0D25 /* Profile+Protocols.swift in Sources */,
+				C30E870725586EEE00C2644B /* RecipeViewController.swift in Sources */,
 				F1523A262550755A00C4A65A /* Dificulty.swift in Sources */,
 				C301FE0125563BEA00F00AA1 /* MenuOptionView.swift in Sources */,
 				F1FF2EDD2553944400AE0D25 /* ProfileViewController.swift in Sources */,
@@ -676,6 +691,7 @@
 				C301FDFB25563A3800F00AA1 /* MenuViewController.swift in Sources */,
 				C3AD9B6A254CECBE00CDD65D /* ViewController.swift in Sources */,
 				9206E02C2554C067001CC6E8 /* UITextField+Padding.swift in Sources */,
+				F1633A572559F7DF00409168 /* Profile+Protocols.swift in Sources */,
 				F1523A2A2550773000C4A65A /* Menu.swift in Sources */,
 				C3AD9B66254CECBE00CDD65D /* AppDelegate.swift in Sources */,
 				C3AD9B92254CF9AD00CDD65D /* Alias.swift in Sources */,
