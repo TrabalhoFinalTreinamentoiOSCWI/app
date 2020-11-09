@@ -8,9 +8,10 @@
 
 import UIKit
 
-class SearchViewController: UIViewController {
+class SearchCollectionViewController: UICollectionViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
     }
 }
