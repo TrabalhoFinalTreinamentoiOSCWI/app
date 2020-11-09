@@ -16,7 +16,7 @@ protocol SearchViewType: LoaderViewType {
 
 protocol SearchPresenterType {
     
-    var categories: [String] { get }
+    var categories: [Category] { get }
     
     func loadScreen()
     

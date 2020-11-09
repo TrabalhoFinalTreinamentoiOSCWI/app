@@ -50,6 +50,7 @@
 		F13C3B132558CB6000209F2B /* SearchCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F13C3B112558CB6000209F2B /* SearchCollectionViewCell.xib */; };
 		F13C3B152558CCFD00209F2B /* Search+Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13C3B142558CCFD00209F2B /* Search+Protocols.swift */; };
 		F13C3B172558CD2A00209F2B /* SearchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13C3B162558CD2A00209F2B /* SearchPresenter.swift */; };
+		F13C3B192558D16700209F2B /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13C3B182558D16700209F2B /* Category.swift */; };
 		F1523A1F2550709500C4A65A /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1523A1E2550709500C4A65A /* Api.swift */; };
 		F1523A212550726200C4A65A /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1523A202550726200C4A65A /* Endpoint.swift */; };
 		F1523A24255074B100C4A65A /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1523A23255074B100C4A65A /* Recipe.swift */; };
@@ -128,6 +129,7 @@
 		F13C3B112558CB6000209F2B /* SearchCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchCollectionViewCell.xib; sourceTree = "<group>"; };
 		F13C3B142558CCFD00209F2B /* Search+Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Search+Protocols.swift"; sourceTree = "<group>"; };
 		F13C3B162558CD2A00209F2B /* SearchPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPresenter.swift; sourceTree = "<group>"; };
+		F13C3B182558D16700209F2B /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		F1523A1E2550709500C4A65A /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
 		F1523A202550726200C4A65A /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		F1523A23255074B100C4A65A /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
@@ -362,6 +364,7 @@
 				F1523A252550755A00C4A65A /* Dificulty.swift */,
 				F1523A272550766E00C4A65A /* User.swift */,
 				F1523A292550773000C4A65A /* Menu.swift */,
+				F13C3B182558D16700209F2B /* Category.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -661,6 +664,7 @@
 				F13C3B0E2558CA6900209F2B /* SearchCollectionViewController.swift in Sources */,
 				F13C3B172558CD2A00209F2B /* SearchPresenter.swift in Sources */,
 				F13C3B152558CCFD00209F2B /* Search+Protocols.swift in Sources */,
+				F13C3B192558D16700209F2B /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
