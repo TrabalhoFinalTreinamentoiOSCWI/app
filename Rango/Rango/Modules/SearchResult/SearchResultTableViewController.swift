@@ -12,6 +12,10 @@ class SearchResultTableViewController: UITableViewController {
         
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        tableView.register(UINib(resource: R.nib.recipeTableViewCell), forCellReuseIdentifier: "recipe-cell")
+        tableView.delegate = self
+        tableView.dataSource = self
     }
 
     override func numberOfSections(in tableView: UITableView) -> Int {

@@ -7,3 +7,11 @@
 //
 
 import Foundation
+
+protocol SearchPresenterType {
+    
+    var categories: [Category] { get }
+    
+    func loadScreen()
+    
+}

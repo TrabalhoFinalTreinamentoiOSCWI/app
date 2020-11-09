@@ -17,7 +17,7 @@ class FavoriteTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tableView.register(UINib(resource: R.nib.recipeTableViewCell), forCellReuseIdentifier: "favorite-cell")
+        tableView.register(UINib(resource: R.nib.recipeTableViewCell), forCellReuseIdentifier: "recipe-cell")
         tableView.delegate = self
         tableView.dataSource = self
     }
@@ -35,7 +35,7 @@ extension FavoriteTableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "favorite-cell", for: indexPath) as! RecipeTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "recipe-cell", for: indexPath) as! RecipeTableViewCell
         
         cell.config(recipes[0])
         return cell
