@@ -8,10 +8,10 @@
 
 import Foundation
 
-public struct Category {
+public struct Category: Decodable {
     
     let id: Int
-    let path: Endpoint
+    let path: String
     let name: String
     let image: String
     

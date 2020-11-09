@@ -18,6 +18,7 @@ enum Endpoint {
     case cakes
     case users(id: Int)
     case menu
+    case categories
     
     var url: String {
         switch self {
@@ -25,6 +26,25 @@ enum Endpoint {
             return "users/\(id)"
         default:
             return "\(self)"
+        }
+    }
+    
+    var categoryValue: String? {
+        switch self {
+        case .salads:
+            return "salads"
+        case .meats:
+            return "meats"
+        case .pasta:
+            return "pasta"
+        case .snack:
+            return "snack"
+        case .fish:
+            return "fish"
+        case .cakes:
+            return "cakes"
+        default:
+            return nil
         }
     }
 }
