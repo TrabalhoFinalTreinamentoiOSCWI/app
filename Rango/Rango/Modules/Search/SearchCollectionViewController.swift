@@ -34,13 +34,13 @@ extension SearchCollectionViewController: SearchViewType {
 
 extension SearchCollectionViewController: UICollectionViewDelegateFlowLayout {
     
-    enum ConstantesDeLayout {
-        static let alturaDaCelula: CGFloat = 160
-        static let espacamentoHorizontal: CGFloat = 10
-        static let espacamentoVertical: CGFloat = 10
+    enum LayoutContants {
+        static let cellHeight: CGFloat = 160
+        static let horizontalSpacing: CGFloat = 10
+        static let verticalSpacing: CGFloat = 10
         
-        static func largura(baseadaNa larguraDaCollectionView: CGFloat) -> CGFloat {
-            (larguraDaCollectionView - espacamentoHorizontal) / 2.1 - espacamentoHorizontal
+        static func width(base collectionViewWidth: CGFloat) -> CGFloat {
+            (collectionViewWidth - horizontalSpacing) / 2.1 - horizontalSpacing
         }
     }
     
@@ -49,23 +49,23 @@ extension SearchCollectionViewController: UICollectionViewDelegateFlowLayout {
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        .init(width: ConstantesDeLayout.largura(baseadaNa: collectionView.frame.width),
-              height: ConstantesDeLayout.alturaDaCelula)
+        .init(width: LayoutContants.width(base: collectionView.frame.width),
+              height: LayoutContants.cellHeight)
     }
     
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        .init(top:  ConstantesDeLayout.espacamentoVertical,
-              left: ConstantesDeLayout.espacamentoHorizontal,
-              bottom: ConstantesDeLayout.espacamentoVertical,
-              right: ConstantesDeLayout.espacamentoHorizontal)
+        .init(top:  LayoutContants.verticalSpacing,
+              left: LayoutContants.horizontalSpacing,
+              bottom: LayoutContants.verticalSpacing,
+              right: LayoutContants.horizontalSpacing)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-        ConstantesDeLayout.espacamentoHorizontal
+        LayoutContants.horizontalSpacing
     }
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        ConstantesDeLayout.espacamentoVertical
+        LayoutContants.verticalSpacing
     }
 }

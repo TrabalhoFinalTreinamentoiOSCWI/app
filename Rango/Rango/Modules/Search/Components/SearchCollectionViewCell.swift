@@ -21,6 +21,13 @@ class SearchCollectionViewCell: UICollectionViewCell {
     func config(with: Category) {
         self.categoryImageView.loadImage(use: with.image)
         self.categoryNameLabel.text = with.name
+        self.cardViewLayout()
+    }
+}
+
+extension SearchCollectionViewCell {
+    
+    private func cardViewLayout() {
         self.categoryView.layer.cornerRadius = 20
         self.categoryView.layer.shadowColor = UIColor(named: "discreteText")?.cgColor
         self.categoryView.layer.shadowOffset = CGSize(width: 1, height: 1)

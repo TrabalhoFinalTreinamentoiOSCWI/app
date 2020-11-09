@@ -30,21 +30,6 @@ enum Endpoint {
     }
     
     var categoryValue: String? {
-        switch self {
-        case .salads:
-            return "salads"
-        case .meats:
-            return "meats"
-        case .pasta:
-            return "pasta"
-        case .snack:
-            return "snack"
-        case .fish:
-            return "fish"
-        case .cakes:
-            return "cakes"
-        default:
-            return nil
-        }
+        return "\(self)"
     }
 }
