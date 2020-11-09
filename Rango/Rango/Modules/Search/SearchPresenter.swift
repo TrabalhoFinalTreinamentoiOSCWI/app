@@ -6,7 +6,7 @@
 //  Copyright © 2020 CWI. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 class SearchPresenter: NSObject {
     
@@ -42,5 +42,16 @@ extension SearchPresenter: SearchPresenterType {
 
 extension SearchPresenter: UICollectionViewDataSource {
     
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        categories.count
+    }
     
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: R.reuseIdentifier.searchCell, for: indexPath)!
+        let category = categories[indexPath.item]
+
+        cell.config(with: category)
+        
+        return cell
+    }
 }
