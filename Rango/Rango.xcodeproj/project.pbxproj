@@ -62,6 +62,10 @@
 		F15A0D2B2552ED26006EFE94 /* FavoriteTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15A0D2A2552ED26006EFE94 /* FavoriteTableViewController.swift */; };
 		F15A0D302552F0D1006EFE94 /* RecipeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15A0D2E2552F0D1006EFE94 /* RecipeTableViewCell.swift */; };
 		F15A0D312552F0D1006EFE94 /* RecipeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F15A0D2F2552F0D1006EFE94 /* RecipeTableViewCell.xib */; };
+		F1633A502559F35900409168 /* SearchResultTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1633A4E2559F35900409168 /* SearchResultTableViewController.swift */; };
+		F1633A512559F35900409168 /* SearchResultTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1633A4F2559F35900409168 /* SearchResultTableViewController.xib */; };
+		F1633A532559F3DC00409168 /* SearchResult+Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1633A522559F3DC00409168 /* SearchResult+Protocols.swift */; };
+		F1633A552559F3F600409168 /* SearchResultPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1633A542559F3F600409168 /* SearchResultPresenter.swift */; };
 		F1F76BD8255382B700625A13 /* Favorite.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F76BD7255382B700625A13 /* Favorite.swift */; };
 		F1FF2EDD2553944400AE0D25 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FF2EDC2553944400AE0D25 /* ProfileViewController.swift */; };
 		F1FF2EDF2553959600AE0D25 /* Profile+Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FF2EDE2553959600AE0D25 /* Profile+Protocols.swift */; };
@@ -142,6 +146,10 @@
 		F15A0D2A2552ED26006EFE94 /* FavoriteTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteTableViewController.swift; sourceTree = "<group>"; };
 		F15A0D2E2552F0D1006EFE94 /* RecipeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeTableViewCell.swift; sourceTree = "<group>"; };
 		F15A0D2F2552F0D1006EFE94 /* RecipeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecipeTableViewCell.xib; sourceTree = "<group>"; };
+		F1633A4E2559F35900409168 /* SearchResultTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultTableViewController.swift; sourceTree = "<group>"; };
+		F1633A4F2559F35900409168 /* SearchResultTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchResultTableViewController.xib; sourceTree = "<group>"; };
+		F1633A522559F3DC00409168 /* SearchResult+Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchResult+Protocols.swift"; sourceTree = "<group>"; };
+		F1633A542559F3F600409168 /* SearchResultPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultPresenter.swift; sourceTree = "<group>"; };
 		F1F76BD7255382B700625A13 /* Favorite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favorite.swift; sourceTree = "<group>"; };
 		F1FF2EDC2553944400AE0D25 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		F1FF2EDE2553959600AE0D25 /* Profile+Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Profile+Protocols.swift"; sourceTree = "<group>"; };
@@ -310,6 +318,7 @@
 		C3AD9B87254CF66E00CDD65D /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				F1633A4D2559F32B00409168 /* SearchResult */,
 				F13C3B0C2558CA4D00209F2B /* Search */,
 				C301FDF825563A1600F00AA1 /* Menu */,
 				F1FF2EDB2553943000AE0D25 /* Profile */,
@@ -397,6 +406,17 @@
 				F15A0D2F2552F0D1006EFE94 /* RecipeTableViewCell.xib */,
 			);
 			path = RecipeCard;
+			sourceTree = "<group>";
+		};
+		F1633A4D2559F32B00409168 /* SearchResult */ = {
+			isa = PBXGroup;
+			children = (
+				F1633A4E2559F35900409168 /* SearchResultTableViewController.swift */,
+				F1633A4F2559F35900409168 /* SearchResultTableViewController.xib */,
+				F1633A522559F3DC00409168 /* SearchResult+Protocols.swift */,
+				F1633A542559F3F600409168 /* SearchResultPresenter.swift */,
+			);
+			path = SearchResult;
 			sourceTree = "<group>";
 		};
 		F1FF2EDB2553943000AE0D25 /* Profile */ = {
@@ -517,6 +537,7 @@
 				928182D92550D3B50035C7CB /* Nunito-ExtraBold.ttf in Resources */,
 				C3212D1F2557663900B0BE51 /* LoaderViewController.xib in Resources */,
 				F15A0D312552F0D1006EFE94 /* RecipeTableViewCell.xib in Resources */,
+				F1633A512559F35900409168 /* SearchResultTableViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -640,6 +661,7 @@
 				F15A0D2B2552ED26006EFE94 /* FavoriteTableViewController.swift in Sources */,
 				C3212D212557664600B0BE51 /* LoaderViewType.swift in Sources */,
 				F1523A212550726200C4A65A /* Endpoint.swift in Sources */,
+				F1633A552559F3F600409168 /* SearchResultPresenter.swift in Sources */,
 				C301FDFD25563A6100F00AA1 /* MenuPresenter.swift in Sources */,
 				F1523A1F2550709500C4A65A /* Api.swift in Sources */,
 				F15A0D302552F0D1006EFE94 /* RecipeTableViewCell.swift in Sources */,
@@ -647,6 +669,7 @@
 				F1523A262550755A00C4A65A /* Dificulty.swift in Sources */,
 				C301FE0125563BEA00F00AA1 /* MenuOptionView.swift in Sources */,
 				F1FF2EDD2553944400AE0D25 /* ProfileViewController.swift in Sources */,
+				F1633A532559F3DC00409168 /* SearchResult+Protocols.swift in Sources */,
 				C3AD9B96254CFAE600CDD65D /* R.generated.swift in Sources */,
 				F1523A2C2550782800C4A65A /* UIImageView+LoadImage.swift in Sources */,
 				F13C3B122558CB6000209F2B /* SearchCollectionViewCell.swift in Sources */,
@@ -669,6 +692,7 @@
 				F13C3B172558CD2A00209F2B /* SearchPresenter.swift in Sources */,
 				F13C3B152558CCFD00209F2B /* Search+Protocols.swift in Sources */,
 				F13C3B192558D16700209F2B /* Category.swift in Sources */,
+				F1633A502559F35900409168 /* SearchResultTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
