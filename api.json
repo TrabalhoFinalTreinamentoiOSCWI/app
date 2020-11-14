@@ -1043,5 +1043,43 @@
             "image": "https://cdn.discordapp.com/attachments/576875163686010911/772856477483663360/unknown.png",
             "category": "cakes"
         }
+    ],
+    "categories": [
+        {
+            "id": 1,
+            "path": "salads",
+            "name": "Saladas",
+            "image": "https://cdn.discordapp.com/attachments/576875163686010911/775364216545869875/salad.png"
+        },
+        {
+            "id": 2,
+            "path": "meats",
+            "name": "Carnes",
+            "image": "https://cdn.discordapp.com/attachments/576875163686010911/775364933823103026/meat.png"
+        },
+        {
+            "id": 3,
+            "path": "pasta",
+            "name": "Massas",
+            "image": "https://cdn.discordapp.com/attachments/576875163686010911/775365822670962688/pasta.png"
+        },
+        {
+            "id": 4,
+            "path": "snack",
+            "name": "Lanches",
+            "image": "https://cdn.discordapp.com/attachments/576875163686010911/775366609677320192/snack.png"
+        },
+        {
+            "id": 5,
+            "path": "fish",
+            "name": "Frutos do Mar",
+            "image": "https://cdn.discordapp.com/attachments/576875163686010911/775367331886399488/fish.png"
+        },
+        {
+            "id": 6,
+            "path": "cakes",
+            "name": "Bolos e Doces",
+            "image": "https://cdn.discordapp.com/attachments/576875163686010911/775368049175035904/cake.png"
+        }
     ]
 }
