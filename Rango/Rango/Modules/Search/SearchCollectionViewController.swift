@@ -64,4 +64,12 @@ extension SearchCollectionViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         LayoutContants.verticalSpacing
     }
+    
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let path = presenter.categories[indexPath.row].path
+        
+        //TODO continuar cosdígo que ao clicar no card de pesquisa por categoria vai enviar para a SearchResultTableViewController
+//        let vc = UINib(resource: R.nib.searchResultTableViewController)
+//        navigationController?.pushViewController(vc, animated: true)
+    }
 }
