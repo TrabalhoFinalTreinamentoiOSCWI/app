@@ -15,17 +15,17 @@ class RecipeTableViewCell: UITableViewCell {
     @IBOutlet weak var recipeBioName: UILabel!
     @IBOutlet weak var recipeTimeLabel: UILabel!
     @IBOutlet weak var recipeRatingLabel: UILabel!
-    
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        self.recipeImageView.layer.cornerRadius = 20
-    }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }
     
+    override class func awakeFromNib() {
+        super.awakeFromNib()
+    }
+    
     func config(_ recipe: Recipe) {
+        self.recipeImageView.roundCorners(corners: [.allCorners], radius: 20)
         self.recipeImageView.loadImage(use: recipe.image)
         self.recipeNameLabel.text = recipe.name
         self.recipeBioName.text = recipe.bio

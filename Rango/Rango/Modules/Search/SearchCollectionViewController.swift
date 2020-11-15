@@ -18,6 +18,7 @@ class SearchCollectionViewController: UICollectionViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.removeBackButtonText
         collectionView.delegate = self
         collectionView.dataSource = self.presenter
         collectionView.register(R.nib.searchCollectionViewCell)
@@ -67,9 +68,9 @@ extension SearchCollectionViewController: UICollectionViewDelegateFlowLayout {
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let path = presenter.categories[indexPath.row].path
+        let viewController = SearchResultTableViewController()
         
-        //TODO continuar cosdígo que ao clicar no card de pesquisa por categoria vai enviar para a SearchResultTableViewController
-//        let vc = UINib(resource: R.nib.searchResultTableViewController)
-//        navigationController?.pushViewController(vc, animated: true)
+        viewController.config(path: path)
+        self.navigationController?.pushViewController(viewController, animated: true)
     }
 }

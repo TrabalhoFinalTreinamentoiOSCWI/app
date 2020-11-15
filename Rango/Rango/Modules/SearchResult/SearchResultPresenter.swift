@@ -20,6 +20,14 @@ class SearchResultPresenter: NSObject {
 }
 
 extension SearchResultPresenter: SearchResultPresenterType {
+    func onSelect(with indexPath: IndexPath) {
+        let recipe = recipes[indexPath.row]
+        let recipeViewController = RecipeViewController()
+        
+        recipeViewController.config(for: recipe)
+        view?.navigate(to: recipeViewController)
+    }
+    
     
     func loadScreen(path: String) {
         self.view?.showLoader()
@@ -40,7 +48,7 @@ extension SearchResultPresenter: SearchResultPresenterType {
     }
 }
 
-extension SearchResultPresenter {
+extension SearchResultPresenter: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         self.recipes.count
@@ -53,7 +61,7 @@ extension SearchResultPresenter {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "recipe-cell", for: indexPath) as! RecipeTableViewCell
         
-        cell.config(self.recipes[0])
+        cell.config(self.recipes[indexPath.row])
         return cell
     }
 }

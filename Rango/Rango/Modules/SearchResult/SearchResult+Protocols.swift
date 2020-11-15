@@ -6,11 +6,12 @@
 //  Copyright © 2020 CWI. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 protocol SearchResultViewType: LoaderViewType {
     
     func showCards()
+    func navigate(to viewController: UIViewController)
     
 }
 
@@ -19,5 +20,6 @@ protocol SearchResultPresenterType {
     var recipes: [Recipe] { get }
     
     func loadScreen(path: String)
+    func onSelect(with indexPath: IndexPath)
     
 }

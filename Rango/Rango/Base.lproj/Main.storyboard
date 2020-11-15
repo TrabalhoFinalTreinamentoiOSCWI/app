@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17140" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BlS-E2-Yt5">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BlS-E2-Yt5">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17115"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -65,7 +65,7 @@
             </objects>
             <point key="canvasLocation" x="-2219" y="-739"/>
         </scene>
-        <!--Favoritos-->
+        <!--FAVORITOS-->
         <scene sceneID="8yL-J9-Dg0">
             <objects>
                 <tableViewController id="yst-Ho-RiX" customClass="FavoriteTableViewController" customModule="Rango" customModuleProvider="target" sceneMemberID="viewController">
@@ -78,7 +78,7 @@
                             <outlet property="delegate" destination="yst-Ho-RiX" id="avS-QR-LdK"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Favoritos" id="Noy-h5-XAY"/>
+                    <navigationItem key="navigationItem" title="FAVORITOS" id="Noy-h5-XAY"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rwy-IR-g1c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -179,6 +179,9 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="WIO-19-hfG">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" name="accent"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="yst-Ho-RiX" kind="relationship" relationship="rootViewController" id="AJd-cR-9Xt"/>
@@ -196,6 +199,9 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="RGU-8i-LOV">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" name="accent"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="gTq-wn-jAb" kind="relationship" relationship="rootViewController" id="qo0-tW-Kwj"/>
@@ -205,7 +211,7 @@
             </objects>
             <point key="canvasLocation" x="-716" y="-340"/>
         </scene>
-        <!--Search Collection View Controller-->
+        <!--PESQUISA-->
         <scene sceneID="7C7-vz-whq">
             <objects>
                 <collectionViewController id="gTq-wn-jAb" customClass="SearchCollectionViewController" customModule="Rango" customModuleProvider="target" sceneMemberID="viewController">
@@ -225,7 +231,7 @@
                             <outlet property="delegate" destination="gTq-wn-jAb" id="Xwl-pQ-vPC"/>
                         </connections>
                     </collectionView>
-                    <navigationItem key="navigationItem" id="8ao-vE-1sH"/>
+                    <navigationItem key="navigationItem" title="PESQUISA" id="8ao-vE-1sH"/>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K7i-f8-sX5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -239,6 +245,9 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="WJh-AQ-IKa">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" name="accent"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="wjV-kT-stu" kind="relationship" relationship="rootViewController" id="Hez-M7-Odp"/>
@@ -248,7 +257,7 @@
             </objects>
             <point key="canvasLocation" x="-2220" y="150"/>
         </scene>
-        <!--Menu View Controller-->
+        <!--MENU-->
         <scene sceneID="Yzn-nf-S1b">
             <objects>
                 <viewController id="wjV-kT-stu" customClass="MenuViewController" customModule="Rango" customModuleProvider="target" sceneMemberID="viewController">
@@ -285,7 +294,7 @@
                             <constraint firstAttribute="trailing" secondItem="BrB-Jf-jxk" secondAttribute="trailing" id="fNu-VQ-L89"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="pyT-b5-UP4"/>
+                    <navigationItem key="navigationItem" title="MENU" id="pyT-b5-UP4"/>
                     <connections>
                         <outlet property="optionsStackView" destination="IOc-Oj-MmE" id="C80-xf-YOw"/>
                     </connections>
