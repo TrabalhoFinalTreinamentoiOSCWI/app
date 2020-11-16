@@ -18,6 +18,7 @@ class SearchCollectionViewController: UICollectionViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.removeBackButtonText
         collectionView.delegate = self
         collectionView.dataSource = self.presenter
         collectionView.register(R.nib.searchCollectionViewCell)
@@ -44,10 +45,6 @@ extension SearchCollectionViewController: UICollectionViewDelegateFlowLayout {
         }
     }
     
-    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        //TODO go to search result screen
-    }
-    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         .init(width: LayoutContants.width(base: collectionView.frame.width),
               height: LayoutContants.cellHeight)
@@ -67,5 +64,13 @@ extension SearchCollectionViewController: UICollectionViewDelegateFlowLayout {
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         LayoutContants.verticalSpacing
+    }
+    
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let path = presenter.categories[indexPath.row].path
+        let viewController = SearchResultTableViewController()
+        
+        viewController.config(path: path)
+        self.navigationController?.pushViewController(viewController, animated: true)
     }
 }

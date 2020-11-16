@@ -17,14 +17,16 @@ class MenuViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "MENU"
+        self.removeBackButtonText
         presenter.screenDidLoad()
     }
     
     @objc func action(_ sender: UITapGestureRecognizer) {
-        print("clicou")
-        // TODO: enviar usuario para tela de resultado de busca
-        // pela categoria da opção selecionada
+        guard let category = sender.name else { return }
+        
+        let viewController = SearchResultTableViewController()
+        viewController.config(path: category)
+        self.navigationController?.pushViewController(viewController, animated: true)
     }
 }
 
@@ -48,6 +50,7 @@ extension MenuViewController: MenuViewType {
             spacing: CGFloat(30))
         menuOptionView.roundCorners(corners: [.allCorners], radius: 10)
         let gestureRecognizer = self.getGestureRecognizer(for: menuOptionView)
+        gestureRecognizer.name = currentOption.category
         menuOptionView.addGestureRecognizer(gestureRecognizer)
         
         return menuOptionView
