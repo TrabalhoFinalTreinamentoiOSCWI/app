@@ -768,7 +768,6 @@ struct _R: Rswift.Validatable {
         if UIKit.UIImage(named: "heart", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'heart' is used in nib 'RecipeViewController', but couldn't be loaded.") }
         if #available(iOS 11.0, tvOS 11.0, *) {
           if UIKit.UIColor(named: "discreteText", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'discreteText' is used in storyboard 'RecipeViewController', but couldn't be loaded.") }
-          if UIKit.UIColor(named: "favorite", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'favorite' is used in storyboard 'RecipeViewController', but couldn't be loaded.") }
         }
       }
 
