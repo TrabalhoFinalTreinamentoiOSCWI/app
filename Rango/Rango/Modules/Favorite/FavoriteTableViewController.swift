@@ -22,6 +22,10 @@ class FavoriteTableViewController: UITableViewController {
         tableView.dataSource = self
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        tableView.reloadData()
+    }
+    
 }
 
 extension FavoriteTableViewController {
@@ -37,7 +41,7 @@ extension FavoriteTableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "recipe-cell", for: indexPath) as! RecipeTableViewCell
         
-        cell.config(recipes[0])
+        cell.config(recipes[indexPath.item])
         return cell
     }
     
