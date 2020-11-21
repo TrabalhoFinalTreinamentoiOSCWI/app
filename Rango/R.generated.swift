@@ -536,8 +536,12 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
 
-  /// This `R.nib` struct is generated, and contains static references to 7 nibs.
+  /// This `R.nib` struct is generated, and contains static references to 9 nibs.
   struct nib {
+    /// Nib `ListBlockView`.
+    static let listBlockView = _R.nib._ListBlockView()
+    /// Nib `ListItemView`.
+    static let listItemView = _R.nib._ListItemView()
     /// Nib `LoaderViewController`.
     static let loaderViewController = _R.nib._LoaderViewController()
     /// Nib `LoginViewController`.
@@ -552,6 +556,22 @@ struct R: Rswift.Validatable {
     static let searchCollectionViewCell = _R.nib._SearchCollectionViewCell()
     /// Nib `SearchResultTableViewController`.
     static let searchResultTableViewController = _R.nib._SearchResultTableViewController()
+
+    #if os(iOS) || os(tvOS)
+    /// `UINib(name: "ListBlockView", in: bundle)`
+    @available(*, deprecated, message: "Use UINib(resource: R.nib.listBlockView) instead")
+    static func listBlockView(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.listBlockView)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UINib(name: "ListItemView", in: bundle)`
+    @available(*, deprecated, message: "Use UINib(resource: R.nib.listItemView) instead")
+    static func listItemView(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.listItemView)
+    }
+    #endif
 
     #if os(iOS) || os(tvOS)
     /// `UINib(name: "LoaderViewController", in: bundle)`
@@ -608,6 +628,14 @@ struct R: Rswift.Validatable {
       return UIKit.UINib(resource: R.nib.searchResultTableViewController)
     }
     #endif
+
+    static func listBlockView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> ListBlockView? {
+      return R.nib.listBlockView.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? ListBlockView
+    }
+
+    static func listItemView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> ListItemView? {
+      return R.nib.listItemView.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? ListItemView
+    }
 
     static func loaderViewController(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
       return R.nib.loaderViewController.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
@@ -681,6 +709,28 @@ struct _R: Rswift.Validatable {
       try _RecipeTableViewCell.validate()
       try _RecipeViewController.validate()
       try _SearchCollectionViewCell.validate()
+    }
+
+    struct _ListBlockView: Rswift.NibResourceType {
+      let bundle = R.hostingBundle
+      let name = "ListBlockView"
+
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> ListBlockView? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? ListBlockView
+      }
+
+      fileprivate init() {}
+    }
+
+    struct _ListItemView: Rswift.NibResourceType {
+      let bundle = R.hostingBundle
+      let name = "ListItemView"
+
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> ListItemView? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? ListItemView
+      }
+
+      fileprivate init() {}
     }
 
     struct _LoaderViewController: Rswift.NibResourceType, Rswift.Validatable {
