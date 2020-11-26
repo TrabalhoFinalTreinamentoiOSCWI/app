@@ -49,6 +49,7 @@
 		C3AD9B92254CF9AD00CDD65D /* Alias.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3AD9B91254CF9AD00CDD65D /* Alias.swift */; };
 		C3AD9B96254CFAE600CDD65D /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3AD9B95254CFAE600CDD65D /* R.generated.swift */; };
 		C3FB522325617B3200070058 /* UIViewController+NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FB522225617B3200070058 /* UIViewController+NavigationBar.swift */; };
+		F102C1E925706F7A007F82A4 /* FavoriteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F102C1E825706F7A007F82A4 /* FavoriteTests.swift */; };
 		F13C3B0E2558CA6900209F2B /* SearchCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13C3B0D2558CA6900209F2B /* SearchCollectionViewController.swift */; };
 		F13C3B122558CB6000209F2B /* SearchCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13C3B102558CB6000209F2B /* SearchCollectionViewCell.swift */; };
 		F13C3B132558CB6000209F2B /* SearchCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F13C3B112558CB6000209F2B /* SearchCollectionViewCell.xib */; };
@@ -137,6 +138,7 @@
 		E3399DACC8415A10ABAD5B08 /* Pods_RangoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RangoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4A710C225AC8A347E6FED02 /* Pods-RangoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RangoTests.debug.xcconfig"; path = "Target Support Files/Pods-RangoTests/Pods-RangoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F01757C97EAE95BDBEB60E9D /* Pods-RangoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RangoTests.release.xcconfig"; path = "Target Support Files/Pods-RangoTests/Pods-RangoTests.release.xcconfig"; sourceTree = "<group>"; };
+		F102C1E825706F7A007F82A4 /* FavoriteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteTests.swift; sourceTree = "<group>"; };
 		F13C3B0D2558CA6900209F2B /* SearchCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCollectionViewController.swift; sourceTree = "<group>"; };
 		F13C3B102558CB6000209F2B /* SearchCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCollectionViewCell.swift; sourceTree = "<group>"; };
 		F13C3B112558CB6000209F2B /* SearchCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -328,6 +330,7 @@
 			children = (
 				C3AD9B7C254CECC000CDD65D /* RangoTests.swift */,
 				C3AD9B7E254CECC000CDD65D /* Info.plist */,
+				F102C1E825706F7A007F82A4 /* FavoriteTests.swift */,
 			);
 			path = RangoTests;
 			sourceTree = "<group>";
@@ -725,6 +728,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3AD9B7D254CECC000CDD65D /* RangoTests.swift in Sources */,
+				F102C1E925706F7A007F82A4 /* FavoriteTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
