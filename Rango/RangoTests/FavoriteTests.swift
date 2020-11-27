@@ -31,6 +31,14 @@ class FavoriteTests: QuickSpec {
                     let result = favorite.alter(recipe)
                     expect(result).to(beTrue())
                 }
+                it("should can alter some recipe") {
+                    let recipe: Recipe = Recipe(id: 1, userId: 1, name: "", bio: "", dificulty: Dificult.easy, time: 1, rating: 1, image: "", ingredients: [""], steps: [""])
+                    
+                    favorite.favoriteRecipes = [recipe]
+                    
+                    let result = favorite.alter(recipe)
+                    expect(result).to(beFalse())
+                }
             }
             
         }
