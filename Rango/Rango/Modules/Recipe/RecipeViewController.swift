@@ -16,6 +16,7 @@ class RecipeViewController: UIViewController {
     @IBOutlet private weak var dificultyLabel: UILabel!
     @IBOutlet private weak var expectedTimeLabel: UILabel!
     @IBOutlet private weak var favoriteButton: UIButton!
+    @IBOutlet private weak var listsStackView: UIStackView!
     private var recipe: Recipe!
 
     @IBAction func onClickFavoriteButton(_ sender: UIButton) {
@@ -37,7 +38,24 @@ class RecipeViewController: UIViewController {
             self.dificultyView.roundCorners(corners: [.allCorners], radius: 50)
             self.expectedTimeLabel.text = "Tempo de preparo estimado em \(recipe.time)min"
             self.configureIsFavorite(for: recipe)
+            self.setListsStackView()
         }
+        
+    }
+    
+    private func setListsStackView() {
+        let ingredientsListBlockView = ListBlockView.doNib()
+        ingredientsListBlockView.config(for: self.recipe.ingredients, named: "Ingredientes")
+        ingredientsListBlockView.frame.size.height = (26 * CGFloat(self.recipe.ingredients.count))
+        ingredientsListBlockView.withShadow
+        
+        let stepsListBlockView = ListBlockView.doNib()
+        stepsListBlockView.config(for: self.recipe.steps, named: "Passos")
+        stepsListBlockView.frame.size.height = (26 * CGFloat(self.recipe.steps.count))
+        stepsListBlockView.withShadow
+        
+        self.listsStackView.addArrangedSubview(ingredientsListBlockView)
+        self.listsStackView.addArrangedSubview(stepsListBlockView)
         
     }
     
