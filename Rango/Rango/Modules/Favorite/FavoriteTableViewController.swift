@@ -54,4 +54,12 @@ extension FavoriteTableViewController {
         }
         return .init(actions: [action])
     }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let recipe = recipes[indexPath.row]
+        let recipeViewController = RecipeViewController()
+        
+        recipeViewController.config(for: recipe)
+        self.navigationController?.pushViewController(recipeViewController, animated: true)
+    }
 }

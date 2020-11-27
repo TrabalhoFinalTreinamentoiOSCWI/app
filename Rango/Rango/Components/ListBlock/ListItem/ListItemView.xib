@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Nunito-Regular.ttf">
+            <string>Nunito-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ListItemView" customModule="Rango" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ListItemView" customModule="Rango" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FPg-iX-Hb0">
+                    <rect key="frame" x="10" y="447" width="12" height="12"/>
+                    <color key="backgroundColor" name="accent"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="12" id="6ls-E5-ddl"/>
+                        <constraint firstAttribute="width" constant="12" id="K0s-q4-k5G"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pND-Q7-tR6">
+                    <rect key="frame" x="32" y="5" width="372" height="896"/>
+                    <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="14"/>
+                    <color key="textColor" name="text"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="pND-Q7-tR6" secondAttribute="trailing" constant="10" id="8RF-xB-39r"/>
+                <constraint firstItem="pND-Q7-tR6" firstAttribute="centerY" secondItem="FPg-iX-Hb0" secondAttribute="centerY" id="Dj0-aT-mkI"/>
+                <constraint firstItem="FPg-iX-Hb0" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="GMw-4a-TGi"/>
+                <constraint firstItem="FPg-iX-Hb0" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="N4P-vL-YXe"/>
+                <constraint firstAttribute="height" secondItem="pND-Q7-tR6" secondAttribute="height" id="iv9-SL-9BP"/>
+                <constraint firstItem="pND-Q7-tR6" firstAttribute="leading" secondItem="FPg-iX-Hb0" secondAttribute="trailing" constant="10" id="jlF-Tb-Yp2"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="dotView" destination="FPg-iX-Hb0" id="1zV-tB-iPv"/>
+                <outlet property="itemContentLabel" destination="pND-Q7-tR6" id="Iw7-18-mWI"/>
+            </connections>
+            <point key="canvasLocation" x="20" y="67"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="accent">
+            <color red="0.9882352941176471" green="0.54509803921568623" blue="0.33725490196078434" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="text">
+            <color red="0.25098039215686274" green="0.25098039215686274" blue="0.25098039215686274" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

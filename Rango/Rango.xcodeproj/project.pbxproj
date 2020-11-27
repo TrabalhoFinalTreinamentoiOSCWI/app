@@ -38,7 +38,11 @@
 		C3212D1E2557663900B0BE51 /* LoaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3212D1C2557663900B0BE51 /* LoaderViewController.swift */; };
 		C3212D1F2557663900B0BE51 /* LoaderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3212D1D2557663900B0BE51 /* LoaderViewController.xib */; };
 		C3212D212557664600B0BE51 /* LoaderViewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3212D202557664600B0BE51 /* LoaderViewType.swift */; };
-		C380845025618DD5008BAD5D /* UIButton+Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C380844F25618DD5008BAD5D /* UIButton+Shadow.swift */; };
+		C3800C7D2568ACCD00912718 /* ListBlockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3800C7C2568ACCD00912718 /* ListBlockView.swift */; };
+		C3800C7F2568AD1200912718 /* ListBlockView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3800C7E2568AD1200912718 /* ListBlockView.xib */; };
+		C3800C822568AD2A00912718 /* ListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3800C812568AD2A00912718 /* ListItemView.swift */; };
+		C3800C842568AD3600912718 /* ListItemView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3800C832568AD3600912718 /* ListItemView.xib */; };
+		C380845025618DD5008BAD5D /* UIView+Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C380844F25618DD5008BAD5D /* UIView+Shadow.swift */; };
 		C3AD9B66254CECBE00CDD65D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3AD9B65254CECBE00CDD65D /* AppDelegate.swift */; };
 		C3AD9B68254CECBE00CDD65D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3AD9B67254CECBE00CDD65D /* SceneDelegate.swift */; };
 		C3AD9B6A254CECBE00CDD65D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3AD9B69254CECBE00CDD65D /* ViewController.swift */; };
@@ -118,7 +122,11 @@
 		C3212D1C2557663900B0BE51 /* LoaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderViewController.swift; sourceTree = "<group>"; };
 		C3212D1D2557663900B0BE51 /* LoaderViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoaderViewController.xib; sourceTree = "<group>"; };
 		C3212D202557664600B0BE51 /* LoaderViewType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderViewType.swift; sourceTree = "<group>"; };
-		C380844F25618DD5008BAD5D /* UIButton+Shadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Shadow.swift"; sourceTree = SOURCE_ROOT; };
+		C3800C7C2568ACCD00912718 /* ListBlockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListBlockView.swift; sourceTree = "<group>"; };
+		C3800C7E2568AD1200912718 /* ListBlockView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListBlockView.xib; sourceTree = "<group>"; };
+		C3800C812568AD2A00912718 /* ListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemView.swift; sourceTree = "<group>"; };
+		C3800C832568AD3600912718 /* ListItemView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListItemView.xib; sourceTree = "<group>"; };
+		C380844F25618DD5008BAD5D /* UIView+Shadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Shadow.swift"; sourceTree = SOURCE_ROOT; };
 		C3AD9B62254CECBE00CDD65D /* Rango.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rango.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3AD9B65254CECBE00CDD65D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C3AD9B67254CECBE00CDD65D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -281,6 +289,25 @@
 			path = Loader;
 			sourceTree = "<group>";
 		};
+		C3800C7B2568ACA100912718 /* ListBlock */ = {
+			isa = PBXGroup;
+			children = (
+				C3800C802568AD1700912718 /* ListItem */,
+				C3800C7C2568ACCD00912718 /* ListBlockView.swift */,
+				C3800C7E2568AD1200912718 /* ListBlockView.xib */,
+			);
+			path = ListBlock;
+			sourceTree = "<group>";
+		};
+		C3800C802568AD1700912718 /* ListItem */ = {
+			isa = PBXGroup;
+			children = (
+				C3800C812568AD2A00912718 /* ListItemView.swift */,
+				C3800C832568AD3600912718 /* ListItemView.xib */,
+			);
+			path = ListItem;
+			sourceTree = "<group>";
+		};
 		C3AD9B59254CECBE00CDD65D = {
 			isa = PBXGroup;
 			children = (
@@ -355,7 +382,7 @@
 				C301FE0625563D4600F00AA1 /* UIView+Size.swift */,
 				F13C3B1A2558D84000209F2B /* String+EndpointPath.swift */,
 				C3FB522225617B3200070058 /* UIViewController+NavigationBar.swift */,
-				C380844F25618DD5008BAD5D /* UIButton+Shadow.swift */,
+				C380844F25618DD5008BAD5D /* UIView+Shadow.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -413,6 +440,7 @@
 		F15A0D2C2552F09B006EFE94 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				C3800C7B2568ACA100912718 /* ListBlock */,
 				C3212D1B2557662300B0BE51 /* Loader */,
 				F15A0D2D2552F0A3006EFE94 /* RecipeCard */,
 			);
@@ -542,6 +570,7 @@
 				928182DA2550D3B50035C7CB /* Nunito-ExtraLightItalic.ttf in Resources */,
 				928182D82550D3B50035C7CB /* Nunito-SemiBoldItalic.ttf in Resources */,
 				928182DC2550D3B50035C7CB /* Nunito-ExtraLight.ttf in Resources */,
+				C3800C7F2568AD1200912718 /* ListBlockView.xib in Resources */,
 				C3AD9B72254CECC000CDD65D /* LaunchScreen.storyboard in Resources */,
 				C301FE0325563BF900F00AA1 /* MenuOptionView.xib in Resources */,
 				C3AD9B6F254CECC000CDD65D /* Assets.xcassets in Resources */,
@@ -551,6 +580,7 @@
 				928182E12550D3B50035C7CB /* Nunito-LightItalic.ttf in Resources */,
 				928182D62550D3B50035C7CB /* Nunito-BlackItalic.ttf in Resources */,
 				F13C3B132558CB6000209F2B /* SearchCollectionViewCell.xib in Resources */,
+				C3800C842568AD3600912718 /* ListItemView.xib in Resources */,
 				928182E02550D3B50035C7CB /* Nunito-Black.ttf in Resources */,
 				928182DE2550D3B50035C7CB /* Nunito-ExtraBoldItalic.ttf in Resources */,
 				928182DD2550D3B50035C7CB /* Nunito-Bold.ttf in Resources */,
@@ -692,7 +722,9 @@
 				F1FF2EDD2553944400AE0D25 /* ProfileViewController.swift in Sources */,
 				F1633A532559F3DC00409168 /* SearchResult+Protocols.swift in Sources */,
 				C3AD9B96254CFAE600CDD65D /* R.generated.swift in Sources */,
+				C3800C822568AD2A00912718 /* ListItemView.swift in Sources */,
 				F1523A2C2550782800C4A65A /* UIImageView+LoadImage.swift in Sources */,
+				C3800C7D2568ACCD00912718 /* ListBlockView.swift in Sources */,
 				F13C3B122558CB6000209F2B /* SearchCollectionViewCell.swift in Sources */,
 				C301FDFB25563A3800F00AA1 /* MenuViewController.swift in Sources */,
 				C3AD9B6A254CECBE00CDD65D /* ViewController.swift in Sources */,
@@ -712,7 +744,7 @@
 				F1523A24255074B100C4A65A /* Recipe.swift in Sources */,
 				F13C3B0E2558CA6900209F2B /* SearchCollectionViewController.swift in Sources */,
 				F13C3B1B2558D84000209F2B /* String+EndpointPath.swift in Sources */,
-				C380845025618DD5008BAD5D /* UIButton+Shadow.swift in Sources */,
+				C380845025618DD5008BAD5D /* UIView+Shadow.swift in Sources */,
 				F13C3B172558CD2A00209F2B /* SearchPresenter.swift in Sources */,
 				F13C3B152558CCFD00209F2B /* Search+Protocols.swift in Sources */,
 				F13C3B192558D16700209F2B /* Category.swift in Sources */,
