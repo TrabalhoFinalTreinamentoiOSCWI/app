@@ -23,7 +23,14 @@ class FavoriteTests: QuickSpec {
         
         describe("when favorite recipes") {
             context("when alter cards") {
-                
+                it("should can add some recipe") {
+                    favorite.favoriteRecipes = []
+                    
+                    let recipe: Recipe = Recipe(id: 1, userId: 1, name: "", bio: "", dificulty: Dificult.easy, time: 1, rating: 1, image: "", ingredients: [""], steps: [""])
+                    
+                    let result = favorite.alter(recipe)
+                    expect(result).to(beTrue())
+                }
             }
             
         }

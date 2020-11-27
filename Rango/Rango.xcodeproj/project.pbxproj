@@ -483,7 +483,6 @@
 				C3AD9B74254CECC000CDD65D /* Sources */,
 				C3AD9B75254CECC000CDD65D /* Frameworks */,
 				C3AD9B76254CECC000CDD65D /* Resources */,
-				CADAB18627C3756E2021A128 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -628,28 +627,11 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				$SRCROOT/R.generated.swift,
+				"$SRCROOT/R.generated.swift",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\n\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
-		};
-		CADAB18627C3756E2021A128 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RangoTests/Pods-RangoTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RangoTests/Pods-RangoTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RangoTests/Pods-RangoTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
 		};
 		FE48C7AB76D7B2AEC1110F42 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
