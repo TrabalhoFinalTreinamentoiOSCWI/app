@@ -8,12 +8,11 @@ target 'Rango' do
   # Pods for Rango
   pod 'R.swift'
   pod 'Nuke'
+  pod 'Nimble'
+  pod 'Quick'
 
   target 'RangoTests' do
     inherit! :search_paths
-    # Pods for testing
-    pod 'Nimble'
-    pod 'Quick'
 
   end
 
