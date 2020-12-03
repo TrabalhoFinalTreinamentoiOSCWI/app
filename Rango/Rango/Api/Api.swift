@@ -11,7 +11,7 @@ import Foundation
 typealias SuccessResult<T: Decodable> = (T) -> Void
 typealias ErrorResult = (String) -> Void
 
-class Api {
+class Api: NetworkServiceInterface {
     
     let baseUrl: String = "http://localhost:3000"
     

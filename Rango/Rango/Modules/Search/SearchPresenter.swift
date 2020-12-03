@@ -12,7 +12,7 @@ class SearchPresenter: NSObject {
     
     var view: SearchViewType?
     var categories: [Category] = []
-    let api = Api()
+    let api: NetworkServiceInterface = Api()
     
     init(view: SearchViewType) {
         self.view = view

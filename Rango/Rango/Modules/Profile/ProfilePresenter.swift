@@ -12,7 +12,7 @@ class ProfilePresenter: NSObject {
     
     var view: ProfileViewType?
     var user: User?
-    let api = Api()
+    var api: NetworkServiceInterface = Api()
     
 }
 
@@ -20,19 +20,13 @@ extension ProfilePresenter: ProfilePresenterType {
     
     func loadScreen() {
         view?.showLoader()
-        self.api.get(endpoint: .users(id: 1), success: success, error: fail)
-    }
-    
-    private func success(_ user: User) {
-        DispatchQueue.main.async {
+        self.api.get(endpoint: .users(id: 1)) { (user: User) in
             self.user = user
             self.view?.showUser(use: user)
             self.view?.dismissLoader()
+        } error: { (error) in
+            print(error)
+            self.view?.dismissLoader()
         }
-    }
-    
-    private func fail(_ error: String) {
-        print(error)
-        view?.dismissLoader()
     }
 }

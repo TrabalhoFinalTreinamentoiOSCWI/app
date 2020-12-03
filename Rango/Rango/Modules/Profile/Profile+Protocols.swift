@@ -16,6 +16,10 @@ protocol ProfileViewType: LoaderViewType {
 
 protocol ProfilePresenterType {
     
+    var view: ProfileViewType? { get set }
+    
+    var api: NetworkServiceInterface { get set }
+    
     var user: User? { get }
     
     func loadScreen()
