@@ -73,6 +73,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="tintColor" name="accent"/>
+                        <color key="separatorColor" name="easy"/>
                         <connections>
                             <outlet property="dataSource" destination="yst-Ho-RiX" id="r1f-bx-OEY"/>
                             <outlet property="delegate" destination="yst-Ho-RiX" id="avS-QR-LdK"/>
@@ -179,6 +181,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="WIO-19-hfG">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" name="accent"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" name="accent"/>
                         </textAttributes>
@@ -199,6 +202,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="RGU-8i-LOV">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" name="accent"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" name="accent"/>
                         </textAttributes>
@@ -219,6 +223,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="tintColor" name="accent"/>
                         <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="YTp-Tv-nG8">
                             <size key="itemSize" width="128" height="128"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -245,6 +250,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="WJh-AQ-IKa">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" name="accent"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" name="accent"/>
                         </textAttributes>
@@ -287,6 +293,7 @@
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="tintColor" name="accent"/>
                         <constraints>
                             <constraint firstItem="BrB-Jf-jxk" firstAttribute="leading" secondItem="Lzd-Se-IO7" secondAttribute="leading" id="42g-ct-Kk2"/>
                             <constraint firstItem="BrB-Jf-jxk" firstAttribute="top" secondItem="OlC-D5-FoD" secondAttribute="bottom" id="DU3-IC-87P"/>
@@ -315,6 +322,9 @@
         </namedColor>
         <namedColor name="discreteText">
             <color red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="easy">
+            <color red="0.52156862745098043" green="0.85882352941176465" blue="0.59607843137254901" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="text">
             <color red="0.25098039215686274" green="0.25098039215686274" blue="0.25098039215686274" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

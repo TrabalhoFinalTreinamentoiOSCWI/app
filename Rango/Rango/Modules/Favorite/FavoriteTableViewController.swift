@@ -16,6 +16,7 @@ class FavoriteTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.removeBackButtonText
         
         tableView.register(UINib(resource: R.nib.recipeTableViewCell), forCellReuseIdentifier: "recipe-cell")
         tableView.delegate = self
