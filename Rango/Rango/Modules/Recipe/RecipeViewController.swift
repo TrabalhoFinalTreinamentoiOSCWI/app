@@ -46,12 +46,12 @@ class RecipeViewController: UIViewController {
     private func setListsStackView() {
         let ingredientsListBlockView = ListBlockView.doNib()
         ingredientsListBlockView.config(for: self.recipe.ingredients, named: "Ingredientes")
-        ingredientsListBlockView.frame.size.height = (26 * CGFloat(self.recipe.ingredients.count))
+        ingredientsListBlockView.frame.size.height = ingredientsListBlockView.configureStackListHeight(for: self.recipe.ingredients.count)
         ingredientsListBlockView.withShadow
         
         let stepsListBlockView = ListBlockView.doNib()
         stepsListBlockView.config(for: self.recipe.steps, named: "Passos")
-        stepsListBlockView.frame.size.height = (26 * CGFloat(self.recipe.steps.count))
+        stepsListBlockView.frame.size.height = stepsListBlockView.configureStackListHeight(for: self.recipe.steps.count)
         stepsListBlockView.withShadow
         
         self.listsStackView.addArrangedSubview(ingredientsListBlockView)

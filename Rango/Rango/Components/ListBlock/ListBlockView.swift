@@ -23,7 +23,6 @@ class ListBlockView: UIView {
             for item in list {
                 let itemView = ListItemView.doNib()
                 itemView.config(for: item)
-//                itemView.frame.size.height = 26
                 self.listStackView.addArrangedSubview(itemView)
             }
             

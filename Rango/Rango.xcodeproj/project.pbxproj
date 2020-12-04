@@ -51,6 +51,7 @@
 		C3AD9B72254CECC000CDD65D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3AD9B70254CECC000CDD65D /* LaunchScreen.storyboard */; };
 		C3AD9B92254CF9AD00CDD65D /* Alias.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3AD9B91254CF9AD00CDD65D /* Alias.swift */; };
 		C3AD9B96254CFAE600CDD65D /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3AD9B95254CFAE600CDD65D /* R.generated.swift */; };
+		C3EBD2502579D9A300EBEBE5 /* ListBlockView+Height.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3EBD24F2579D9A300EBEBE5 /* ListBlockView+Height.swift */; };
 		C3FB522325617B3200070058 /* UIViewController+NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FB522225617B3200070058 /* UIViewController+NavigationBar.swift */; };
 		F102C1E925706F7A007F82A4 /* FavoriteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F102C1E825706F7A007F82A4 /* FavoriteTests.swift */; };
 		F10AE6912579C9E6000D506C /* MenuViewTypeMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10AE6902579C9E6000D506C /* MenuViewTypeMock.swift */; };
@@ -149,6 +150,7 @@
 		C3AD9B7E254CECC000CDD65D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C3AD9B91254CF9AD00CDD65D /* Alias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alias.swift; sourceTree = "<group>"; };
 		C3AD9B95254CFAE600CDD65D /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		C3EBD24F2579D9A300EBEBE5 /* ListBlockView+Height.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ListBlockView+Height.swift"; sourceTree = SOURCE_ROOT; };
 		C3FB522225617B3200070058 /* UIViewController+NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+NavigationBar.swift"; sourceTree = SOURCE_ROOT; };
 		C5C925304F083606DE307C89 /* Pods-Rango.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rango.release.xcconfig"; path = "Target Support Files/Pods-Rango/Pods-Rango.release.xcconfig"; sourceTree = "<group>"; };
 		E3399DACC8415A10ABAD5B08 /* Pods_RangoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RangoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -406,6 +408,7 @@
 				F13C3B1A2558D84000209F2B /* String+EndpointPath.swift */,
 				C3FB522225617B3200070058 /* UIViewController+NavigationBar.swift */,
 				C380844F25618DD5008BAD5D /* UIView+Shadow.swift */,
+				C3EBD24F2579D9A300EBEBE5 /* ListBlockView+Height.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -783,6 +786,7 @@
 				F13C3B122558CB6000209F2B /* SearchCollectionViewCell.swift in Sources */,
 				C301FDFB25563A3800F00AA1 /* MenuViewController.swift in Sources */,
 				C3AD9B6A254CECBE00CDD65D /* ViewController.swift in Sources */,
+				C3EBD2502579D9A300EBEBE5 /* ListBlockView+Height.swift in Sources */,
 				9206E02C2554C067001CC6E8 /* UITextField+Padding.swift in Sources */,
 				F1633A572559F7DF00409168 /* Profile+Protocols.swift in Sources */,
 				F1523A2A2550773000C4A65A /* Menu.swift in Sources */,
