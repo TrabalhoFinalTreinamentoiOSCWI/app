@@ -13,8 +13,8 @@ import Foundation
 open class ProfileFailMockApiNetworkService: NetworkServiceInterface {
     
     open func get<T>(endpoint: Endpoint, success: @escaping SuccessResult<T>, error: @escaping ErrorResult) where T : Decodable {
-        let a = "Error Message"
-        error(a)
+        let message = "Error Message"
+        error(message)
     }
 
 }

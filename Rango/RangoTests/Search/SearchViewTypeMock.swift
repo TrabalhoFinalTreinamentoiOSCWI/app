@@ -1,8 +1,8 @@
 //
-//  ProfileViewMock.swift
+//  SearchViewTypeMock.swift
 //  RangoTests
 //
-//  Created by Rhian Lopes da Costa on 02/12/20.
+//  Created by Rhian Lopes da Costa on 04/12/20.
 //  Copyright © 2020 CWI. All rights reserved.
 //
 
@@ -10,21 +10,22 @@ import Foundation
 
 @testable import Rango
 
-class ProfileViewMock: ProfileViewType {
+class SearchViewTypeMock: SearchViewType {
     
     var loaderScreen: LoaderViewController?
     
-    var shownUser: User?
-    
     var hasError: Bool?
     
-    func showUser(use user: User) {
-        self.shownUser = user
+    func reloadCollection() {
+        
     }
     
-    func showLoader() {}
+    func showLoader() {
+        
+    }
     
     func dismissLoader() {
         hasError = true
     }
 }
+

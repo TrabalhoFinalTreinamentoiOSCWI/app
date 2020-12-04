@@ -9,7 +9,7 @@
 import Foundation
 
 class MenuPresenter: NSObject {
-    let api = Api()
+    var api: NetworkServiceInterface = Api()
     var menuOptions: [Menu] = []
     var view: MenuViewType?
     
@@ -21,21 +21,14 @@ class MenuPresenter: NSObject {
 extension MenuPresenter: MenuPresenterType {
     func screenDidLoad() {
         view?.showLoader()
-        request()
-    }
-    
-    private func request() {
-        self.api.get(endpoint: .menu, success: success, error: fail)
-    }
-    
-    private func success(_ response: [Menu]) {
-        DispatchQueue.main.async {
-            self.view?.setMenuOptions(for: response)
+        self.api.get(endpoint: .menu) { (response: [Menu]) in
+            DispatchQueue.main.async {
+                self.view?.setMenuOptions(for: response)
+                self.view?.dismissLoader()
+            }
+        } error: { (error) in
+            print(error)
             self.view?.dismissLoader()
         }
-    }
-    
-    private func fail(_ error: String) {
-        print(error)
     }
 }

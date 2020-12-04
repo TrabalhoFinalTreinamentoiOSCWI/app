@@ -16,6 +16,10 @@ protocol SearchViewType: LoaderViewType {
 
 protocol SearchPresenterType {
     
+    var view: SearchViewType? { get set }
+    
+    var api: NetworkServiceInterface { get set }
+    
     var categories: [Category] { get }
     
     func loadScreen()

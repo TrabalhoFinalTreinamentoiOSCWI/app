@@ -31,6 +31,7 @@ class MenuViewController: UIViewController {
 }
 
 extension MenuViewController: MenuViewType {
+    
     func setMenuOptions(for options: [Menu]) {
         DispatchQueue.main.async {
             let listSize = options.count

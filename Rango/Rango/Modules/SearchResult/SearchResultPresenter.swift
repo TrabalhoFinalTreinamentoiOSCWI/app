@@ -12,7 +12,7 @@ class SearchResultPresenter: NSObject {
     
     var view: SearchResultViewType?
     var recipes: [Recipe] = []
-    let api = Api()
+    var api: NetworkServiceInterface = Api()
     
     init(view: SearchResultViewType) {
         self.view = view
@@ -31,20 +31,16 @@ extension SearchResultPresenter: SearchResultPresenterType {
     
     func loadScreen(path: String) {
         self.view?.showLoader()
-        self.api.get(endpoint: path.findEndpointByPath(path: path) ?? .salads, success: success, error: fail)
-    }
-    
-    private func success(_ recipes: [Recipe]) {
-        DispatchQueue.main.async {
-            self.recipes = recipes
-            self.view?.showCards()
+        self.api.get(endpoint: path.findEndpointByPath(path: path) ?? .salads) { (recipes: [Recipe]) in
+            DispatchQueue.main.async {
+                self.recipes = recipes
+                self.view?.showCards()
+                self.view?.dismissLoader()
+            }
+        } error: { (error) in
+            print(error)
             self.view?.dismissLoader()
         }
-    }
-    
-    private func fail(_ error: String) {
-        print(error)
-        self.view?.dismissLoader()
     }
 }
 

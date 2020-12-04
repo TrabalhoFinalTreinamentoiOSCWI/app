@@ -21,9 +21,11 @@ extension ProfilePresenter: ProfilePresenterType {
     func loadScreen() {
         view?.showLoader()
         self.api.get(endpoint: .users(id: 1)) { (user: User) in
-            self.user = user
-            self.view?.showUser(use: user)
-            self.view?.dismissLoader()
+            DispatchQueue.main.async {
+                self.user = user
+                self.view?.showUser(use: user)
+                self.view?.dismissLoader()
+            }
         } error: { (error) in
             print(error)
             self.view?.dismissLoader()
