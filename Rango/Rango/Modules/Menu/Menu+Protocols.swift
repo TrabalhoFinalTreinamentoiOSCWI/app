@@ -9,9 +9,17 @@
 import UIKit
 
 protocol MenuViewType: LoaderViewType {
+
     func setMenuOptions(for options: [Menu])
+    
 }
 
 protocol MenuPresenterType {
+    
+    var view: MenuViewType? { get set }
+    
+    var api: NetworkServiceInterface { get set }
+    
     func screenDidLoad()
+    
 }

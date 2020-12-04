@@ -17,11 +17,11 @@ class ProfilePresenterTests: QuickSpec {
     
     override func spec() {
         var profile: ProfilePresenterType!
-        var view: ProfileViewMock!
+        var view: ProfileViewTypeMock!
         
         beforeEach {
             profile = ProfilePresenter()
-            view = ProfileViewMock()
+            view = ProfileViewTypeMock()
             profile.view = view
         }
         
@@ -32,12 +32,14 @@ class ProfilePresenterTests: QuickSpec {
                     
                     profile.loadScreen()
                     
-                    expect(profile.user?.id).to(equal(1))
-                    expect(profile.user?.name).to(equal("Rhian"))
-                    expect(profile.user?.email).to(equal("rhian@gmail.com"))
-                    expect(profile.user?.bio).to(equal("mock bio"))
-                    expect(profile.user?.image).to(equal("https://image.png"))
-                    expect(view.shownUser).toNot(beNil())
+                    DispatchQueue.main.async {
+                        expect(profile.user?.id).to(equal(1))
+                        expect(profile.user?.name).to(equal("Rhian"))
+                        expect(profile.user?.email).to(equal("rhian@gmail.com"))
+                        expect(profile.user?.bio).to(equal("mock bio"))
+                        expect(profile.user?.image).to(equal("https://image.png"))
+                        expect(view.shownUser).toNot(beNil())
+                    }
                 }
                 it("should get profile with fail") {
                     profile.api = ProfileFailMockApiNetworkService()

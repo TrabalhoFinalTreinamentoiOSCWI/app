@@ -10,7 +10,7 @@ import Foundation
 
 @testable import Rango
 
-class ProfileViewMock: ProfileViewType {
+class ProfileViewTypeMock: ProfileViewType {
     
     var loaderScreen: LoaderViewController?
     
