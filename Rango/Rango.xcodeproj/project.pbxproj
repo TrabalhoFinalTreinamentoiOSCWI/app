@@ -58,6 +58,10 @@
 		F10AE6932579CB54000D506C /* MenuSuccessMockApiNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10AE6922579CB54000D506C /* MenuSuccessMockApiNetworkService.swift */; };
 		F10AE6952579CBA0000D506C /* MenuFailMockApiNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10AE6942579CBA0000D506C /* MenuFailMockApiNetworkService.swift */; };
 		F10E88C825786A2500FB30DE /* NetworkServiceInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10E88C725786A2500FB30DE /* NetworkServiceInterface.swift */; };
+		F11FEF052579EA94005A7277 /* SearchResultPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11FEF042579EA94005A7277 /* SearchResultPresenterTests.swift */; };
+		F11FEF072579EB91005A7277 /* SearchResultViewTypeMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11FEF062579EB91005A7277 /* SearchResultViewTypeMock.swift */; };
+		F11FEF092579EC7F005A7277 /* SearchResultSuccessMockApiNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11FEF082579EC7F005A7277 /* SearchResultSuccessMockApiNetworkService.swift */; };
+		F11FEF0B2579EE6A005A7277 /* SearchResultFailMockApiNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11FEF0A2579EE6A005A7277 /* SearchResultFailMockApiNetworkService.swift */; };
 		F12DFF3525780FD300AC92E2 /* ProfileViewTypeMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12DFF3425780FD300AC92E2 /* ProfileViewTypeMock.swift */; };
 		F12DFF39257817BD00AC92E2 /* ProfileSuccessMockApiNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12DFF38257817BD00AC92E2 /* ProfileSuccessMockApiNetworkService.swift */; };
 		F13C3B0E2558CA6900209F2B /* SearchCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13C3B0D2558CA6900209F2B /* SearchCollectionViewController.swift */; };
@@ -165,6 +169,10 @@
 		F10AE6922579CB54000D506C /* MenuSuccessMockApiNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuSuccessMockApiNetworkService.swift; sourceTree = "<group>"; };
 		F10AE6942579CBA0000D506C /* MenuFailMockApiNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuFailMockApiNetworkService.swift; sourceTree = "<group>"; };
 		F10E88C725786A2500FB30DE /* NetworkServiceInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceInterface.swift; sourceTree = "<group>"; };
+		F11FEF042579EA94005A7277 /* SearchResultPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultPresenterTests.swift; sourceTree = "<group>"; };
+		F11FEF062579EB91005A7277 /* SearchResultViewTypeMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultViewTypeMock.swift; sourceTree = "<group>"; };
+		F11FEF082579EC7F005A7277 /* SearchResultSuccessMockApiNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultSuccessMockApiNetworkService.swift; sourceTree = "<group>"; };
+		F11FEF0A2579EE6A005A7277 /* SearchResultFailMockApiNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultFailMockApiNetworkService.swift; sourceTree = "<group>"; };
 		F12DFF3425780FD300AC92E2 /* ProfileViewTypeMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewTypeMock.swift; sourceTree = "<group>"; };
 		F12DFF38257817BD00AC92E2 /* ProfileSuccessMockApiNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSuccessMockApiNetworkService.swift; sourceTree = "<group>"; };
 		F13C3B0D2558CA6900209F2B /* SearchCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCollectionViewController.swift; sourceTree = "<group>"; };
@@ -383,6 +391,7 @@
 		C3AD9B7B254CECC000CDD65D /* RangoTests */ = {
 			isa = PBXGroup;
 			children = (
+				F11FEF032579EA76005A7277 /* SearchResult */,
 				F1F7FBF82579E3200034E020 /* Search */,
 				F148BE772579C5320035748B /* Menu */,
 				F1C0AC1C2579A8420077CFEC /* Favorite */,
@@ -420,6 +429,17 @@
 				C3EBD24F2579D9A300EBEBE5 /* ListBlockView+Height.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F11FEF032579EA76005A7277 /* SearchResult */ = {
+			isa = PBXGroup;
+			children = (
+				F11FEF042579EA94005A7277 /* SearchResultPresenterTests.swift */,
+				F11FEF062579EB91005A7277 /* SearchResultViewTypeMock.swift */,
+				F11FEF082579EC7F005A7277 /* SearchResultSuccessMockApiNetworkService.swift */,
+				F11FEF0A2579EE6A005A7277 /* SearchResultFailMockApiNetworkService.swift */,
+			);
+			path = SearchResult;
 			sourceTree = "<group>";
 		};
 		F13C3B0C2558CA4D00209F2B /* Search */ = {
@@ -840,14 +860,18 @@
 				F12DFF39257817BD00AC92E2 /* ProfileSuccessMockApiNetworkService.swift in Sources */,
 				F148BE792579C5440035748B /* MenuPresenterTests.swift in Sources */,
 				F148BE742579A9620035748B /* RangoTests.swift in Sources */,
+				F11FEF072579EB91005A7277 /* SearchResultViewTypeMock.swift in Sources */,
 				F149E0C32575BA04003B72E4 /* ProfilePresenterTests.swift in Sources */,
+				F11FEF052579EA94005A7277 /* SearchResultPresenterTests.swift in Sources */,
 				F10AE6952579CBA0000D506C /* MenuFailMockApiNetworkService.swift in Sources */,
 				F12DFF3525780FD300AC92E2 /* ProfileViewTypeMock.swift in Sources */,
 				F10AE6912579C9E6000D506C /* MenuViewTypeMock.swift in Sources */,
 				F1F7FBFE2579E5240034E020 /* SearchSuccessMockApiNetworkService.swift in Sources */,
+				F11FEF0B2579EE6A005A7277 /* SearchResultFailMockApiNetworkService.swift in Sources */,
 				F1F7FBFC2579E4120034E020 /* SearchViewTypeMock.swift in Sources */,
 				F102C1E925706F7A007F82A4 /* FavoriteTests.swift in Sources */,
 				F148BE762579AB1F0035748B /* ProfileFailMockApiNetworkService.swift in Sources */,
+				F11FEF092579EC7F005A7277 /* SearchResultSuccessMockApiNetworkService.swift in Sources */,
 				F10AE6932579CB54000D506C /* MenuSuccessMockApiNetworkService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -11,15 +11,21 @@ import UIKit
 protocol SearchResultViewType: LoaderViewType {
     
     func showCards()
+    
     func navigate(to viewController: UIViewController)
     
 }
 
 protocol SearchResultPresenterType {
     
+    var view: SearchResultViewType? { get set }
+    
+    var api: NetworkServiceInterface { get set }
+    
     var recipes: [Recipe] { get }
     
     func loadScreen(path: String)
+    
     func onSelect(with indexPath: IndexPath)
     
 }
