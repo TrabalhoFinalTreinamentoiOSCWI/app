@@ -115,10 +115,12 @@ struct R: Rswift.Validatable {
   }
   #endif
 
-  /// This `R.color` struct is generated, and contains static references to 11 colors.
+  /// This `R.color` struct is generated, and contains static references to 13 colors.
   struct color {
     /// Color `accent`.
     static let accent = Rswift.ColorResource(bundle: R.hostingBundle, name: "accent")
+    /// Color `background`.
+    static let background = Rswift.ColorResource(bundle: R.hostingBundle, name: "background")
     /// Color `detail`.
     static let detail = Rswift.ColorResource(bundle: R.hostingBundle, name: "detail")
     /// Color `discreteText`.
@@ -133,6 +135,8 @@ struct R: Rswift.Validatable {
     static let intermediate = Rswift.ColorResource(bundle: R.hostingBundle, name: "intermediate")
     /// Color `lightDetail`.
     static let lightDetail = Rswift.ColorResource(bundle: R.hostingBundle, name: "lightDetail")
+    /// Color `line`.
+    static let line = Rswift.ColorResource(bundle: R.hostingBundle, name: "line")
     /// Color `loaderBackground`.
     static let loaderBackground = Rswift.ColorResource(bundle: R.hostingBundle, name: "loaderBackground")
     /// Color `text`.
@@ -146,6 +150,15 @@ struct R: Rswift.Validatable {
     @available(iOS 11.0, *)
     static func accent(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIColor? {
       return UIKit.UIColor(resource: R.color.accent, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIColor(named: "background", bundle: ..., traitCollection: ...)`
+    @available(tvOS 11.0, *)
+    @available(iOS 11.0, *)
+    static func background(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIColor? {
+      return UIKit.UIColor(resource: R.color.background, compatibleWith: traitCollection)
     }
     #endif
 
@@ -209,6 +222,15 @@ struct R: Rswift.Validatable {
     @available(iOS 11.0, *)
     static func lightDetail(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIColor? {
       return UIKit.UIColor(resource: R.color.lightDetail, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIColor(named: "line", bundle: ..., traitCollection: ...)`
+    @available(tvOS 11.0, *)
+    @available(iOS 11.0, *)
+    static func line(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIColor? {
+      return UIKit.UIColor(resource: R.color.line, compatibleWith: traitCollection)
     }
     #endif
 
@@ -817,6 +839,7 @@ struct _R: Rswift.Validatable {
       static func validate() throws {
         if UIKit.UIImage(named: "heart", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'heart' is used in nib 'RecipeViewController', but couldn't be loaded.") }
         if #available(iOS 11.0, tvOS 11.0, *) {
+          if UIKit.UIColor(named: "accent", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'accent' is used in storyboard 'RecipeViewController', but couldn't be loaded.") }
           if UIKit.UIColor(named: "discreteText", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'discreteText' is used in storyboard 'RecipeViewController', but couldn't be loaded.") }
         }
       }
@@ -911,6 +934,7 @@ struct _R: Rswift.Validatable {
         if #available(iOS 11.0, tvOS 11.0, *) {
           if UIKit.UIColor(named: "accent", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'accent' is used in storyboard 'Main', but couldn't be loaded.") }
           if UIKit.UIColor(named: "discreteText", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'discreteText' is used in storyboard 'Main', but couldn't be loaded.") }
+          if UIKit.UIColor(named: "easy", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'easy' is used in storyboard 'Main', but couldn't be loaded.") }
           if UIKit.UIColor(named: "text", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'text' is used in storyboard 'Main', but couldn't be loaded.") }
         }
         if _R.storyboard.main().mainStack() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'mainStack' could not be loaded from storyboard 'Main' as 'UIKit.UITabBarController'.") }

@@ -14,6 +14,8 @@ class MenuViewTypeMock: MenuViewType {
     
     var menuOptions: [Menu]? = []
     
+    var hasError: Bool?
+    
     var loaderScreen: LoaderViewController?
     
     func setMenuOptions(for options: [Menu]) {
@@ -25,6 +27,6 @@ class MenuViewTypeMock: MenuViewType {
     }
     
     func dismissLoader() {
-        
+        self.hasError = true
     }
 }

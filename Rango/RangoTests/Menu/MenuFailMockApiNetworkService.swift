@@ -13,6 +13,7 @@ import Foundation
 open class MenuFailMockApiNetworkService: NetworkServiceInterface {
     
     public func get<T>(endpoint: Endpoint, success: @escaping SuccessResult<T>, error: @escaping ErrorResult) where T : Decodable {
-        
+        let message = "Error Message"
+        error(message)
     }
 }

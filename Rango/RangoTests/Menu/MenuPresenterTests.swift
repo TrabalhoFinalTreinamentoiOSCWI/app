@@ -37,6 +37,13 @@ class MenuPresenterTests: QuickSpec {
                         expect(view.menuOptions?.first?.category).to(equal("pasta"))
                     }
                 }
+                it("should get error") {
+                    menu.api = MenuFailMockApiNetworkService()
+                    
+                    menu.screenDidLoad()
+                    
+                    expect(view.hasError).to(beTrue())
+                }
             }
         }
     }
