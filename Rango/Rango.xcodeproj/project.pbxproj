@@ -87,6 +87,10 @@
 		F1633A552559F3F600409168 /* SearchResultPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1633A542559F3F600409168 /* SearchResultPresenter.swift */; };
 		F1633A572559F7DF00409168 /* Profile+Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1633A562559F7DF00409168 /* Profile+Protocols.swift */; };
 		F1F76BD8255382B700625A13 /* Favorite.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F76BD7255382B700625A13 /* Favorite.swift */; };
+		F1F7FBFA2579E3360034E020 /* SearchPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F7FBF92579E3360034E020 /* SearchPresenterTests.swift */; };
+		F1F7FBFC2579E4120034E020 /* SearchViewTypeMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F7FBFB2579E4120034E020 /* SearchViewTypeMock.swift */; };
+		F1F7FBFE2579E5240034E020 /* SearchSuccessMockApiNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F7FBFD2579E5240034E020 /* SearchSuccessMockApiNetworkService.swift */; };
+		F1F7FC002579E55B0034E020 /* SearchFailMockApiNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F7FBFF2579E55B0034E020 /* SearchFailMockApiNetworkService.swift */; };
 		F1FF2EDD2553944400AE0D25 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FF2EDC2553944400AE0D25 /* ProfileViewController.swift */; };
 		F1FF2EE1255395F000AE0D25 /* ProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FF2EE0255395F000AE0D25 /* ProfilePresenter.swift */; };
 /* End PBXBuildFile section */
@@ -190,6 +194,10 @@
 		F1633A542559F3F600409168 /* SearchResultPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultPresenter.swift; sourceTree = "<group>"; };
 		F1633A562559F7DF00409168 /* Profile+Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Profile+Protocols.swift"; sourceTree = "<group>"; };
 		F1F76BD7255382B700625A13 /* Favorite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favorite.swift; sourceTree = "<group>"; };
+		F1F7FBF92579E3360034E020 /* SearchPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPresenterTests.swift; sourceTree = "<group>"; };
+		F1F7FBFB2579E4120034E020 /* SearchViewTypeMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewTypeMock.swift; sourceTree = "<group>"; };
+		F1F7FBFD2579E5240034E020 /* SearchSuccessMockApiNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchSuccessMockApiNetworkService.swift; sourceTree = "<group>"; };
+		F1F7FBFF2579E55B0034E020 /* SearchFailMockApiNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFailMockApiNetworkService.swift; sourceTree = "<group>"; };
 		F1FF2EDC2553944400AE0D25 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		F1FF2EE0255395F000AE0D25 /* ProfilePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -375,6 +383,7 @@
 		C3AD9B7B254CECC000CDD65D /* RangoTests */ = {
 			isa = PBXGroup;
 			children = (
+				F1F7FBF82579E3200034E020 /* Search */,
 				F148BE772579C5320035748B /* Menu */,
 				F1C0AC1C2579A8420077CFEC /* Favorite */,
 				F1C0AC1B2579A8190077CFEC /* Profile */,
@@ -418,8 +427,8 @@
 			children = (
 				F13C3B0F2558CB3100209F2B /* Components */,
 				F13C3B0D2558CA6900209F2B /* SearchCollectionViewController.swift */,
-				F13C3B142558CCFD00209F2B /* Search+Protocols.swift */,
 				F13C3B162558CD2A00209F2B /* SearchPresenter.swift */,
+				F13C3B142558CCFD00209F2B /* Search+Protocols.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -522,6 +531,17 @@
 				F102C1E825706F7A007F82A4 /* FavoriteTests.swift */,
 			);
 			path = Favorite;
+			sourceTree = "<group>";
+		};
+		F1F7FBF82579E3200034E020 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				F1F7FBF92579E3360034E020 /* SearchPresenterTests.swift */,
+				F1F7FBFB2579E4120034E020 /* SearchViewTypeMock.swift */,
+				F1F7FBFD2579E5240034E020 /* SearchSuccessMockApiNetworkService.swift */,
+				F1F7FBFF2579E55B0034E020 /* SearchFailMockApiNetworkService.swift */,
+			);
+			path = Search;
 			sourceTree = "<group>";
 		};
 		F1FF2EDB2553943000AE0D25 /* Profile */ = {
@@ -729,7 +749,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$SRCROOT/R.generated.swift",
+				$SRCROOT/R.generated.swift,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -815,6 +835,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1F7FBFA2579E3360034E020 /* SearchPresenterTests.swift in Sources */,
+				F1F7FC002579E55B0034E020 /* SearchFailMockApiNetworkService.swift in Sources */,
 				F12DFF39257817BD00AC92E2 /* ProfileSuccessMockApiNetworkService.swift in Sources */,
 				F148BE792579C5440035748B /* MenuPresenterTests.swift in Sources */,
 				F148BE742579A9620035748B /* RangoTests.swift in Sources */,
@@ -822,6 +844,8 @@
 				F10AE6952579CBA0000D506C /* MenuFailMockApiNetworkService.swift in Sources */,
 				F12DFF3525780FD300AC92E2 /* ProfileViewTypeMock.swift in Sources */,
 				F10AE6912579C9E6000D506C /* MenuViewTypeMock.swift in Sources */,
+				F1F7FBFE2579E5240034E020 /* SearchSuccessMockApiNetworkService.swift in Sources */,
+				F1F7FBFC2579E4120034E020 /* SearchViewTypeMock.swift in Sources */,
 				F102C1E925706F7A007F82A4 /* FavoriteTests.swift in Sources */,
 				F148BE762579AB1F0035748B /* ProfileFailMockApiNetworkService.swift in Sources */,
 				F10AE6932579CB54000D506C /* MenuSuccessMockApiNetworkService.swift in Sources */,

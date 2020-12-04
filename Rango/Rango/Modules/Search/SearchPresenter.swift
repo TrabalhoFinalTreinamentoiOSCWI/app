@@ -12,7 +12,7 @@ class SearchPresenter: NSObject {
     
     var view: SearchViewType?
     var categories: [Category] = []
-    let api: NetworkServiceInterface = Api()
+    var api: NetworkServiceInterface = Api()
     
     init(view: SearchViewType) {
         self.view = view
@@ -23,20 +23,16 @@ extension SearchPresenter: SearchPresenterType {
     
     func loadScreen() {
         self.view?.showLoader()
-        self.api.get(endpoint: .categories, success: success, error: fail)
-    }
-    
-    private func success(_ categories: [Category]) {
-        DispatchQueue.main.async {
-            self.categories = categories
-            self.view?.reloadCollection()
+        self.api.get(endpoint: .categories) { (categories: [Category]) in
+            DispatchQueue.main.async {
+                self.categories = categories
+                self.view?.reloadCollection()
+                self.view?.dismissLoader()
+            }
+        } error: { (error) in
+            print(error)
             self.view?.dismissLoader()
         }
-    }
-    
-    private func fail(_ error: String) {
-        print(error)
-        self.view?.dismissLoader()
     }
 }
 
