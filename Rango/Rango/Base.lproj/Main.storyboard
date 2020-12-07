@@ -147,6 +147,7 @@
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="tintColor" name="accent"/>
                         <constraints>
                             <constraint firstItem="5Xz-qA-A4d" firstAttribute="centerX" secondItem="sgx-BX-q5s" secondAttribute="centerX" id="6la-lI-JEA"/>
                             <constraint firstItem="5Xz-qA-A4d" firstAttribute="top" secondItem="jgG-Sy-Bw2" secondAttribute="bottom" constant="20" id="Cks-9N-c9f"/>

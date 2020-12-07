@@ -47,8 +47,7 @@ extension MenuViewController: MenuViewType {
         menuOptionView.config(for: currentOption)
         menuOptionView.setSize(
             for: self.optionsStackView,
-            numberOfItems: CGFloat(listSize),
-            spacing: CGFloat(30))
+            numberOfItems: CGFloat(listSize))
         menuOptionView.roundCorners(corners: [.allCorners], radius: 10)
         let gestureRecognizer = self.getGestureRecognizer(for: menuOptionView)
         gestureRecognizer.name = currentOption.category

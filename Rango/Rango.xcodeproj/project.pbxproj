@@ -51,6 +51,8 @@
 		C3AD9B72254CECC000CDD65D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3AD9B70254CECC000CDD65D /* LaunchScreen.storyboard */; };
 		C3AD9B92254CF9AD00CDD65D /* Alias.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3AD9B91254CF9AD00CDD65D /* Alias.swift */; };
 		C3AD9B96254CFAE600CDD65D /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3AD9B95254CFAE600CDD65D /* R.generated.swift */; };
+		C3B1EF16257C567F004F3826 /* UITextField+PaddingTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B1EF15257C567F004F3826 /* UITextField+PaddingTest.swift */; };
+		C3B1EF18257C5B9D004F3826 /* UIView+SizeTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B1EF17257C5B9D004F3826 /* UIView+SizeTest.swift */; };
 		C3EBD2502579D9A300EBEBE5 /* ListBlockView+Height.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3EBD24F2579D9A300EBEBE5 /* ListBlockView+Height.swift */; };
 		C3FB522325617B3200070058 /* UIViewController+NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FB522225617B3200070058 /* UIViewController+NavigationBar.swift */; };
 		F102C1E925706F7A007F82A4 /* FavoriteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F102C1E825706F7A007F82A4 /* FavoriteTests.swift */; };
@@ -158,6 +160,8 @@
 		C3AD9B7E254CECC000CDD65D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C3AD9B91254CF9AD00CDD65D /* Alias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alias.swift; sourceTree = "<group>"; };
 		C3AD9B95254CFAE600CDD65D /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		C3B1EF15257C567F004F3826 /* UITextField+PaddingTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+PaddingTest.swift"; sourceTree = "<group>"; };
+		C3B1EF17257C5B9D004F3826 /* UIView+SizeTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+SizeTest.swift"; sourceTree = "<group>"; };
 		C3EBD24F2579D9A300EBEBE5 /* ListBlockView+Height.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ListBlockView+Height.swift"; sourceTree = SOURCE_ROOT; };
 		C3FB522225617B3200070058 /* UIViewController+NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+NavigationBar.swift"; sourceTree = SOURCE_ROOT; };
 		C5C925304F083606DE307C89 /* Pods-Rango.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rango.release.xcconfig"; path = "Target Support Files/Pods-Rango/Pods-Rango.release.xcconfig"; sourceTree = "<group>"; };
@@ -391,6 +395,7 @@
 		C3AD9B7B254CECC000CDD65D /* RangoTests */ = {
 			isa = PBXGroup;
 			children = (
+				C3B1EF14257C4307004F3826 /* Extensions */,
 				F11FEF032579EA76005A7277 /* SearchResult */,
 				F1F7FBF82579E3200034E020 /* Search */,
 				F148BE772579C5320035748B /* Menu */,
@@ -427,6 +432,15 @@
 				C3FB522225617B3200070058 /* UIViewController+NavigationBar.swift */,
 				C380844F25618DD5008BAD5D /* UIView+Shadow.swift */,
 				C3EBD24F2579D9A300EBEBE5 /* ListBlockView+Height.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C3B1EF14257C4307004F3826 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C3B1EF15257C567F004F3826 /* UITextField+PaddingTest.swift */,
+				C3B1EF17257C5B9D004F3826 /* UIView+SizeTest.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -858,6 +872,7 @@
 				F1F7FBFA2579E3360034E020 /* SearchPresenterTests.swift in Sources */,
 				F1F7FC002579E55B0034E020 /* SearchFailMockApiNetworkService.swift in Sources */,
 				F12DFF39257817BD00AC92E2 /* ProfileSuccessMockApiNetworkService.swift in Sources */,
+				C3B1EF18257C5B9D004F3826 /* UIView+SizeTest.swift in Sources */,
 				F148BE792579C5440035748B /* MenuPresenterTests.swift in Sources */,
 				F148BE742579A9620035748B /* RangoTests.swift in Sources */,
 				F11FEF072579EB91005A7277 /* SearchResultViewTypeMock.swift in Sources */,
@@ -873,6 +888,7 @@
 				F148BE762579AB1F0035748B /* ProfileFailMockApiNetworkService.swift in Sources */,
 				F11FEF092579EC7F005A7277 /* SearchResultSuccessMockApiNetworkService.swift in Sources */,
 				F10AE6932579CB54000D506C /* MenuSuccessMockApiNetworkService.swift in Sources */,
+				C3B1EF16257C567F004F3826 /* UITextField+PaddingTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

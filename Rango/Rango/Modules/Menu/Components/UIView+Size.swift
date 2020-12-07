@@ -9,8 +9,8 @@
 import UIKit
 
 extension UIView {
-    func setSize(for stackView: UIStackView, numberOfItems: CGFloat, spacing: CGFloat) {
-        let emptySpace = (numberOfItems - 1) * spacing
+    func setSize(for stackView: UIStackView, numberOfItems: CGFloat) {
+        let emptySpace = (numberOfItems - 1) * stackView.spacing
         frame.size.width = stackView.frame.size.width
         frame.size.height = (stackView.frame.size.height - emptySpace) / numberOfItems
     }

@@ -9,11 +9,12 @@
 import UIKit
 
 extension ListBlockView {
-    func configureStackListHeight(for numberOfLines: Int) -> CGFloat {
+    func configureStackListHeight(for numberOfLines: Int) {
         enum LayoutContants {
             static let lineHeight: CGFloat = 26
         }
         
-        return LayoutContants.lineHeight * CGFloat(numberOfLines)
+        self.frame.size.height = LayoutContants.lineHeight * CGFloat(numberOfLines)
+        print(LayoutContants.lineHeight * CGFloat(numberOfLines))
     }
 }
