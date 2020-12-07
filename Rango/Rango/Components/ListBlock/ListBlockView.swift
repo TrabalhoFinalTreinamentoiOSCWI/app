@@ -19,6 +19,7 @@ class ListBlockView: UIView {
     func config(for list: [String], named title: String) {
         DispatchQueue.main.async {
             self.listTitleLabel.text = title
+            self.configureStackListHeight(for: list.count)
             
             for item in list {
                 let itemView = ListItemView.doNib()

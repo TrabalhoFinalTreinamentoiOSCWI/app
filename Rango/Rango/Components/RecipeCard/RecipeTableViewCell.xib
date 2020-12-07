@@ -95,6 +95,7 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="tintColor" name="accent"/>
             <connections>
                 <outlet property="recipeBioName" destination="ypj-pE-MKA" id="xei-0I-Lk4"/>
                 <outlet property="recipeImageView" destination="oo0-9c-Obi" id="7DD-fX-O3p"/>
